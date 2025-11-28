@@ -5,6 +5,8 @@ from fastapi import Body
 from sqlalchemy.orm import Session
 from typing import List, Dict, Any
 
+from fastapi.middleware.cors import CORSMiddleware
+
 import crud
 import models
 import schemas
@@ -18,6 +20,12 @@ app = FastAPI(
     description="Un endpoint para realizar consultas complejas a la base de datos."
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.post("/query", response_model=List[Dict[str, Any]])
 async def handle_query(
     # Usamos Body(..., discriminator="action") para ayudar a FastAPI
