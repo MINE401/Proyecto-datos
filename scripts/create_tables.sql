@@ -5,10 +5,11 @@ create table if not exists public.company (
   id uuid primary key default gen_random_uuid(),
   name varchar(255) not null,
   website varchar(255),
-  num_locations_bands integer,
-  year_business_back integer,
+  num_locations_bands varchar,
+  year_business_back varchar,
   employee_band varchar(50),
-  revenue_band varchar(50)
+  revenue_band varchar(50),
+  external_id integer,
 );
 
 -- =========================================
