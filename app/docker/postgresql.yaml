@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/kubernetes.json
+# Este archivo YAML define un Pod de Kubernetes para ejecutar una base de datos PostgreSQL.
+# Está diseñado para ser utilizado con `podman play kube`.
+#
+# Requisitos:
+#   - Podman instalado.
+#
+# Uso:
+#   1. Navega a la raíz del proyecto en tu terminal.
+#   2. Ejecuta `podman play kube docker/postgresql.yaml` para crear e iniciar el pod.
+#   3. La base de datos estará disponible en `localhost:5432`.
+#   4. Para detener y eliminar el pod y el volumen, ejecuta `podman play kube --down docker/postgresql.yaml`.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: partner-db-pod
+spec:
+  containers:
+    - name: postgres-db
+      image: docker.io/postgres:15-alpine
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
+      env:
+        - name: POSTGRES_USER
+          value: "user"
+        - name: POSTGRES_PASSWORD
+          value: "password"
+        - name: POSTGRES_DB
+          value: "partner_db"
+      ports:
+        - containerPort: 5432
+          hostPort: 5432 # Expone el puerto 5432 del contenedor al puerto 5432 del host.
+      volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data # Directorio estándar de datos de PostgreSQL.
+        - name: init-db-script
+          mountPath: /docker-entrypoint-initdb.d/init.sql # Monta el script de inicialización.
+          readOnly: true # El script solo necesita ser leído, no modificado.
+
+  volumes:
+    - name: postgres-data
+      # Podman creará un volumen nombrado para persistir los datos de la base de datos.
+      persistentVolumeClaim:
+        claimName: postgres-data-pvc
+    - name: init-db-script
+      hostPath:
+        path: '/Users/juank1400/workspaces/mati/Proyecto-datos/app/sql/schema.sql'

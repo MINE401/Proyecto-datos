@@ -1,0 +1,45 @@
+## Buscar compañías por país (ej. Argentina), limit 50:
+
+curl -s -X POST "http://localhost:8000/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "action": "search_company",
+    "params": {
+      "territory": { "country": "Argentina" }
+    },
+    "pagination": { "limit": 50, "offset": 0 }
+  }' | jq .
+
+## Buscar por región global (ej. "EMEA"):
+
+curl -s -X POST "http://localhost:8000/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "action": "search_company",
+    "params": {
+      "territory": { "region": "EMEA" }
+    },
+    "pagination": { "limit": 100, "offset": 0 }
+  }' | jq .
+
+## Buscar por ciudad (ej. "Buenos Aires") y por nombre parcial del cliente:
+
+curl -s -X POST "http://localhost:8000/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "action": "search_company",
+    "params": {
+      "territory": { "city": "Buenos Aires" },
+      "clientName": "Acme"
+    },
+    "pagination": { "limit": 20, "offset": 0 }
+  }' | jq .
+
+## Solo listar (sin filtrar por territorio) — usa list_companies:
+curl -s -X POST "http://localhost:8000/query" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "action": "list_companies",
+    "params": { "sort_by": "name", "sort_order": "asc" },
+    "pagination": { "limit": 20, "offset": 0 }
+  }' | jq .
