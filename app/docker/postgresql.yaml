@@ -19,8 +19,13 @@ spec:
   containers:
     - name: postgres-db
       image: docker.io/postgres:15-alpine
-      # Las credenciales y el nombre de la base de datos coinciden con los de `app/database.py`.
-      # Es recomendable gestionar esto con secrets en un entorno real.
+      resources:
+        requests:
+          memory: "256Mi"
+          cpu: "250m"
+        limits:
+          memory: "512Mi"
+          cpu: "500m"
       env:
         - name: POSTGRES_USER
           value: "user"
@@ -44,7 +49,5 @@ spec:
       persistentVolumeClaim:
         claimName: postgres-data-pvc
     - name: init-db-script
-      # Monta el archivo schema.sql local en el pod.
-      # La ruta es relativa al archivo YAML.
       hostPath:
-        path: schema.sql
+        path: '/Users/juank1400/workspaces/mati/Proyecto-datos/app/sql/schema.sql'
