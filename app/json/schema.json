@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Esquema de Consulta de Compañías",
+  "description": "Define la estructura para consultar la base de datos de compañías, territorios y clientes.",
+  "type": "object",
+  "properties": {
+    "action": {
+      "description": "El tipo de consulta a realizar.",
+      "type": "string",
+      "enum": ["list_companies", "list_territories", "search_company"]
+    },
+    "params": {
+      "description": "Parámetros específicos para la acción seleccionada."
+    },
+    "pagination": {
+      "description": "Parámetros de paginación para los resultados.",
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "default": 20,
+          "minimum": 1
+        },
+        "offset": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "required": ["action"],
+  "allOf": [
+    {
+      "if": {
+        "properties": { "action": { "const": "list_companies" } }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "$ref": "#/definitions/ListCompaniesParams"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "action": { "const": "list_territories" } }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "$ref": "#/definitions/ListTerritoriesParams"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "action": { "const": "search_company" } }
+      },
+      "then": {
+        "properties": {
+          "params": {
+            "$ref": "#/definitions/SearchCompanyParams"
+          }
+        },
+        "required": ["params"]
+      }
+    }
+  ],
+  "definitions": {
+    "ListCompaniesParams": {
+      "type": "object",
+      "properties": {
+        "sortBy": {
+          "type": "string",
+          "enum": ["name", "relevance_score"],
+          "default": "name"
+        },
+        "sortOrder": {
+          "type": "string",
+          "enum": ["asc", "desc"],
+          "default": "asc"
+        }
+      }
+    },
+    "ListTerritoriesParams": {
+      "type": "object",
+      "properties": {
+        "filterBy": {
+          "type": "string",
+          "enum": ["country", "region", "global_region"],
+          "description": "Campo por el cual agrupar y listar los territorios."
+        }
+      },
+      "required": ["filterBy"]
+    },
+    "SearchCompanyParams": {
+      "type": "object",
+      "properties": {
+        "territory": {
+          "description": "Filtros de territorio para buscar compañías.",
+          "type": "object",
+          "properties": {
+            "country": { "type": "string" },
+            "state": { "type": "string" },
+            "city": { "type": "string" },
+            "region": { "type": "string" }
+          },
+          "minProperties": 1
+        },
+        "clientName": {
+          "description": "Nombre del cliente (compañía) por el cual filtrar. Busca compañías que son vendors de este cliente.",
+          "type": "string"
+        }
+      },
+      "description": "Debe proveer al menos un criterio de búsqueda: 'territory' o 'clientName'.",
+      "anyOf": [
+        { "required": ["territory"] },
+        { "required": ["clientName"] }
+      ]
+    }
+  }
+}
