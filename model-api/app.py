@@ -8,6 +8,17 @@ from sklearn.preprocessing import OrdinalEncoder
 from pydantic import BaseModel
 from typing import Optional
 from enum import Enum
+import os
+try:
+    from joblib import dump, load
+except Exception:
+    import pickle
+    def dump(obj, path):
+        with open(path, 'wb') as f:
+            pickle.dump(obj, f)
+    def load(path):
+        with open(path, 'rb') as f:
+            return pickle.load(f)
 
 
 # --- Enums para campos categóricos (valores esperados según notebook / dataframes) ---
@@ -135,7 +146,6 @@ def predict(data: PredictionInput):
         return {"error": "El modelo no está cargado. La aplicación no se inició correctamente."}
 
     try:
-        # Mapear los campos Pydantic a los nombres que usa feature_engineering
         # Si algunos campos vienen como Enum, extraer su .value; si no, dejar None/str
         payload = {
             'Company ID': data.company_id,
@@ -153,27 +163,87 @@ def predict(data: PredictionInput):
         features_df = pd.DataFrame([payload])
         features_transformed = feature_engineering(features_df)
 
+        # (debug prints removed)
+
         # Quitar columnas que no son usadas por el modelo
         X = features_transformed.drop(['Relevance', 'Company ID'], axis=1, errors='ignore')
 
-        # Predecir
-        prediction = model.predict(X)
+        # Alinear columnas con las que el modelo espera (evita errores por nombres distintos)
+        def _get_model_feature_names(m):
+            # Intentar varios atributos/métodos que puede tener un modelo CatBoost
+            for attr in ('feature_names_', 'feature_names', 'get_feature_names'):
+                if hasattr(m, attr):
+                    val = getattr(m, attr)
+                    if callable(val):
+                        try:
+                            return list(val())
+                        except Exception:
+                            continue
+                    else:
+                        return list(val)
+            return None
+
+        expected = _get_model_feature_names(model)
+        # (debug prints removed)
+        if expected is not None and len(expected) > 0:
+            # Añadir columnas faltantes con NaN (el modelo deberá manejarlas o se pueden imputar)
+            for col in expected:
+                if col not in X.columns:
+                    X[col] = np.nan
+            # Seleccionar/ordenar solo las columnas esperadas (descartar extras)
+            X = X[expected]
+        else:
+            # Fallback: si el modelo no expone nombres y existe una columna 'Revenue Band Mod'
+            # pero falta 'Revenue Band', renombrarla para evitar el error observado.
+            if 'Revenue Band Mod' in X.columns and 'Revenue Band' not in X.columns:
+                X = X.rename(columns={'Revenue Band Mod': 'Revenue Band'})
+
+        # (debug prints removed)
+
+        # Predecir: intentar predict normal, si falla por mapeo de etiquetas usar alternativas
+        prediction = None
         prediction_proba = None
-        if hasattr(model, 'predict_proba'):
+        try:
+            prediction = model.predict(X)
+        except Exception as e_pred:
+            # Intentar obtener probabilidades (si aplica)
+            try:
+                prediction_proba = model.predict(X, prediction_type='Probability')
+                prediction = None
+            except Exception:
+                try:
+                    # Último recurso: obtener valores crudos
+                    prediction = model.predict(X, prediction_type='RawFormulaVal')
+                except Exception as e2:
+                    raise e2
+        # Si no obtuvimos probabilidades pero el modelo tiene predict_proba, intentarlo
+        if prediction_proba is None and hasattr(model, 'predict_proba'):
             try:
                 prediction_proba = model.predict_proba(X).tolist()
             except Exception:
                 prediction_proba = None
 
-        result = {
-            "prediction": prediction.tolist(),
-            "model_used": "CatBoost"
-        }
+        result = {"model_used": "CatBoost"}
+        if prediction is not None:
+            try:
+                result['prediction'] = prediction.tolist()
+            except Exception:
+                result['prediction'] = prediction
         if prediction_proba is not None:
-            result['prediction_proba'] = prediction_proba
+            try:
+                result['prediction_proba'] = prediction_proba.tolist() if hasattr(prediction_proba, 'tolist') else prediction_proba
+            except Exception:
+                result['prediction_proba'] = prediction_proba
 
         return result
     except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        # Registrar la traza en logs del servidor (no se devuelve en la respuesta)
+        try:
+            print("PREDICT ERROR TRACEBACK:\n", tb)
+        except Exception:
+            pass
         return {"error": f"Error durante la predicción: {e}"}
 
 @app.get("/health")
@@ -184,209 +254,200 @@ def health_check():
 def feature_engineering(input_data):
     """
     Aplica transformaciones de ingeniería de características a los datos de entrada.
-    Replica el procesamiento del notebook 1_Preparación_score.ipynb
+    Replica (de forma simplificada) el procesamiento del notebook 1_Preparación_score.ipynb
+    - Normaliza bands (Revenue / Employee / Years)
+    - Agrupa categorías (Industry, Cloud, Technology, Partner)
+    - Reusa encoders ordinales guardados en `artifacts/` si existen
     """
     output_data = input_data.copy()
-    
-    # ========================================
-    # 1. TRANSFORMACIÓN: Revenue Band
-    # ========================================
-    if 'Revenue Band' in output_data:
+
+    # Helper: safe string
+    def sstr(x):
+        return None if x is None or (isinstance(x, float) and np.isnan(x)) else str(x)
+
+    # Directorio de artefactos
+    enc_dir = 'artifacts'
+    os.makedirs(enc_dir, exist_ok=True)
+
+    # ===== Revenue Band =====
+    if 'Revenue Band' in output_data.columns:
+        # Normalizar texto y extraer límite inferior
         output_data['Revenue Band Mod'] = (
-            output_data['Revenue Band']
-            .astype(str)
+            output_data['Revenue Band'].fillna('').astype(str)
             .str.replace('K', '000', regex=False)
             .str.replace('.5M', '500000', regex=False)
             .str.replace('M', '000000', regex=False)
             .str.replace('B', '000000000', regex=False)
             .str.replace('$', '', regex=False)
             .str.replace('+', '', regex=False)
-            .str.split('-')
-            .str[0]
+            .str.split('-').str[0]
             .str.replace('<', '-', regex=False)
-            .astype(float)
         )
-        
-        # Codificación ordinal
-        encoder_revenue = OrdinalEncoder()
-        output_data['Revenue Band Mod Codificado'] = encoder_revenue.fit_transform(
-            output_data[['Revenue Band Mod']]
-        )
-    
-    # ========================================
-    # 2. TRANSFORMACIÓN: Employee Band
-    # ========================================
-    if 'Employee Band' in output_data:
+        # Convertir a float cuando sea posible
+        output_data['Revenue Band Mod'] = pd.to_numeric(output_data['Revenue Band Mod'], errors='coerce')
+
+        rev_path = os.path.join(enc_dir, 'encoder_revenue.joblib')
+        try:
+            if os.path.exists(rev_path):
+                encoder_revenue = load(rev_path)
+            else:
+                encoder_revenue = OrdinalEncoder()
+                encoder_revenue.fit(output_data[['Revenue Band Mod']].fillna(-1).to_numpy())
+                dump(encoder_revenue, rev_path)
+        except Exception:
+            encoder_revenue = OrdinalEncoder()
+            encoder_revenue.fit(output_data[['Revenue Band Mod']].fillna(-1))
+
+        # Usar .to_numpy() para evitar verificación por nombre de columna en encoders guardados
+        arr_rev = output_data[['Revenue Band Mod']].fillna(-1).to_numpy(dtype=float)
+        try:
+            allowed_rev = set([float(x) for x in encoder_revenue.categories_[0]])
+            arr_rev = np.where(np.isin(arr_rev, list(allowed_rev)), arr_rev, -1.0)
+        except Exception:
+            pass
+        transformed_rev = encoder_revenue.transform(arr_rev)
+        output_data['Revenue Band Mod Codificado'] = transformed_rev.reshape(-1, 1) if transformed_rev.ndim == 2 else transformed_rev
+
+    # ===== Employee Band =====
+    if 'Employee Band' in output_data.columns:
         output_data['Employee Band Mod'] = (
-            output_data['Employee Band']
-            .astype(str)
+            output_data['Employee Band'].fillna('').astype(str)
             .str.replace('+', '', regex=False)
             .str.replace(',', '', regex=False)
-            .str.split('-')
-            .str[0]
-            .astype(float)
+            .str.split('-').str[0]
         )
-        
-        # Codificación ordinal
-        encoder_employee = OrdinalEncoder()
-        output_data['Employee Band Mod Codificado'] = encoder_employee.fit_transform(
-            output_data[['Employee Band Mod']]
-        )
-    
-    # ========================================
-    # 3. TRANSFORMACIÓN: Years in Business Band
-    # ========================================
-    if 'Years in Business Band' in output_data:
+        output_data['Employee Band Mod'] = pd.to_numeric(output_data['Employee Band Mod'], errors='coerce')
+
+        emp_path = os.path.join(enc_dir, 'encoder_employee.joblib')
+        try:
+            if os.path.exists(emp_path):
+                encoder_employee = load(emp_path)
+            else:
+                encoder_employee = OrdinalEncoder()
+                encoder_employee.fit(output_data[['Employee Band Mod']].fillna(-1).to_numpy())
+                dump(encoder_employee, emp_path)
+        except Exception:
+            encoder_employee = OrdinalEncoder()
+            encoder_employee.fit(output_data[['Employee Band Mod']].fillna(-1))
+
+        arr_emp = output_data[['Employee Band Mod']].fillna(-1).to_numpy(dtype=float)
+        try:
+            allowed_emp = set([float(x) for x in encoder_employee.categories_[0]])
+            arr_emp = np.where(np.isin(arr_emp, list(allowed_emp)), arr_emp, -1.0)
+        except Exception:
+            pass
+        transformed_emp = encoder_employee.transform(arr_emp)
+        output_data['Employee Band Mod Codificado'] = transformed_emp.reshape(-1, 1) if transformed_emp.ndim == 2 else transformed_emp
+
+    # ===== Years in Business Band =====
+    if 'Years in Business Band' in output_data.columns:
         output_data['Years in Business Band Mod'] = (
-            output_data['Years in Business Band']
-            .astype(str)
+            output_data['Years in Business Band'].fillna('').astype(str)
             .str.replace('+', '', regex=False)
             .str.replace(' ', '', regex=False)
             .str.replace('<', '', regex=False)
-            .str.split('-')
-            .str[0]
+            .str.split('-').str[0]
         )
-        output_data['Years in Business Band Mod'] = (
-            output_data['Years in Business Band Mod']
-            .replace('', np.nan)
-            .astype(float)
-        )
-        
-        # Codificación ordinal
-        encoder_years = OrdinalEncoder()
-        output_data['Years in Business Band Mod Codificado'] = encoder_years.fit_transform(
-            output_data[['Years in Business Band Mod']]
-        )
-    
-    # ========================================
-    # 4. TRANSFORMACIÓN: Global Region (moda por empresa)
-    # ========================================
-    if 'Global Region' in output_data:
-        # Si es un único registro, mantenerlo; si es múltiple, usar moda
-        if isinstance(output_data['Global Region'], str):
-            output_data['Global Region'] = output_data['Global Region']
-        # Para múltiples registros se aplicaría moda en producción
-    
-    # ========================================
-    # 5. TRANSFORMACIÓN: Industry Detail (Customer)
-    # ========================================
-    if 'Industry Detail (Customer)' in output_data:
+        output_data['Years in Business Band Mod'] = pd.to_numeric(output_data['Years in Business Band Mod'], errors='coerce')
+
+        years_path = os.path.join(enc_dir, 'encoder_years.joblib')
+        try:
+            if os.path.exists(years_path):
+                encoder_years = load(years_path)
+            else:
+                encoder_years = OrdinalEncoder()
+                encoder_years.fit(output_data[['Years in Business Band Mod']].fillna(-1).to_numpy())
+                dump(encoder_years, years_path)
+        except Exception:
+            encoder_years = OrdinalEncoder()
+            encoder_years.fit(output_data[['Years in Business Band Mod']].fillna(-1))
+
+        arr_years = output_data[['Years in Business Band Mod']].fillna(-1).to_numpy(dtype=float)
+        try:
+            allowed_years = set([float(x) for x in encoder_years.categories_[0]])
+            arr_years = np.where(np.isin(arr_years, list(allowed_years)), arr_years, -1.0)
+        except Exception:
+            pass
+        transformed_years = encoder_years.transform(arr_years)
+        output_data['Years in Business Band Mod Codificado'] = transformed_years.reshape(-1, 1) if transformed_years.ndim == 2 else transformed_years
+
+    # ===== Industry grouping =====
+    if 'Industry Detail (Customer)' in output_data.columns:
         def map_industry(code):
-            if pd.isna(code):
+            if pd.isna(code) or code == 'None':
                 return np.nan
             code = str(code).strip().upper()
-            
-            if code.startswith("B"):
-                return "Finanzas"
-            elif code.startswith("C"):
-                return "Salud"
-            elif code.startswith("D"):
-                return "Energia"
-            elif code.startswith("E"):
-                return "Manufactura"
-            elif code.startswith("F"):
-                return "Servicios"
-            elif code.startswith("G"):
-                return "Sector_publico"
-            elif code.startswith("H"):
-                return "Otros"
-            else:
-                return "Otros"
-        
+            if code.startswith('B'):
+                return 'Finanzas'
+            if code.startswith('C'):
+                return 'Salud'
+            if code.startswith('D'):
+                return 'Energia'
+            if code.startswith('E'):
+                return 'Manufactura'
+            if code.startswith('F'):
+                return 'Servicios'
+            if code.startswith('G'):
+                return 'Sector_publico'
+            return 'Otros'
         output_data['Industry_agrupado'] = output_data['Industry Detail (Customer)'].apply(map_industry)
-    
-    # ========================================
-    # 6. TRANSFORMACIÓN: Cloud Coverage
-    # ========================================
-    if 'Cloud Coverage' in output_data:
-        output_data['Cloud_agrupado'] = output_data['Cloud Coverage'].apply(
-            lambda x: 'Publico' if x in ['Iaas', 'SaaS', 'PaaS'] else 'Otros'
-        )
-    
-    # ========================================
-    # 7. TRANSFORMACIÓN: Technology Scope
-    # ========================================
-    if 'Technology Scope' in output_data:
+
+    # ===== Cloud Coverage grouping =====
+    if 'Cloud Coverage' in output_data.columns:
+        output_data['Cloud_agrupado'] = output_data['Cloud Coverage'].apply(lambda x: 'Publico' if sstr(x) in ['Iaas', 'SaaS', 'PaaS'] else 'Otros')
+
+    # ===== Technology grouping =====
+    if 'Technology Scope' in output_data.columns:
         infraestructura = ['Mobility', 'IoT', 'Cloud']
         inteligencia = ['Big Data and Analytics', 'AI', 'Robotics']
         usuario = ['AR/VR', '3D Printing', 'Social']
         seguridad = ['Security', 'Blockchain']
-        
         def map_tech(scope):
-            if pd.isna(scope):
+            if pd.isna(scope) or scope == 'None':
                 return np.nan
             s = str(scope).strip()
-            
             if s in infraestructura:
                 return 'Infraestructura'
-            elif s in inteligencia:
+            if s in inteligencia:
                 return 'Inteligencia'
-            elif s in usuario:
+            if s in usuario:
                 return 'Usuario'
-            elif s in seguridad:
+            if s in seguridad:
                 return 'Seguridad'
-            elif s == '-':
-                return 'Otros'
-            else:
-                return 'Otros'
-        
+            return 'Otros'
         output_data['Technology_agrupado'] = output_data['Technology Scope'].apply(map_tech)
-    
-    # ========================================
-    # 8. TRANSFORMACIÓN: Partner Classification
-    # ========================================
-    if 'Partner Classification' in output_data:
+
+    # ===== Partner grouping =====
+    if 'Partner Classification' in output_data.columns:
         desarrollador = ['Independent Software Vendor (ISV)']
         integrador = ['Regional System Integrator (RSI)', 'Global Systems Integrator (GSI)']
         proveedor = ['Cloud Service Provider (CSP)', 'Managed Service Provider (MSP)']
         revendedor = ['Direct Market Reseller (DMR)', 'Value Added Reseller (VAR)', 'Distributor']
-        
         def map_partner(p):
-            if pd.isna(p):
+            if pd.isna(p) or p == 'None':
                 return np.nan
             s = str(p).strip()
-            
             if s in desarrollador:
-                return "Desarrollador"
-            elif s in integrador:
-                return "Integrador"
-            elif s in proveedor:
-                return "Proveedor"
-            elif s in revendedor:
-                return "Revendedor"
-            elif s == '-':
-                return "Otros"
-            else:
-                return "Otros"
-        
+                return 'Desarrollador'
+            if s in integrador:
+                return 'Integrador'
+            if s in proveedor:
+                return 'Proveedor'
+            if s in revendedor:
+                return 'Revendedor'
+            return 'Otros'
         output_data['Partner_agrupado'] = output_data['Partner Classification'].apply(map_partner)
-    
-    # ========================================
-    # 9. IMPUTACIÓN DE NULOS
-    # ========================================
-    # Ordinales: rellenar con mediana
-    ordinales = [
-        'Revenue Band Mod Codificado',
-        'Employee Band Mod Codificado',
-        'Years in Business Band Mod Codificado'
-    ]
-    
+
+    # ===== Imputaciones =====
+    ordinales = ['Revenue Band Mod Codificado', 'Employee Band Mod Codificado', 'Years in Business Band Mod Codificado']
     for col in ordinales:
         if col in output_data.columns:
-            mediana = output_data[col].median()
-            output_data[col] = output_data[col].fillna(mediana)
-    
-    # Categóricas: rellenar con 'Otros'
-    categoricas = [
-        'Global Region',
-        'Industry_agrupado',
-        'Cloud_agrupado',
-        'Technology_agrupado',
-        'Partner_agrupado'
-    ]
-    
+            med = output_data[col].median()
+            output_data[col] = output_data[col].fillna(med)
+
+    categoricas = ['Global Region', 'Industry_agrupado', 'Cloud_agrupado', 'Technology_agrupado', 'Partner_agrupado']
     for col in categoricas:
         if col in output_data.columns:
             output_data[col] = output_data[col].fillna('Otros')
-    
+
     return output_data
