@@ -9,6 +9,13 @@ RUN npm ci --no-audit --no-fund
 
 # Copy source and build
 COPY . .
+# Allow passing Supabase config at build time so Vite can inline it
+ARG VITE_SUPABASE_URL
+ARG VITE_SUPABASE_ANON_KEY
+ARG VITE_API_BASE
+ENV VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+ENV VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
+ENV VITE_API_BASE=${VITE_API_BASE}
 RUN npm run build
 
 # Stage 2: Serve static files with UBI NGINX 1.20 (non-root, port 8080)

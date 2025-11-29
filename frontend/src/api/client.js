@@ -14,18 +14,20 @@ const instance = axios.create({
  * - Si NO está configurado, usa POST a `/query` (backend local o remoto).
  */
 export async function query(action, params = {}, pagination = {}) {
-  // Preferir Supabase si está configurado
-  if (supabase && (action === 'list_companies' || action === 'search_company')) {
+  // Para estas acciones, requerimos Supabase configurado (no usar fallback HTTP en producción)
+  if (action === 'list_companies' || action === 'search_company') {
+    if (!supabase) {
+      throw new Error('Supabase no está configurado. Defina VITE_SUPABASE_URL y VITE_SUPABASE_ANON_KEY al construir la imagen.')
+    }
     const filters = params || {}
     const { data, error } = await fetchCompaniesFromSupabase({ filters, pagination })
     if (error) {
-      // No hacer fallback automático: devolver error claro para evitar "Network Error"
       throw new Error(`Supabase error: ${error.message || JSON.stringify(error)}`)
     }
     return { results: data }
   }
 
-  // Si no hay Supabase, usar el backend HTTP
+  // Para otras acciones, si existen, usar el backend HTTP
   try {
     const payload = { action, params, pagination }
     const res = await instance.post('/query', payload)
