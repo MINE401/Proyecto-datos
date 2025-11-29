@@ -132,11 +132,18 @@ button.secondary:hover { background: #555; }
   font-size: 12px;
   margin-right: 4px;
   margin-top: 8px;
+  line-height: 1.2;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .badge.industry { background: #e3f2fd; color: #1976d2; }
 .badge.segment { background: #f3e5f5; color: #7b1fa2; }
 .badge.territory { background: #e8f5e9; color: #388e3c; }
+
+.badges-group { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
 
 /* Messages */
 .message {

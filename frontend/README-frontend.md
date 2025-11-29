@@ -101,6 +101,10 @@ src/
 ## Variables de Entorno
 
 - `VITE_API_BASE`: URL base del API (default: `http://localhost:8000`)
+- `VITE_SUPABASE_URL`: URL pública del proyecto Supabase (p.ej. `https://xyz.supabase.co`)
+- `VITE_SUPABASE_ANON_KEY`: Clave anon/public del proyecto Supabase
+
+Si configuras `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY`, la app intentará leer la tabla `companies` directamente desde Supabase para las acciones de `list_companies` y `search_company`. Si la consulta Supabase falla, la app volverá al endpoint `POST /query`.
 
 ## Uso de la Aplicación
 

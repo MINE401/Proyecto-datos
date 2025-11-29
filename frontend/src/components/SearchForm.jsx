@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { fetchIndustrySectors } from '../services/supabase'
 
 export default function SearchForm({ onSearch }) {
   const [country, setCountry] = useState('')
@@ -6,6 +7,25 @@ export default function SearchForm({ onSearch }) {
   const [city, setCity] = useState('')
   const [clientName, setClientName] = useState('')
   const [industry, setIndustry] = useState('')
+  const [industryOptions, setIndustryOptions] = useState([])
+  const [loadingIndustries, setLoadingIndustries] = useState(false)
+
+  useEffect(() => {
+    let mounted = true
+    async function loadIndustries() {
+      setLoadingIndustries(true)
+      try {
+        const sectors = await fetchIndustrySectors()
+        if (mounted) setIndustryOptions(sectors)
+      } catch (e) {
+        console.warn('No se pudieron cargar industrias:', e.message)
+      } finally {
+        if (mounted) setLoadingIndustries(false)
+      }
+    }
+    loadIndustries()
+    return () => { mounted = false }
+  }, [])
   const [segment, setSegment] = useState('')
   const [limit, setLimit] = useState(50)
 
@@ -79,12 +99,13 @@ export default function SearchForm({ onSearch }) {
       
       <div>
         <label>Industria:</label>
-        <input
-          type="text"
-          placeholder="ej: Telco, Finance"
-          value={industry}
-          onChange={e => setIndustry(e.target.value)}
-        />
+        <select value={industry} onChange={e => setIndustry(e.target.value)}>
+          <option value="">-- Todas --</option>
+          {industryOptions.map(opt => (
+            <option key={opt} value={opt}>{opt}</option>
+          ))}
+        </select>
+        {loadingIndustries && <span style={{ fontSize:12, color:'#666' }}> Cargando…</span>}
       </div>
       
       <div>

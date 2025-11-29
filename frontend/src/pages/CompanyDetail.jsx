@@ -49,7 +49,7 @@ export default function CompanyDetail({ company, onBack }) {
         })}
       </div>
 
-      <h3 style={{ marginTop: 24, marginBottom: 16 }}>ℹ️ Información General</h3>
+      <h3 style={{ marginTop: 24, marginBottom: 8 }}>ℹ️ Información General</h3>
       <div className="meta-info">
         <div className="meta-item">
           <div className="meta-label">País</div>
@@ -57,7 +57,7 @@ export default function CompanyDetail({ company, onBack }) {
         </div>
         <div className="meta-item">
           <div className="meta-label">Región</div>
-          <div className="meta-value">{company.territory?.region || company.region || 'N/A'}</div>
+          <div className="meta-value">{company.territory?.global_region || company.territory?.region || company.region || 'N/A'}</div>
         </div>
         <div className="meta-item">
           <div className="meta-label">Ciudad</div>
@@ -75,6 +75,22 @@ export default function CompanyDetail({ company, onBack }) {
           <div className="meta-label">Estado</div>
           <div className="meta-value">{company.status || 'Activo'}</div>
         </div>
+      </div>
+
+      <h3 style={{ marginTop: 8, marginBottom: 12 }}>🏭 Industrias</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+        {(company.industry_details || []).map(det => (
+          <span key={det} className="badge industry" style={{ marginTop: 0 }}>{det}</span>
+        ))}
+        {(company.industry_details || []).length === 0 && <span style={{ fontSize: 12, color: '#999' }}>Sin datos</span>}
+      </div>
+
+      <h3 style={{ marginTop: 20, marginBottom: 12 }}>👥 Clasificaciones / Segmentos</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+        {(company.classifications || []).map(cls => (
+          <span key={cls} className="badge segment" style={{ marginTop: 0 }}>{cls}</span>
+        ))}
+        {(company.classifications || []).length === 0 && <span style={{ fontSize: 12, color: '#999' }}>Sin datos</span>}
       </div>
 
       <h3 style={{ marginTop: 24, marginBottom: 16 }}>📝 Datos Completos</h3>

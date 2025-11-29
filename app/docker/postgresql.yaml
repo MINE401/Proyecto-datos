@@ -1,53 +1,224 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/kubernetes.json
-# Este archivo YAML define un Pod de Kubernetes para ejecutar una base de datos PostgreSQL.
-# Está diseñado para ser utilizado con `podman play kube`.
-#
-# Requisitos:
-#   - Podman instalado.
-#
-# Uso:
-#   1. Navega a la raíz del proyecto en tu terminal.
-#   2. Ejecuta `podman play kube docker/postgresql.yaml` para crear e iniciar el pod.
-#   3. La base de datos estará disponible en `localhost:5432`.
-#   4. Para detener y eliminar el pod y el volumen, ejecuta `podman play kube --down docker/postgresql.yaml`.
-
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: partner-db-pod
+  name: partner-db
+  labels:
+    app: partner-db
 spec:
-  containers:
-    - name: postgres-db
-      image: docker.io/postgres:15-alpine
-      resources:
-        requests:
-          memory: "256Mi"
-          cpu: "250m"
-        limits:
-          memory: "512Mi"
-          cpu: "500m"
-      env:
-        - name: POSTGRES_USER
-          value: "user"
-        - name: POSTGRES_PASSWORD
-          value: "password"
-        - name: POSTGRES_DB
-          value: "partner_db"
-      ports:
-        - containerPort: 5432
-          hostPort: 5432 # Expone el puerto 5432 del contenedor al puerto 5432 del host.
-      volumeMounts:
+  replicas: 1  # Para BD, recomendamos 1 replica; para HA usa StatefulSet
+  selector:
+    matchLabels:
+      app: partner-db
+  template:
+    metadata:
+      labels:
+        app: partner-db
+    spec:
+      containers:
+        - name: postgres-dbs
+          image: docker.io/postgres:15-alpine
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          env:
+            - name: POSTGRES_USER
+              value: "user"
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_DB
+              value: "partner_db"
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data # Directorio estándar de datos de PostgreSQL.
+            - name: init-db-script
+              mountPath: /docker-entrypoint-initdb.d/init.sql # Monta el script de inicialización.
+              subPath: init.sql
+              readOnly: true # El script solo necesita ser leído, no modificado.
+      volumes:
         - name: postgres-data
-          mountPath: /var/lib/postgresql/data # Directorio estándar de datos de PostgreSQL.
+          # PVC con volumeMode: Filesystem (definido en postgres-pvc.yaml)
+          persistentVolumeClaim:
+            claimName: postgres-data-pvc
         - name: init-db-script
-          mountPath: /docker-entrypoint-initdb.d/init.sql # Monta el script de inicialización.
-          readOnly: true # El script solo necesita ser leído, no modificado.
+          # En lugar de montar un archivo desde el host, usamos un ConfigMap
+          # con la clave `init.sql`. Esto hace el manifiesto portable para k8s/cloud.
+          configMap:
+            name: postgres-init-sql
+            defaultMode: 0444
 
-  volumes:
-    - name: postgres-data
-      # Podman creará un volumen nombrado para persistir los datos de la base de datos.
-      persistentVolumeClaim:
-        claimName: postgres-data-pvc
-    - name: init-db-script
-      hostPath:
-        path: '/Users/juank1400/workspaces/mati/Proyecto-datos/app/sql/schema.sql'
+---
+# ConfigMap con el script de inicialización (creado a partir de sql/create_tables.sql)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-init-sql
+data:
+  init.sql: |-
+    -- =========================================
+    -- COMPANY (tabla principal)
+    -- =========================================
+    create table if not exists public.company (
+      id uuid primary key default gen_random_uuid(),
+      name varchar(255) not null,
+      website varchar(255),
+      num_locations_bands varchar,
+      year_business_back varchar,
+      employee_band varchar(50),
+      revenue_band varchar(50),
+      external_id integer,
+    );
+
+    -- =========================================
+    -- INDUSTRY: tabla maestra
+    -- =========================================
+    create table if not exists public.industry_master (
+      id uuid primary key default gen_random_uuid(),
+      sector varchar(255) not null,
+      detail varchar(255),
+      unique (sector, detail)
+    );
+
+    -- =========================================
+    -- COMPANY ⇄ INDUSTRY (tabla pivote many-to-many)
+    -- =========================================
+    create table if not exists public.company_industry (
+      company_id uuid not null references public.company(id) on delete cascade,
+      industry_id uuid not null references public.industry_master(id) on delete cascade,
+      primary key (company_id, industry_id)
+    );
+
+    create index if not exists idx_company_industry_company
+      on public.company_industry(company_id);
+
+    create index if not exists idx_company_industry_industry
+      on public.company_industry(industry_id);
+
+    -- =========================================
+    -- LOCATION: tabla maestra
+    -- =========================================
+    create table if not exists public.location_master (
+      id uuid primary key default gen_random_uuid(),
+      city varchar(255),
+      global_region varchar(255),
+      country varchar(255),
+      state varchar(255),
+      region varchar(255),
+      unique (city, state, country)
+    );
+
+    -- =========================================
+    -- COMPANY ⇄ LOCATION (tabla pivote many-to-many)
+    -- =========================================
+    create table if not exists public.company_location (
+      company_id uuid not null references public.company(id) on delete cascade,
+      location_id uuid not null references public.location_master(id) on delete cascade,
+      address_type varchar(50),  -- HQ, Branch, etc.
+      primary key (company_id, location_id, address_type)
+    );
+
+    create index if not exists idx_company_location_company
+      on public.company_location(company_id);
+
+    create index if not exists idx_company_location_location
+      on public.company_location(location_id);
+
+    -- =========================================
+    -- PARTNER CLASSIFICATION (1–N contra company)
+    -- =========================================
+    create table if not exists public.partner_classification (
+      id uuid primary key default gen_random_uuid(),
+      company_id uuid not null references public.company(id) on delete cascade,
+      classification varchar(255) not null
+    );
+
+    create index if not exists idx_partner_class_company
+      on public.partner_classification(company_id);
+
+    -- =========================================
+    -- CLOUD (1–N contra company)
+    -- =========================================
+    create table if not exists public.cloud (
+      id uuid primary key default gen_random_uuid(),
+      company_id uuid not null references public.company(id) on delete cascade,
+      coverage varchar(255)
+    );
+
+    create index if not exists idx_cloud_company
+      on public.cloud(company_id);
+
+    -- =========================================
+    -- PARTNER_VENDOR (many-to-many entre companies)
+    -- =========================================
+    create table if not exists public.partner_vendor (
+      partner_id uuid not null references public.company(id) on delete cascade,
+      vendor_id uuid not null references public.company(id) on delete cascade,
+      primary key (partner_id, vendor_id)
+    );
+
+    create index if not exists idx_partner_vendor_vendor
+      on public.partner_vendor(vendor_id);
+
+    -- =========================================
+    -- TECHNOLOGY_SC (1–N contra company)
+    -- =========================================
+    create table if not exists public.technology_sc (
+      id uuid primary key default gen_random_uuid(),
+      company_id uuid not null references public.company(id) on delete cascade,
+      scope varchar(255)
+    );
+
+    create index if not exists idx_tech_sc_company
+      on public.technology_sc(company_id);
+
+    -- =========================================
+    -- TECHNOLOGY (1–N contra company)
+    -- =========================================
+    create table if not exists public.technology (
+      id uuid primary key default gen_random_uuid(),
+      company_id uuid not null references public.company(id) on delete cascade,
+      tech_group varchar(255),
+      technology varchar(255),
+      detail varchar(255),
+      category varchar(255)
+    );
+
+    create index if not exists idx_technology_company
+      on public.technology(company_id);
+
+    -- =========================================
+    -- SCORE (1–N contra company)
+    -- =========================================
+    create table if not exists public.score (
+      id uuid primary key default gen_random_uuid(),
+      company_id uuid not null references public.company(id) on delete cascade,
+      relevance numeric,
+      vendors text,
+      partner_classification text
+    );
+
+    create index if not exists idx_score_company
+      on public.score(company_id);
+
+---
+# Service para exponer PostgreSQL dentro del cluster (ClusterIP)
+apiVersion: v1
+kind: Service
+metadata:
+  name: partner-db-svc
+  labels:
+    app: partner-db
+spec:
+  type: ClusterIP
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: 5432
+      protocol: TCP
+  selector:
+    app: partner-db
