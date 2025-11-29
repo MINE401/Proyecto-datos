@@ -1,6 +1,7 @@
 # app.py (Ejemplo usando FastAPI)
 
 from fastapi import FastAPI
+from contextlib import asynccontextmanager
 import logging
 from catboost import CatBoostClassifier, CatBoostRegressor
 import numpy as np
@@ -105,9 +106,6 @@ class YearsInBusinessEnum(str, Enum):
     _21_plus = "21+"
 
 
-# Inicializa la aplicación FastAPI
-app = FastAPI(title="CatBoost Model API")
-
 # Configurar logging básico
 logger = logging.getLogger("model_api")
 if not logger.handlers:
@@ -121,9 +119,10 @@ if not logger.handlers:
 MODEL_PATH = "catboost_best_model.cbm"
 model = None
 
-@app.on_event("startup")
-def load_model():
-    """Carga el modelo CatBoost al iniciar la aplicación."""
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Maneja los eventos de startup y shutdown de la aplicación usando lifespan."""
+    # Startup
     global model
     try:
         # Usa el método estático load_model y especifica el tipo si es necesario
@@ -133,6 +132,13 @@ def load_model():
     except Exception as e:
         logger.error(f"Error al cargar el modelo: {e}")
         # Es crucial que la app no inicie si no puede cargar el modelo
+    # Yield control a la aplicación durante su ejecución
+    yield
+    # Shutdown (lógica de limpieza si es necesaria)
+    logger.info("Aplicación cerrando")
+
+# Inicializa la aplicación FastAPI con lifespan handler
+app = FastAPI(title="CatBoost Model API", lifespan=lifespan)
 
 # --- 2. ENDPOINT DE PREDICCIÓN ---
 
