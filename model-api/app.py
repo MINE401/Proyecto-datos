@@ -1,6 +1,7 @@
 # app.py (Ejemplo usando FastAPI)
 
 from fastapi import FastAPI
+import logging
 from catboost import CatBoostClassifier, CatBoostRegressor
 import numpy as np
 import pandas as pd
@@ -107,6 +108,15 @@ class YearsInBusinessEnum(str, Enum):
 # Inicializa la aplicación FastAPI
 app = FastAPI(title="CatBoost Model API")
 
+# Configurar logging básico
+logger = logging.getLogger("model_api")
+if not logger.handlers:
+    handler = logging.StreamHandler()
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.setLevel(logging.INFO)
+
 # --- 1. CARGA DEL MODELO (Solo se ejecuta una vez al inicio) ---
 MODEL_PATH = "catboost_best_model.cbm"
 model = None
@@ -119,9 +129,9 @@ def load_model():
         # Usa el método estático load_model y especifica el tipo si es necesario
         model = CatBoostClassifier() # O CatBoostRegressor()
         model.load_model(MODEL_PATH)
-        print(f"✅ Modelo CatBoost cargado exitosamente desde: {MODEL_PATH}")
+        logger.info(f"Modelo CatBoost cargado exitosamente desde: {MODEL_PATH}")
     except Exception as e:
-        print(f"❌ Error al cargar el modelo: {e}")
+        logger.error(f"Error al cargar el modelo: {e}")
         # Es crucial que la app no inicie si no puede cargar el modelo
 
 # --- 2. ENDPOINT DE PREDICCIÓN ---
@@ -241,7 +251,7 @@ def predict(data: PredictionInput):
         tb = traceback.format_exc()
         # Registrar la traza en logs del servidor (no se devuelve en la respuesta)
         try:
-            print("PREDICT ERROR TRACEBACK:\n", tb)
+            logger.exception("Error durante /predict:\n%s", tb)
         except Exception:
             pass
         return {"error": f"Error durante la predicción: {e}"}

@@ -1,0 +1,78 @@
+# app.py (Ejemplo usando FastAPI)
+
+from fastapi import FastAPI
+from catboost import CatBoostClassifier, CatBoostRegressor
+import numpy as np
+import pandas as pd
+# Importa la clase del esquema de datos que usarás para las predicciones
+# from pydantic import BaseModel 
+
+# Inicializa la aplicación FastAPI
+app = FastAPI(title="CatBoost Model API")
+
+# --- 1. CARGA DEL MODELO (Solo se ejecuta una vez al inicio) ---
+MODEL_PATH = "catboost_best_model.cbm"
+model = None
+
+@app.on_event("startup")
+def load_model():
+    """Carga el modelo CatBoost al iniciar la aplicación."""
+    global model
+    try:
+        # Usa el método estático load_model y especifica el tipo si es necesario
+        model = CatBoostClassifier() # O CatBoostRegressor()
+        model.load_model(MODEL_PATH)
+        print(f"✅ Modelo CatBoost cargado exitosamente desde: {MODEL_PATH}")
+    except Exception as e:
+        print(f"❌ Error al cargar el modelo: {e}")
+        # Es crucial que la app no inicie si no puede cargar el modelo
+
+# --- 2. ENDPOINT DE PREDICIÓN ---
+
+# Define una estructura de datos para la entrada de la API (es una buena práctica)
+# class PredictionInput(BaseModel):
+#     feature_1: float
+#     feature_2: float
+#     ...
+
+@app.post("/predict")
+def predict(data: dict): # Reemplaza 'dict' con tu esquema Pydantic (PredictionInput)
+    """Realiza una predicción usando el modelo CatBoost cargado."""
+    if model is None:
+        return {"error": "El modelo no está cargado. La aplicación no se inició correctamente."}
+
+    try:
+        # Prepara los datos (ej. un diccionario a un array o Series de Pandas)
+        # Esto depende de cómo entrenaste tu modelo. 
+        # Asegúrate de replicar el pre-procesamiento.
+        
+        # Ejemplo:
+        # features = pd.DataFrame([data])
+        # prediction = model.predict(features)
+        
+        # Ejemplo muy simple de solo una fila de entrada
+        features = list(data.values()) 
+        prediction = model.predict(features)
+
+        # Para CatBoost, usa predict_proba si necesitas la probabilidad
+        # prediction_proba = model.predict_proba(features) 
+        
+        return {
+            "prediction": prediction.tolist(), 
+            "model_used": "CatBoost"
+        }
+    except Exception as e:
+        return {"error": f"Error durante la predicción: {e}"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "model_loaded": model is not None}
+
+
+def feature_engineering(input_data):
+    """Aplica transformaciones de ingeniería de características a los datos de entrada."""
+    # Implementa aquí las transformaciones necesarias
+    output_data = input_data.copy()
+
+
+    return output_data

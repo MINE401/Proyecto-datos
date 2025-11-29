@@ -3,3 +3,8 @@ uvicorn[standard]
 catboost
 numpy # Es fundamental, ya que los modelos de ML suelen requerir NumPy
 pandas # Si tu código de pre-procesamiento lo usa, inclúyelo
+scikit-learn
+joblib
+pydantic
+pytest
+httpx
