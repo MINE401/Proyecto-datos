@@ -29,9 +29,14 @@ export async function query(action, params = {}, pagination = {}) {
 
   // Para otras acciones, si existen, usar el backend HTTP
   try {
-    const payload = { action, params, pagination }
-    const res = await instance.post('/query', payload)
-    return res.data
+    if (action === 'predict_score') {
+      const res = await instance.post('/predict', params)
+      return res.data
+    } else {
+      const payload = { action, params, pagination }
+      const res = await instance.post('/query', payload)
+      return res.data
+    }
   } catch (err) {
     // Mejorar el mensaje de error
     const msg = err?.message || 'Error desconocido en la petición HTTP'

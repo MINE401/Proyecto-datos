@@ -1,6 +1,7 @@
 # app.py (Ejemplo usando FastAPI)
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
 from catboost import CatBoostClassifier, CatBoostRegressor
@@ -145,15 +146,24 @@ app = FastAPI(title="CatBoost Model API", lifespan=lifespan)
 # Define una estructura de datos para la entrada de la API (es una buena práctica)
 class PredictionInput(BaseModel):
     company_id: Optional[int] = None
-    revenue_band: Optional[RevenueBandEnum] = None
-    employee_band: Optional[EmployeeBandEnum] = None
-    years_in_business_band: Optional[YearsInBusinessEnum] = None
+    # Acepta cualquier string y se mapea internamente para evitar 422 por valores fuera del Enum
+    revenue_band: Optional[str] = None
+    employee_band: Optional[str] = None
+    years_in_business_band: Optional[str] = None
     global_region: Optional[str] = None
     industry_detail_customer: Optional[str] = None
-    cloud_coverage: Optional[CloudCoverageEnum] = None
-    technology_scope: Optional[TechnologyScopeEnum] = None
-    partner_classification: Optional[PartnerClassificationEnum] = None
+    cloud_coverage: Optional[str] = None
+    technology_scope: Optional[str] = None
+    partner_classification: Optional[str] = None
 
+# Configurar CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # En producción, especifica los dominios permitidos
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/predict")
 def predict(data: PredictionInput):
@@ -163,16 +173,88 @@ def predict(data: PredictionInput):
 
     try:
         # Si algunos campos vienen como Enum, extraer su .value; si no, dejar None/str
+        # Normalizar valores de entrada para tolerar variaciones de mayúsculas/minúsculas y espacios
+        def norm(v):
+            if v is None:
+                return None
+            if isinstance(v, str):
+                return v.strip()
+            return v
+
+        # Mapeos tolerantes para variantes comunes desde el front
+        def map_cloud(v):
+            s = norm(v)
+            if s is None:
+                return None
+            s_upper = s.upper()
+            if s_upper == 'IAAS':
+                return 'Iaas'
+            if s_upper == 'PAAS':
+                return 'PaaS'
+            if s_upper == 'SAAS':
+                return 'SaaS'
+            return s
+
+        def map_technology(v):
+            s = norm(v)
+            if s is None:
+                return None
+            # Normalizar variantes comunes
+            aliases = {
+                'mobility': 'Mobility',
+                'iot': 'IoT',
+                'cloud': 'Cloud',
+                'big data and analytics': 'Big Data and Analytics',
+                'bigdataandanalytics': 'Big Data and Analytics',
+                'ai': 'AI',
+                'robotics': 'Robotics',
+                'ar/vr': 'AR/VR',
+                'arvr': 'AR/VR',
+                '3d printing': '3D Printing',
+                '3dprinting': '3D Printing',
+                'social': 'Social',
+                'security': 'Security',
+                'blockchain': 'Blockchain',
+                '-': '-',
+            }
+            key = s.lower().replace(' ', '') if s.lower() not in aliases else s.lower()
+            return aliases.get(s.lower(), aliases.get(key, s))
+
+        def map_partner(v):
+            s = norm(v)
+            if s is None:
+                return None
+            aliases = {
+                'independent software vendor (isv)': 'Independent Software Vendor (ISV)',
+                'isv': 'Independent Software Vendor (ISV)',
+                'regional system integrator (rsi)': 'Regional System Integrator (RSI)',
+                'rsi': 'Regional System Integrator (RSI)',
+                'global systems integrator (gsi)': 'Global Systems Integrator (GSI)',
+                'gsi': 'Global Systems Integrator (GSI)',
+                'cloud service provider (csp)': 'Cloud Service Provider (CSP)',
+                'csp': 'Cloud Service Provider (CSP)',
+                'managed service provider (msp)': 'Managed Service Provider (MSP)',
+                'msp': 'Managed Service Provider (MSP)',
+                'direct market reseller (dmr)': 'Direct Market Reseller (DMR)',
+                'dmr': 'Direct Market Reseller (DMR)',
+                'value added reseller (var)': 'Value Added Reseller (VAR)',
+                'var': 'Value Added Reseller (VAR)',
+                'distributor': 'Distributor',
+                '-': '-',
+            }
+            key = s.lower()
+            return aliases.get(key, s)
+
         payload = {
             'Company ID': data.company_id,
-            'Revenue Band': data.revenue_band.value if data.revenue_band is not None else None,
-            'Employee Band': data.employee_band.value if data.employee_band is not None else None,
-            'Years in Business Band': data.years_in_business_band.value if data.years_in_business_band is not None else None,
-            'Global Region': data.global_region,
-            'Industry Detail (Customer)': data.industry_detail_customer,
-            'Cloud Coverage': data.cloud_coverage.value if data.cloud_coverage is not None else None,
-            'Technology Scope': data.technology_scope.value if data.technology_scope is not None else None,
-            'Partner Classification': data.partner_classification.value if data.partner_classification is not None else None
+            'Revenue Band': norm(data.revenue_band),
+            'Employee Band': norm(data.employee_band),
+            'Years in Business Band': norm(data.years_in_business_band),
+            'Global Region': norm(data.global_region),
+            'Industry Detail (Customer)': norm(data.industry_detail_customer),
+            'Cloud Coverage': map_cloud(data.cloud_coverage),
+            'Technology Scope': map_technology(data.technology_scope),
+            'Partner Classification': map_partner(data.partner_classification)
         }
 
         # Preparar DataFrame de entrada y aplicar feature engineering

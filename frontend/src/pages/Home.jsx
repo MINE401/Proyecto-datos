@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SearchForm from '../components/SearchForm'
+import PredictForm from '../components/PredictForm'
 import CompanyList from '../components/CompanyList'
 import { query } from '../api/client'
 import CompanyDetail from './CompanyDetail'
@@ -10,6 +11,10 @@ export default function Home() {
   const [error, setError] = useState(null)
   const [selected, setSelected] = useState(null)
   const [totalResults, setTotalResults] = useState(0)
+  const [showPredict, setShowPredict] = useState(false)
+  const [predictLoading, setPredictLoading] = useState(false)
+  const [predictResult, setPredictResult] = useState(null)
+  const [predictError, setPredictError] = useState(null)
 
   async function handleSearch({ params = {}, pagination = {} }) {
     setLoading(true)
@@ -60,11 +65,53 @@ export default function Home() {
         <p style={{ color: '#666', fontSize: 14 }}>
           Encuentra los partners ideales para tu estrategia comercial
         </p>
+        <div style={{ marginTop: 8 }}>
+          <button type="button" onClick={() => setShowPredict(s => !s)}>
+            {showPredict ? 'Cerrar cálculo de score' : '➕ Nuevo partner: Calcular score'}
+          </button>
+        </div>
       </header>
 
       {!selected ? (
         <>
           <SearchForm onSearch={handleSearch} />
+
+          {showPredict && (
+            <div style={{ marginTop: 16 }}>
+              <h3 style={{ marginBottom: 8 }}>🧮 Calcular score para nuevo partner</h3>
+              <PredictForm
+                loading={predictLoading}
+                onSubmit={async (payload) => {
+                  setPredictLoading(true)
+                  setPredictError(null)
+                  setPredictResult(null)
+                  try {
+                    const res = await query('predict_score', payload)
+                    // Interpretar respuesta: usar prob de clase positiva si existe
+                    let score = null
+                    if (res && Array.isArray(res.prediction_proba)) {
+                      const row = Array.isArray(res.prediction_proba[0]) ? res.prediction_proba[0] : null
+                      if (row && row.length >= 2) score = row[1]
+                    }
+                    setPredictResult({ model: res.model_used, raw: res, score })
+                  } catch (e) {
+                    setPredictError(e.message || 'Error calculando score')
+                  } finally {
+                    setPredictLoading(false)
+                  }
+                }}
+              />
+              {predictLoading && <div className="message loading">Calculando…</div>}
+              {predictError && <div className="message error">{predictError}</div>}
+              {predictResult && (
+                <div className="message success">
+                  Modelo: <strong>{predictResult.model || 'N/A'}</strong> · Score: <strong>{
+                    predictResult.score != null ? `${(predictResult.score*100).toFixed(1)}%` : 'N/A'
+                  }</strong>
+                </div>
+              )}
+            </div>
+          )}
           
           {loading && <div className="message loading">⏳ Buscando partners...</div>}
           {error && <div className="message error">❌ Error: {error}</div>}
