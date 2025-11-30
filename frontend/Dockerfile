@@ -29,12 +29,9 @@ COPY --from=build /opt/app-root/src/dist /opt/app-root/src
 
 # Ensure directories exist and are writable by arbitrary UID
 RUN mkdir -p /opt/app-root/src/logs /opt/app-root/src/tmp \
-  && chmod -R g=u /opt/app-root/src
+  && chmod -R g=u /opt/app-root/src /etc/nginx /var/cache/nginx
 
 EXPOSE 8080
-
-HEALTHCHECK --interval=30s --timeout=3s --start-period=30s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:8080/ || exit 1
 
 # Override S2I entrypoint to run nginx directly in runtime
 CMD ["nginx", "-g", "daemon off;"]
