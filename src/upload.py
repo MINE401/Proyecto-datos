@@ -1,27 +1,49 @@
-import math
+from pathlib import Path
+from typing import Dict, Iterable, List, Mapping, Optional
+
 import pandas as pd
+
 from db import supabase
 from controllers.location import prepare_location_data
 from controllers.industry import prepare_industry_data
-from controllers.general import *
+from controllers.general import (
+    prepare_score_data,
+    prepare_cloud_data,
+    prepare_partner_class_data,
+    prepare_technology_sc_data,
+    prepare_technology_data,
+    prepare_partner_vendor_data,
+)
+
+BASE_DATA_DIR = Path("src/data")
+
+
+def _read_csv(file_name: str) -> pd.DataFrame:
+    """Lee un CSV desde el directorio de datos y muestra sus columnas."""
+    file_path = BASE_DATA_DIR / file_name
+    df = pd.read_csv(file_path)
+    print(f"Columnas del CSV {file_name}:", df.columns.tolist())
+    return df
+
 
 def upload_data(
-    file_path: str,
+    file_name: str,
     table_name: str,
     chunk_size: int = 1000,
-    column_map=None,
-    keep_columns=None,
-    required_not_null=None,
-    default_values=None,     
-):
-    df = pd.read_csv(file_path)
-    print("Columnas del CSV:", df.columns.tolist())
+    column_map: Optional[Mapping[str, str]] = None,
+    keep_columns: Optional[Iterable[str]] = None,
+    required_not_null: Optional[Iterable[str]] = None,
+    default_values: Optional[Mapping[str, object]] = None,
+) -> None:
+    """Sube datos de un CSV a una tabla de Supabase en chunks."""
+    df = _read_csv(file_name)
 
     if column_map:
         df = df.rename(columns=column_map)
 
     if keep_columns:
-        df = df[keep_columns]
+        keep_columns = [col for col in keep_columns if col in df.columns]
+        df = df[list(keep_columns)]
 
     if default_values:
         for col, default in default_values.items():
@@ -31,38 +53,43 @@ def upload_data(
                 after = df[col].isnull().sum()
                 filled = before - after
                 if filled > 0:
-                    print(f"Se llenaron {filled} valores nulos en '{col}' con '{default}'")
+                    print(
+                        f"Se llenaron {filled} valores nulos en '{col}' con '{default}'"
+                    )
 
-    # 👉 SOLO FILTRAR SI AÚN QUEDAN NULOS EN CAMPOS OBLIGATORIOS
     if required_not_null:
         for col in required_not_null:
+            if col not in df.columns:
+                print(
+                    f"Advertencia: la columna requerida '{col}' no existe en el CSV. Se omite esta validacion."
+                )
+                continue
             before = len(df)
             df = df[df[col].notnull()]
             removed = before - len(df)
             if removed > 0:
-                print(f"Se eliminaron {removed} filas con '{col}' aún nulo")
+                print(f"Se eliminaron {removed} filas con '{col}' nulo")
 
     df = df.where(pd.notnull(df), None)
 
-    records = df.to_dict(orient="records")
+    records: List[Dict[str, object]] = df.to_dict(orient="records")
     total = len(records)
     print(f"Subiendo {total} filas a la tabla '{table_name}'...")
 
     for i in range(0, total, chunk_size):
-        chunk = records[i:i + chunk_size]
+        chunk = records[i : i + chunk_size]
         resp = supabase.table(table_name).insert(chunk).execute()
 
         if getattr(resp, "error", None):
             print(f"Error en el chunk {i // chunk_size + 1}: {resp.error}")
             break
 
-    print("Proceso terminado.")
+    print(f"Subida a '{table_name}' finalizada.")
 
 
-
-def upload_company():
+def upload_company() -> None:
     upload_data(
-        file_path="src/data/df_company_tot.csv",
+        file_name="df_company_tot.csv",
         table_name="company",
         column_map={
             "Company ID": "external_company_id",
@@ -82,17 +109,14 @@ def upload_company():
             "employee_band",
             "revenue_band",
         ],
-        default_values={
-            "name": "No Name"
-        },
+        default_values={"name": "No Name"},
         required_not_null=None,
     )
 
 
-
-def upload_location_master():
+def upload_location_master() -> None:
     upload_data(
-        file_path="src/data/location_master.csv",
+        file_name="location_master.csv",
         table_name="location_master",
         keep_columns=[
             "id",
@@ -104,9 +128,10 @@ def upload_location_master():
         ],
     )
 
-def upload_company_location():
+
+def upload_company_location() -> None:
     upload_data(
-        file_path="src/data/company_location.csv",
+        file_name="company_location.csv",
         table_name="company_location",
         keep_columns=[
             "company_id",
@@ -115,9 +140,10 @@ def upload_company_location():
         ],
     )
 
-def upload_industry_master():
+
+def upload_industry_master() -> None:
     upload_data(
-        file_path="src/data/industry_master.csv",
+        file_name="industry_master.csv",
         table_name="industry_master",
         keep_columns=[
             "id",
@@ -126,23 +152,21 @@ def upload_industry_master():
         ],
     )
 
-def upload_score():
+
+def upload_score() -> None:
     upload_data(
-        file_path="src/data/score_ready.csv",
+        file_name="score_ready.csv",
         table_name="score",
         keep_columns=[
             "company_id",
             "relevance",
-            "vendors",
-            "partner_classification",
         ],
     )
 
 
-
-def upload_company_industry():
+def upload_company_industry() -> None:
     upload_data(
-        file_path="src/data/company_industry.csv",
+        file_name="company_industry.csv",
         table_name="company_industry",
         keep_columns=[
             "company_id",
@@ -150,9 +174,10 @@ def upload_company_industry():
         ],
     )
 
-def upload_cloud():
+
+def upload_cloud() -> None:
     upload_data(
-        file_path="src/data/cloud_ready.csv",
+        file_name="cloud_ready.csv",
         table_name="cloud",
         keep_columns=[
             "company_id",
@@ -160,9 +185,10 @@ def upload_cloud():
         ],
     )
 
-def upload_partner_classification():
+
+def upload_partner_classification() -> None:
     upload_data(
-        file_path="src/data/partner_classification_ready.csv",
+        file_name="partner_classification_ready.csv",
         table_name="partner_classification",
         keep_columns=[
             "company_id",
@@ -170,9 +196,10 @@ def upload_partner_classification():
         ],
     )
 
-def upload_technology_sc():
+
+def upload_technology_sc() -> None:
     upload_data(
-        file_path="src/data/technology_sc_ready.csv",
+        file_name="technology_sc_ready.csv",
         table_name="technology_sc",
         keep_columns=[
             "company_id",
@@ -180,9 +207,10 @@ def upload_technology_sc():
         ],
     )
 
-def upload_technology():
+
+def upload_technology() -> None:
     upload_data(
-        file_path="src/data/technology_ready.csv",
+        file_name="technology_ready.csv",
         table_name="technology",
         keep_columns=[
             "company_id",
@@ -193,9 +221,10 @@ def upload_technology():
         ],
     )
 
-def upload_partner_vendor():
+
+def upload_partner_vendor() -> None:
     upload_data(
-        file_path="src/data/partner_vendor_ready.csv",
+        file_name="partner_vendor_ready.csv",
         table_name="partner_vendor",
         keep_columns=[
             "partner_id",
@@ -205,7 +234,6 @@ def upload_partner_vendor():
 
 
 if __name__ == "__main__":
-
     print("====== INICIANDO CARGA DE DATOS ======\n")
 
     upload_company()
@@ -235,5 +263,5 @@ if __name__ == "__main__":
 
     prepare_partner_vendor_data()
     upload_partner_vendor()
-    
+
     print("TODAS LAS CARGAS TERMINADAS")

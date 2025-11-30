@@ -1,30 +1,30 @@
 id,sector,detail
-ee6e7a9c-47e3-4de4-954a-4163011ae83e,G. Public Sector,G1. Education
-a38acd52-3935-4319-ac8c-fcdb2f77430b,B. Financial Services,B1. Banking
-c5d91487-7373-4abe-9508-a66ba3439b84,B. Financial Services,B3. Capital Markets
-75614006-ccbb-4f86-abcd-b7f96341725c,F. Retail and Services,F3. Travel and Transportation
-9e6dced8-f80c-4695-92b1-35b626df06b5,F. Retail and Services,F1. Retail
-951fc434-5a57-41bb-bad0-ca7972b21996,F. Retail and Services,F7. Professional and Personal Services
-f9837d5c-51ba-471f-bd59-9e030f1d96a3,E. Manufacturing and Resources,E6. Consumer Goods
-e1e1fba3-96ed-4e7e-8ddf-d52b6202f2b1,H. Agnostic,H1. Agnostic
-2bdc1d06-1ab7-4fc4-9f79-556263e50f3f,C. Healthcare,C2. Healthcare Provider
-05dd571a-061e-4d44-9166-5617a49dbde0,F. Retail and Services,F2. Software and Information Services
-eb71904e-a6e5-488e-8641-9738d018494b,F. Retail and Services,"F6. Engineering, Construction, and Real Estate"
-5b3253ab-816a-47e0-bd9b-5c08a2fef4be,E. Manufacturing and Resources,E4. Industrial and Other Manufacturing
-d75e6b1d-1306-472c-bd6e-71b143b52a28,E. Manufacturing and Resources,E1. High Tech and Electronics
-8d77d583-5bc4-497c-821a-46427b05f53b,D. Infrastructure and Energy,D3. Utilities
-6ae4e5ae-a471-4520-ae48-5cab4c93a8e0,D. Infrastructure and Energy,D1. Telecommunications
-426e7f17-6610-4b67-aba6-492864309041,G. Public Sector,G2. Federal/Central Government
-b29074d2-ffb5-4d9a-a7d1-590660642f44,D. Infrastructure and Energy,D2. Oil and Gas
-1fe6caf1-ca6d-4531-a99f-427a08cd6998,F. Retail and Services,F5. Media and Entertainment
-8693f085-5cec-459d-9feb-bb2fed221363,E. Manufacturing and Resources,E8. Mining
-cdbfc940-a00e-435b-97ed-660e1d24fc2c,C. Healthcare,C3. Life Sciences
-cd3773b4-862e-4ff8-92fa-39c01c6171b1,E. Manufacturing and Resources,E7. Agriculture and Fishing
-69ce7c9d-6f66-4716-8228-f509a2369cc3,F. Retail and Services,F4. Hospitality and Leisure
-1db5704b-975a-4040-90c9-336998aa2c39,C. Healthcare,C1. Healthcare Payer
-549a8116-154f-472d-80a8-8fa2e65421d7,E. Manufacturing and Resources,E3. Automotive
-837875bf-2614-44a8-acc9-2ec7667ff196,B. Financial Services,B2. Insurance
-1a3087d4-6a24-4fe9-91e5-ae1e85f26e3c,E. Manufacturing and Resources,E2. Aerospace and Defense
-749de8c5-3f21-456b-aec9-3a63179517dd,E. Manufacturing and Resources,E5. Chemicals
-41810f62-b7a2-423a-b1bf-fbf5f98c7f62,G. Public Sector,G3. State/Local Government
-38959f73-0a5b-4f1f-8e43-79ae440c6376,UNKNOWN,UNKNOWN
+5cd381bc-be15-4061-915b-85d27497ce52,E. Manufacturing and Resources,E6. Consumer Goods
+a92c65a8-2401-492e-ac6f-97d63dfc3ee9,F. Retail and Services,F1. Retail
+2e697f58-6498-4332-8ef3-db20cc0cb0a0,F. Retail and Services,F2. Software and Information Services
+fb8cf6db-03f9-4a24-8423-4bb83931ed1a,F. Retail and Services,F7. Professional and Personal Services
+41ff311d-6f91-4098-996e-1a44ed3a6efd,B. Financial Services,B1. Banking
+b48e86a7-8a9b-4700-9f92-c207b568ffbf,C. Healthcare,C2. Healthcare Provider
+5d06b8ae-8cb9-478a-bab9-fd0206cce15c,F. Retail and Services,F4. Hospitality and Leisure
+0f934d48-a644-45e6-94f7-0f76f60fad15,H. Agnostic,H1. Agnostic
+e81e547c-3e5f-44a1-b7b3-275ba97675fa,F. Retail and Services,F3. Travel and Transportation
+47b44ed9-2535-4f44-a7e7-2861e4fd2ae1,G. Public Sector,G1. Education
+c666734d-66da-4e5a-afbd-f88c02dfafc3,F. Retail and Services,"F6. Engineering, Construction, and Real Estate"
+1751f50e-43b2-4fad-b144-d33d60e9c1f6,B. Financial Services,B3. Capital Markets
+cbd7e95d-3713-4c76-b796-dc1ba07e0bbf,E. Manufacturing and Resources,E1. High Tech and Electronics
+78adfad0-b8b8-4d8d-ae0a-6b580dd26c35,E. Manufacturing and Resources,E4. Industrial and Other Manufacturing
+4a2d6ef5-d333-46fc-9bae-33394f3f0131,D. Infrastructure and Energy,D3. Utilities
+d1189e89-aa14-44f5-856c-71b2773811f1,E. Manufacturing and Resources,E5. Chemicals
+075f6cf8-f08e-4f4e-a694-4da00be4a19e,F. Retail and Services,F5. Media and Entertainment
+fe25566a-e7d8-4a64-bf5c-4c464b755d5f,D. Infrastructure and Energy,D2. Oil and Gas
+e786f0c6-32a6-4d7a-b344-b163c6c3ad0b,E. Manufacturing and Resources,E2. Aerospace and Defense
+0801884b-d630-4ba3-b104-115298683d4e,D. Infrastructure and Energy,D1. Telecommunications
+72786d4a-6bbe-4cb6-b014-baf9aceae6e5,E. Manufacturing and Resources,E3. Automotive
+11012f6c-ecac-4d38-a695-a90010574b16,G. Public Sector,G2. Federal/Central Government
+235ba958-e4c6-4e33-930e-682da136c01e,E. Manufacturing and Resources,E7. Agriculture and Fishing
+2703d729-3aa6-4e2b-a8be-fc6133159aef,B. Financial Services,B2. Insurance
+8b3cd85a-1e2b-47c7-95e5-95e32bdfea27,E. Manufacturing and Resources,E8. Mining
+70aec89d-60f6-4dd1-863d-39cabf72e3b4,C. Healthcare,C3. Life Sciences
+a57324b4-75ee-46e1-aa79-0451262fd172,G. Public Sector,G3. State/Local Government
+aa0eca9d-2494-491f-a57d-0b3c44c28b6b,C. Healthcare,C1. Healthcare Payer
+6b50868b-7f29-4785-8cfc-5ec3449ffd08,UNKNOWN,UNKNOWN

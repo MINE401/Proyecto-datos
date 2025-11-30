@@ -1,1444 +1,917 @@
 company_id,coverage
-4a199fd7-e01a-439d-96d6-081602a3403a,SaaS
-590da92d-4b87-45fe-b639-77ef3bbe9d91,Other Cloud: Hybrid/Private/On-prem virtualization
-590da92d-4b87-45fe-b639-77ef3bbe9d91,SaaS
-0707d260-f5cd-471c-98df-7e957f4baefa,SaaS
-ebd79f1d-7f72-4251-834e-8855cdd76da0,SaaS
-e43c6da8-5aa2-4d75-89aa-948cbe242466,SaaS
-2d573570-d7c3-4608-9859-eeaa1cd9f003,SaaS
-7f7376e1-5c7f-4405-8f20-3047dacdb704,SaaS
-b7a6123f-c34e-4c60-9b46-0be718bfddbb,SaaS
-afc02a55-b636-44cc-a123-d6f327ebcc51,
-c562cf6b-7d18-482e-9a3c-11d46c11190c,IaaS
-c562cf6b-7d18-482e-9a3c-11d46c11190c,SaaS
-c562cf6b-7d18-482e-9a3c-11d46c11190c,PaaS
-0f1693e2-6bf4-484f-8862-f0766686e610,
-5b84f55e-bd8b-4e31-b18d-96b4d05d984c,SaaS
-5b84f55e-bd8b-4e31-b18d-96b4d05d984c,PaaS
-5b84f55e-bd8b-4e31-b18d-96b4d05d984c,IaaS
-5b84f55e-bd8b-4e31-b18d-96b4d05d984c,Other Cloud: Hybrid/Private/On-prem virtualization
-df8df8a1-12f3-4149-8652-fd23deab11da,IaaS
-df8df8a1-12f3-4149-8652-fd23deab11da,SaaS
-df8df8a1-12f3-4149-8652-fd23deab11da,Other Cloud: Hybrid/Private/On-prem virtualization
-b6358544-2d76-40e6-a9bc-b698083957e7,
-cb06d24e-605f-4ef6-b36b-fbdb4f477605,Other Cloud: Hybrid/Private/On-prem virtualization
-cb06d24e-605f-4ef6-b36b-fbdb4f477605,SaaS
-0afbdc34-1dbf-4ca1-9ef7-048b032eb7af,SaaS
-e6dc6a74-bf0c-4b16-82b6-e6c7c6e6e8d7,Other Cloud: Hybrid/Private/On-prem virtualization
-e6dc6a74-bf0c-4b16-82b6-e6c7c6e6e8d7,SaaS
-060537b0-0f78-4a62-916f-120e238eb2e8,SaaS
-060537b0-0f78-4a62-916f-120e238eb2e8,Other Cloud: Hybrid/Private/On-prem virtualization
-060537b0-0f78-4a62-916f-120e238eb2e8,IaaS
-060537b0-0f78-4a62-916f-120e238eb2e8,PaaS
-2abbf53f-395d-4daf-a685-4ae3b6ea445e,Other Cloud: Hybrid/Private/On-prem virtualization
-f09d5071-f364-47c1-b88c-74d63dfc7c05,SaaS
-f09d5071-f364-47c1-b88c-74d63dfc7c05,Other Cloud: Hybrid/Private/On-prem virtualization
-3aed5f47-b397-410e-8376-d6ddd9cdf093,SaaS
-3aed5f47-b397-410e-8376-d6ddd9cdf093,Other Cloud: Hybrid/Private/On-prem virtualization
-1f180ce3-5d41-4744-a36f-8c305e114012,Other Cloud: Hybrid/Private/On-prem virtualization
-8dfeb892-961c-465e-b0b0-8199201db915,SaaS
-921ef7fa-ebb2-434c-a1e4-1572a98a8124,Other Cloud: Hybrid/Private/On-prem virtualization
-921ef7fa-ebb2-434c-a1e4-1572a98a8124,SaaS
-4c2adaff-17d8-4a50-b444-e724f604b8be,SaaS
-5d84110c-78ff-4572-9974-dcef9155f82a,Other Cloud: Hybrid/Private/On-prem virtualization
-dc3c0e63-d575-443f-bc51-829c9b946068,SaaS
-83be68ae-1142-4016-9453-e5e0a5754a0d,IaaS
-83be68ae-1142-4016-9453-e5e0a5754a0d,Other Cloud: Hybrid/Private/On-prem virtualization
-83be68ae-1142-4016-9453-e5e0a5754a0d,SaaS
-6d364b7a-c1f5-42cd-9dc0-e2de95bb34a4,SaaS
-6d364b7a-c1f5-42cd-9dc0-e2de95bb34a4,Other Cloud: Hybrid/Private/On-prem virtualization
-5102d677-ff95-4fc5-b6f2-cdc86a9df569,
-3c51752e-8447-4d69-8184-2a5ec89fa4a8,
-9e0198ef-36de-4683-88db-44eb92a098bd,Other Cloud: Hybrid/Private/On-prem virtualization
-9e0198ef-36de-4683-88db-44eb92a098bd,PaaS
-9e0198ef-36de-4683-88db-44eb92a098bd,SaaS
-9e0198ef-36de-4683-88db-44eb92a098bd,IaaS
-82c4d99e-9928-4fba-a625-15bd8fca70e0,
-a58b710e-397e-44c1-be38-e63bb823edcc,
-ebbbac29-9a56-4b0c-89e9-dbab3a6ded31,
-52e674da-ec32-4e5f-8404-8f80bb21e1ab,SaaS
-52e674da-ec32-4e5f-8404-8f80bb21e1ab,Other Cloud: Hybrid/Private/On-prem virtualization
-852203d7-d813-4434-afb3-b466df5ee81f,Other Cloud: Hybrid/Private/On-prem virtualization
-852203d7-d813-4434-afb3-b466df5ee81f,SaaS
-8467ff17-073b-419d-82d3-bf78031495e5,
-81ee69dc-2c35-43d6-9ee9-db247d171d76,SaaS
-fe6eda15-852c-4238-b3b3-ad6e6531678c,
-b3559d22-47dc-4d6c-93a7-0f0d5ce72359,SaaS
-13dc337d-4ecc-43c7-9900-3e318a4b7f6d,
-89723314-bac9-4d8c-a6ef-ec0952a57b55,Other Cloud: Hybrid/Private/On-prem virtualization
-89723314-bac9-4d8c-a6ef-ec0952a57b55,SaaS
-f306f0fd-9087-44ed-b34c-9a0b60f2eca2,SaaS
-2a2e07d3-fec4-46ed-936d-2d54ecb23187,SaaS
-0484eabf-771a-4fe4-895b-ccf88040b9fc,
-39cec5c0-c592-447e-8caf-69b13e5b28a4,
-9770a512-43a7-4990-bd7e-6ca58437f001,
-12cc66d9-be68-4a5c-bce2-58676b3d4b5f,Other Cloud: Hybrid/Private/On-prem virtualization
-d4ca320c-b346-4689-aa5b-b26f8b0683a5,SaaS
-0640b4e8-cbac-4a41-98ff-65477d5a5aa8,SaaS
-65cf1587-9a87-4608-9af4-17e11c037051,SaaS
-af87f631-027a-4d33-b129-f5db5474e0f6,Other Cloud: Hybrid/Private/On-prem virtualization
-4ba30847-268a-4aef-a05a-a6bb750482cd,SaaS
-fe1987d7-df1d-4e76-80f1-5bb12ef5edf9,SaaS
-8ed0621d-a1b4-4caf-afb8-1b62d0c05425,SaaS
-286440a3-9a32-40b6-8fb6-159ae12295b1,SaaS
-286440a3-9a32-40b6-8fb6-159ae12295b1,Other Cloud: Hybrid/Private/On-prem virtualization
-6a955e97-a659-45e5-984f-6dae671fe7c9,SaaS
-f8cb5a88-570a-41d8-ae5a-96c3ca4b509a,
-83dabdd7-b522-4ab6-a203-aa1cb39c89ce,
-17874f0a-d245-4194-8346-214b8bc0d433,SaaS
-32d814af-a0b6-4b91-bcd1-d0f08bffbe20,
-e11dbed2-bf3d-459e-8c26-5f91727c7e92,
-2684dd1d-1d65-4660-aaf2-8841395f6f3f,
-3f2289d4-9091-4f4c-8f9f-4abd791550ff,SaaS
-125a4d2d-d13c-47dd-a85e-ab93cbbecd77,Other Cloud: Hybrid/Private/On-prem virtualization
-125a4d2d-d13c-47dd-a85e-ab93cbbecd77,SaaS
-125a4d2d-d13c-47dd-a85e-ab93cbbecd77,PaaS
-57a290c3-4c04-438b-9aab-d0e2a7288b82,SaaS
-3975358e-b577-403a-b549-7226c34994f1,SaaS
-7a8a4798-ee8c-4571-ae36-3b598e8838ac,
-34de2c83-9236-457f-9779-9b68004dadee,
-b686dd43-b603-4f90-8d8b-b725f8b964ca,SaaS
-a738721d-1372-4aee-b742-e8685158f909,Other Cloud: Hybrid/Private/On-prem virtualization
-a738721d-1372-4aee-b742-e8685158f909,SaaS
-a738721d-1372-4aee-b742-e8685158f909,IaaS
-7b702cb4-c448-4520-8335-80aca84950d8,
-f1885a1e-93b3-438c-9fcd-aa6b0a5485c0,SaaS
-cb4981c2-a99c-46f9-b299-ccab1b71fbc6,
-50cbebbc-6e17-4532-a714-e68ad747e0b3,PaaS
-50cbebbc-6e17-4532-a714-e68ad747e0b3,IaaS
-50cbebbc-6e17-4532-a714-e68ad747e0b3,SaaS
-6bcef30c-3738-4c2a-87fe-d7480cc52901,
-a8ea81d0-c145-4cc1-9409-ccdfe5e8f962,
-6811b819-d6ff-41c8-98a2-e554d26b6fba,
-11d4433a-fa25-420d-954a-8d4ae47ebdfa,PaaS
-11d4433a-fa25-420d-954a-8d4ae47ebdfa,SaaS
-11d4433a-fa25-420d-954a-8d4ae47ebdfa,Other Cloud: Hybrid/Private/On-prem virtualization
-11d4433a-fa25-420d-954a-8d4ae47ebdfa,IaaS
-dd649da3-a35c-4ba6-bc54-74f02b0a7ec8,
-523fb080-e93c-49a2-a027-13cd7ebaafc0,
-fbb0059c-a1c7-48f0-8556-3304172a6bc6,PaaS
-fbb0059c-a1c7-48f0-8556-3304172a6bc6,Other Cloud: Hybrid/Private/On-prem virtualization
-fbb0059c-a1c7-48f0-8556-3304172a6bc6,SaaS
-22ca213f-e448-4eb6-8395-b688c569b864,
-5d643ccc-1a73-4187-ae01-bcc53eedfb0c,SaaS
-9127bf75-3486-4a3e-88ca-9d7d6a40134b,Other Cloud: Hybrid/Private/On-prem virtualization
-9127bf75-3486-4a3e-88ca-9d7d6a40134b,SaaS
-cebbb33f-d0c9-4302-8d11-fd8fab7b02b0,Other Cloud: Hybrid/Private/On-prem virtualization
-cebbb33f-d0c9-4302-8d11-fd8fab7b02b0,SaaS
-e5f46014-df4f-4b45-a360-3a2b7e1dfefc,Other Cloud: Hybrid/Private/On-prem virtualization
-e5f46014-df4f-4b45-a360-3a2b7e1dfefc,IaaS
-e5f46014-df4f-4b45-a360-3a2b7e1dfefc,SaaS
-e5f46014-df4f-4b45-a360-3a2b7e1dfefc,PaaS
-5aecdc26-dfcb-4dae-b688-49cf5873d951,
-62fc26cc-80a9-401f-a64c-48315ebbf7ec,
-1aa9eb52-8a28-4e6c-8106-810a8e9e1cd5,SaaS
-ad3ae6f9-7ae8-4627-9283-e5b6c873e333,SaaS
-46b26315-bdec-45e7-8fbf-6b5019f5d8f7,Other Cloud: Hybrid/Private/On-prem virtualization
-46b26315-bdec-45e7-8fbf-6b5019f5d8f7,SaaS
-d4dd7d73-feac-43e2-b6a1-1a918e51b6e1,PaaS
-d4dd7d73-feac-43e2-b6a1-1a918e51b6e1,SaaS
-d4dd7d73-feac-43e2-b6a1-1a918e51b6e1,Other Cloud: Hybrid/Private/On-prem virtualization
-d4dd7d73-feac-43e2-b6a1-1a918e51b6e1,IaaS
-e2b33ac6-1fef-4e93-8529-2af2a8ce2280,PaaS
-e2b33ac6-1fef-4e93-8529-2af2a8ce2280,SaaS
-e0567a2d-b307-48f4-8efe-acf7d0042c15,SaaS
-e0567a2d-b307-48f4-8efe-acf7d0042c15,Other Cloud: Hybrid/Private/On-prem virtualization
-c66b6cec-2903-4fb4-a958-0acd75f5bfdd,
-7e1abd8f-8d3c-461e-a5fc-ad55a3d721de,SaaS
-8fb2a5d4-0daa-4c4f-9e32-a3b34d75c7d0,Other Cloud: Hybrid/Private/On-prem virtualization
-12d9c131-1d6f-429f-b182-6d376ce84239,
-1ffad081-64ed-4e58-b142-ac621f3c7910,SaaS
-63da943a-de86-4b75-9df1-485b891aed39,
-e131d012-1b13-4a0d-9bf2-60b175e3fdeb,SaaS
-e131d012-1b13-4a0d-9bf2-60b175e3fdeb,Other Cloud: Hybrid/Private/On-prem virtualization
-04fe3df3-20a4-40f3-a145-810fd63b8638,IaaS
-04fe3df3-20a4-40f3-a145-810fd63b8638,SaaS
-04fe3df3-20a4-40f3-a145-810fd63b8638,Other Cloud: Hybrid/Private/On-prem virtualization
-04fe3df3-20a4-40f3-a145-810fd63b8638,PaaS
-73849832-30bf-4ca1-a25e-5c28a3dd88ee,SaaS
-dbab2c35-a190-4896-9747-76e63a5e8f84,SaaS
-f5dc3410-9d21-449d-a90d-fe110106da35,SaaS
-b382a3d3-35cb-4218-bd79-1bdc56fa8f23,SaaS
-b382a3d3-35cb-4218-bd79-1bdc56fa8f23,IaaS
-c5f4dd1c-d040-4900-a336-8b9e640d5653,SaaS
-95f596e2-de25-488a-b66c-953dd800d409,Other Cloud: Hybrid/Private/On-prem virtualization
-95f596e2-de25-488a-b66c-953dd800d409,SaaS
-79799e34-e330-4de5-b59f-3c9ad1eb156c,
-fec334a9-938d-403b-9708-6792eb9e4022,SaaS
-330ca172-96e4-49a1-a668-5be0967988bd,SaaS
-0d96b881-65ab-4fe1-870e-7f441d2378fa,
-71988123-d044-4608-8462-5995402bf47e,
-64e8959a-d0f2-4fa0-bb3a-5529a6bd2da1,SaaS
-a69eb356-a978-4e73-9cfc-5c073ef5ce6a,SaaS
-43fccd36-cb52-46db-9e03-0e23fdef85cc,SaaS
-90223113-123a-4565-81ea-e9bd42c6f25b,SaaS
-255ebe5f-fc53-4e98-80bf-9d49f95266bc,SaaS
-33e4ed31-f610-480c-b367-7f63bb6556a1,SaaS
-8f8b62a2-8e8b-47b3-bebf-2f162f6763b3,SaaS
-8f8b62a2-8e8b-47b3-bebf-2f162f6763b3,Other Cloud: Hybrid/Private/On-prem virtualization
-6b439ed5-6d03-46aa-8152-19e03fbb515d,SaaS
-6b439ed5-6d03-46aa-8152-19e03fbb515d,Other Cloud: Hybrid/Private/On-prem virtualization
-5b4f646d-980f-463c-8507-fd46fbec3ef1,SaaS
-5b4f646d-980f-463c-8507-fd46fbec3ef1,Other Cloud: Hybrid/Private/On-prem virtualization
-4e52c532-c38e-45ad-8720-8fb656c2e7e0,
-1f3eaced-dccb-4154-b0b6-edd6aab5c064,
-1d4aed0e-8c45-48d6-914a-a00d334fa0b3,
-cf2be4dd-d3b8-47e8-bd1d-d250c2b17480,SaaS
-ffbb5e06-71af-4cc8-8aa7-c7ef4f82a1a0,
-d9c85eea-dc18-4102-904b-a4734bc0ff0d,SaaS
-4703034e-f0f9-42b9-9799-f20197f687cb,Other Cloud: Hybrid/Private/On-prem virtualization
-0ef42977-eb46-4954-a336-1c0d4b0e497b,
-dc0c9d9d-b120-4b13-99b2-a60f762d4f28,
-71d8ea78-9a0a-4f3e-80c3-e24947bdfc7e,
-d2dc3cad-9f86-43c1-be1a-17f65d76d528,SaaS
-d2dc3cad-9f86-43c1-be1a-17f65d76d528,IaaS
-d2dc3cad-9f86-43c1-be1a-17f65d76d528,Other Cloud: Hybrid/Private/On-prem virtualization
-17781e34-fc2d-4b1d-bac8-677c49a529e3,
-e85997c6-ad83-4419-a874-22199c5bbff9,SaaS
-e85997c6-ad83-4419-a874-22199c5bbff9,Other Cloud: Hybrid/Private/On-prem virtualization
-e85997c6-ad83-4419-a874-22199c5bbff9,IaaS
-9c1b093c-b3c0-4ad7-adb4-c9cef6eaaf71,SaaS
-9c1b093c-b3c0-4ad7-adb4-c9cef6eaaf71,Other Cloud: Hybrid/Private/On-prem virtualization
-6b94de51-907b-428b-8667-151b6d4a0cea,Other Cloud: Hybrid/Private/On-prem virtualization
-6b94de51-907b-428b-8667-151b6d4a0cea,SaaS
-27375cca-48a7-4714-8b2d-418a6c20ec74,SaaS
-27375cca-48a7-4714-8b2d-418a6c20ec74,IaaS
-27375cca-48a7-4714-8b2d-418a6c20ec74,Other Cloud: Hybrid/Private/On-prem virtualization
-e8afd8a0-5663-4ef8-abcf-f8eaefc53f9e,Other Cloud: Hybrid/Private/On-prem virtualization
-27e6f66d-23fd-4c4a-b9fd-c2354b78210f,SaaS
-27e6f66d-23fd-4c4a-b9fd-c2354b78210f,Other Cloud: Hybrid/Private/On-prem virtualization
-defc95ec-9342-42d5-a599-d153e9972441,
-674aca75-8d5d-4f83-a5e2-07317055d6fc,Other Cloud: Hybrid/Private/On-prem virtualization
-98e2c635-ded2-4549-a9b9-b2faad0c70c2,Other Cloud: Hybrid/Private/On-prem virtualization
-b600fea2-72e7-457d-93d2-18e66f2db3e2,SaaS
-b0dca283-1d3b-4272-8e08-bc969bd8a278,
-3e8dbf0c-4df8-40f9-978f-efbdbb929071,
-bccf8ddf-6be8-4260-a6e3-ae16f699fb04,SaaS
-bccf8ddf-6be8-4260-a6e3-ae16f699fb04,Other Cloud: Hybrid/Private/On-prem virtualization
-7ee93d56-d572-4072-a642-2c8c8eb0382e,SaaS
-589eea02-7a0f-4148-8ec2-605035ee8410,
-51675f68-40e7-4459-9af6-0a5f5d07d426,
-4448c771-aa9e-46e9-bc57-feccabba096f,SaaS
-e4655f36-d401-44c4-8193-56be708bd257,
-4d1fd888-3bdd-49b6-aa4d-b7d9fa384643,Other Cloud: Hybrid/Private/On-prem virtualization
-4d1fd888-3bdd-49b6-aa4d-b7d9fa384643,SaaS
-90c557eb-b6fd-4504-a306-ad57bf397271,SaaS
-fc8963ba-3a95-4d20-849f-74dc0ccc835b,SaaS
-0a015e77-91a4-41c4-88d2-1ef8db65e3c3,
-1765f46c-a6e9-460a-bc02-8204c8991c90,SaaS
-2ef10d41-04ad-4c00-b1cf-561432c27b6f,
-f7239687-118c-4bd8-a369-99ce901fb01f,Other Cloud: Hybrid/Private/On-prem virtualization
-3e645df8-fe57-45df-a4d3-eb2ad0d8f7e7,
-6b004a5e-23aa-4597-ac0b-5476403be937,
-fcbf3755-998e-42e0-9bbc-491d497ebe80,
-79fa836e-a283-4829-8660-1e18faf56ff7,SaaS
-1cfdcda6-56d9-4889-96c6-54c6ebc7cc15,SaaS
-1cfdcda6-56d9-4889-96c6-54c6ebc7cc15,PaaS
-1cfdcda6-56d9-4889-96c6-54c6ebc7cc15,IaaS
-511069ab-0cd6-44e4-98aa-b36d3d1be060,SaaS
-511069ab-0cd6-44e4-98aa-b36d3d1be060,IaaS
-511069ab-0cd6-44e4-98aa-b36d3d1be060,Other Cloud: Hybrid/Private/On-prem virtualization
-00bdd5ad-9d27-416a-b0de-feb14e4f583d,Other Cloud: Hybrid/Private/On-prem virtualization
-930c5e6d-c2af-4536-bad3-ee3bfb0d8b35,Other Cloud: Hybrid/Private/On-prem virtualization
-930c5e6d-c2af-4536-bad3-ee3bfb0d8b35,SaaS
-26bec251-4883-4f81-8217-3ed4cfd5f175,SaaS
-26bec251-4883-4f81-8217-3ed4cfd5f175,Other Cloud: Hybrid/Private/On-prem virtualization
-2c11f8bf-7ed4-4300-93e5-03ed17d543f5,
-5073ad68-bcd9-429b-b312-a3caef150508,
-64ee5388-b037-4b8d-a85e-26c945af15ce,SaaS
-64ee5388-b037-4b8d-a85e-26c945af15ce,Other Cloud: Hybrid/Private/On-prem virtualization
-88812205-2332-47d0-b8c9-a1f2c920a58f,SaaS
-3e9908c9-c45c-4f2b-b7c6-ebd3184fcea8,PaaS
-3e9908c9-c45c-4f2b-b7c6-ebd3184fcea8,IaaS
-3e9908c9-c45c-4f2b-b7c6-ebd3184fcea8,Other Cloud: Hybrid/Private/On-prem virtualization
-3e9908c9-c45c-4f2b-b7c6-ebd3184fcea8,SaaS
-902ecb25-c835-43d4-92b3-a8ee02169928,IaaS
-902ecb25-c835-43d4-92b3-a8ee02169928,SaaS
-33287d08-0872-4be1-abff-ab7d5f91e471,SaaS
-36706094-e9f5-4031-bf95-38ba4f5dc04d,SaaS
-1ab575fa-8e1a-4c4b-8cd8-584366be93c4,SaaS
-1ab575fa-8e1a-4c4b-8cd8-584366be93c4,Other Cloud: Hybrid/Private/On-prem virtualization
-1f7e6cd8-6cdc-4759-b4ac-c9349f627a6d,
-7974a1e4-0442-4b71-8152-7629c8cf27c4,Other Cloud: Hybrid/Private/On-prem virtualization
-7974a1e4-0442-4b71-8152-7629c8cf27c4,IaaS
-7974a1e4-0442-4b71-8152-7629c8cf27c4,PaaS
-7974a1e4-0442-4b71-8152-7629c8cf27c4,SaaS
-143ed2ca-023e-4b8a-9a9b-20d1069df415,SaaS
-eabef458-e7ad-4319-aacf-99f81a2ce172,SaaS
-dc556aad-101e-4302-9c7a-8d1d985deadb,Other Cloud: Hybrid/Private/On-prem virtualization
-f95d8793-3623-44bf-af4a-02e9091519a4,SaaS
-f95d8793-3623-44bf-af4a-02e9091519a4,Other Cloud: Hybrid/Private/On-prem virtualization
-0c88eec0-0e87-4082-8b3a-78413a12a316,Other Cloud: Hybrid/Private/On-prem virtualization
-0c88eec0-0e87-4082-8b3a-78413a12a316,SaaS
-ee18a4ea-8bfc-4162-ac19-20ed3b793d20,
-9a70bc9c-7f0c-4ed6-b489-e7d302654be7,SaaS
-6ab688dc-f203-45aa-b508-5f60b9698af3,
-fa7d1e98-f1fc-4806-9bcf-1d8356d6171d,SaaS
-fa7d1e98-f1fc-4806-9bcf-1d8356d6171d,Other Cloud: Hybrid/Private/On-prem virtualization
-69c8f986-9c02-47c7-88fc-60cf0d062254,SaaS
-264bf325-438b-4972-8da5-3c29f2145689,SaaS
-264bf325-438b-4972-8da5-3c29f2145689,Other Cloud: Hybrid/Private/On-prem virtualization
-e8d5d41a-9269-41fb-99a6-1eff22c86ec7,Other Cloud: Hybrid/Private/On-prem virtualization
-e8d5d41a-9269-41fb-99a6-1eff22c86ec7,SaaS
-2fd09a4e-82c4-4b44-b888-3d3c4bcaa1ab,SaaS
-30734854-d736-4245-9d31-f7bd458494c4,SaaS
-30734854-d736-4245-9d31-f7bd458494c4,PaaS
-30734854-d736-4245-9d31-f7bd458494c4,Other Cloud: Hybrid/Private/On-prem virtualization
-30734854-d736-4245-9d31-f7bd458494c4,IaaS
-92ac3959-3620-4878-b881-fb12458446da,SaaS
-92ac3959-3620-4878-b881-fb12458446da,IaaS
-7156dc3f-f375-4113-a0e4-2fe73c517178,Other Cloud: Hybrid/Private/On-prem virtualization
-7156dc3f-f375-4113-a0e4-2fe73c517178,SaaS
-7dbec81e-eff8-4380-aa61-ddd6cb349a2c,SaaS
-4f298ff8-20af-4d7b-b7fe-b9d76723be2e,SaaS
-7e39ec9a-dbbe-4008-bffe-509eeb35dabd,SaaS
-7e39ec9a-dbbe-4008-bffe-509eeb35dabd,Other Cloud: Hybrid/Private/On-prem virtualization
-851d524b-5d26-4349-ba64-1555cc829f16,SaaS
-49247400-3746-44e8-b1e5-80b89192ca6f,
-a42b902f-814e-4202-b9d6-54676c81bd1e,
-d2b3ebb5-ca36-45ec-a483-ce01b37b8702,SaaS
-cc152b39-06a8-4c47-8ec2-3d3b4f54f121,SaaS
-08924cce-46c7-4f9c-8b65-42e14640f7cd,IaaS
-a178d65f-167c-47c8-b8be-d64ab586ab07,SaaS
-a178d65f-167c-47c8-b8be-d64ab586ab07,PaaS
-a178d65f-167c-47c8-b8be-d64ab586ab07,IaaS
-426b17a3-86ec-4b96-8adf-ff9f045ef372,
-297d4c2e-5f44-4327-b0f0-1be80847fcaf,
-ac6eb426-017b-4892-a024-8c2a7a0991d1,
-713b71be-4798-4819-b5ef-01bfbe85242d,
-f2afad49-49c4-4059-b3f0-a9f17be04e8a,Other Cloud: Hybrid/Private/On-prem virtualization
-f2afad49-49c4-4059-b3f0-a9f17be04e8a,SaaS
-7b0ce257-48cc-41ee-8459-33d0620e8997,SaaS
-4b23a90b-d58a-46ed-ac55-d6e2480e9264,PaaS
-4b23a90b-d58a-46ed-ac55-d6e2480e9264,Other Cloud: Hybrid/Private/On-prem virtualization
-4b23a90b-d58a-46ed-ac55-d6e2480e9264,SaaS
-a591cd7b-72c6-4739-9c3e-d030e79c07fa,
-251e0a7e-e2d9-46ad-8c1b-2623e40a8f1b,
-e75af3fb-6c51-4dd7-ab7e-a7d1e166d003,
-374814b7-807b-4092-87b4-0bc2a382cc9e,
-2e90df85-eadb-455c-acc6-350875202174,SaaS
-2e90df85-eadb-455c-acc6-350875202174,PaaS
-f031d2e8-4897-4999-a43b-e18ca61bd396,SaaS
-1cc09c69-55c8-4b21-b04e-80335d4ca9e5,
-8fcc8a73-b8bb-4370-8e0a-8023a9261f0c,SaaS
-8fcc8a73-b8bb-4370-8e0a-8023a9261f0c,Other Cloud: Hybrid/Private/On-prem virtualization
-258141e0-8432-466e-92e0-e67645bb49a8,SaaS
-70372446-8ee0-44e1-abb1-f5728790d930,SaaS
-80449d5a-edbf-4739-8a41-3abb8f4c5ef5,
-c3e9f23c-7193-4102-a9bc-ee3b4373238d,Other Cloud: Hybrid/Private/On-prem virtualization
-f2dab18b-b7f6-4523-aa3f-283c830bce96,
-8a688d0b-d5d3-4d71-9c98-7a62df63dfaf,Other Cloud: Hybrid/Private/On-prem virtualization
-8a688d0b-d5d3-4d71-9c98-7a62df63dfaf,SaaS
-e0daf63b-edb0-4f8c-ac35-32dd2d2b8e3d,Other Cloud: Hybrid/Private/On-prem virtualization
-e0daf63b-edb0-4f8c-ac35-32dd2d2b8e3d,SaaS
-92908822-d64b-448f-ba9a-0b6b1e62e250,Other Cloud: Hybrid/Private/On-prem virtualization
-92908822-d64b-448f-ba9a-0b6b1e62e250,SaaS
-d708e660-c867-43fb-97d9-f15339250aa1,Other Cloud: Hybrid/Private/On-prem virtualization
-d708e660-c867-43fb-97d9-f15339250aa1,SaaS
-4e67bba1-1459-49f4-a91c-54bf59a6bd71,
-39f86dec-ef4d-4cf2-bcfc-b131f080082b,Other Cloud: Hybrid/Private/On-prem virtualization
-a775efd9-e7d7-4e2c-9140-aed9646bd35f,
-144c8154-1221-410a-8e19-0942c2fa39e8,SaaS
-f06eee13-915e-498a-ae7b-c308bf0090ae,PaaS
-f06eee13-915e-498a-ae7b-c308bf0090ae,IaaS
-f06eee13-915e-498a-ae7b-c308bf0090ae,Other Cloud: Hybrid/Private/On-prem virtualization
-f06eee13-915e-498a-ae7b-c308bf0090ae,SaaS
-5aac006c-a292-4d01-9bdb-0c0acf9ff17a,Other Cloud: Hybrid/Private/On-prem virtualization
-5aac006c-a292-4d01-9bdb-0c0acf9ff17a,SaaS
-cb4b03b7-7c86-4022-866a-2356cdd1300f,SaaS
-cb4b03b7-7c86-4022-866a-2356cdd1300f,PaaS
-cb4b03b7-7c86-4022-866a-2356cdd1300f,IaaS
-55a9526f-e538-4b47-9287-fa7cb748f441,Other Cloud: Hybrid/Private/On-prem virtualization
-55a9526f-e538-4b47-9287-fa7cb748f441,PaaS
-55a9526f-e538-4b47-9287-fa7cb748f441,SaaS
-55a9526f-e538-4b47-9287-fa7cb748f441,IaaS
-736f115e-292b-41ce-a3be-e2fe8052846e,SaaS
-736f115e-292b-41ce-a3be-e2fe8052846e,Other Cloud: Hybrid/Private/On-prem virtualization
-1e48c41b-5480-465a-b6be-18c5b3b72e7f,
-441b5350-ae0d-4507-a676-f39a47f1cbf3,SaaS
-264d3eff-123e-4799-9137-d812d2715d42,
-3bbb8a48-5f07-42ec-975d-0129a1e1f844,SaaS
-fb00a558-ba05-4b40-86f9-e124150e00ed,
-3e8eb9fe-a2ec-4b4a-933f-bd1137d2500e,Other Cloud: Hybrid/Private/On-prem virtualization
-3e8eb9fe-a2ec-4b4a-933f-bd1137d2500e,IaaS
-3e8eb9fe-a2ec-4b4a-933f-bd1137d2500e,SaaS
-3e8eb9fe-a2ec-4b4a-933f-bd1137d2500e,PaaS
-0bce1685-944a-4fd9-8b1e-c58bec84139b,
-cbe9d411-6d70-4b57-a263-93ff0c6d2ea9,SaaS
-cbe9d411-6d70-4b57-a263-93ff0c6d2ea9,Other Cloud: Hybrid/Private/On-prem virtualization
-deef9014-6156-40fb-b51d-2213976d2c76,
-c112c6ad-4fc0-48d0-9de7-ac54d1b4446f,SaaS
-96f39dd5-f0e2-43d7-bb64-e8c1adbbd8bb,SaaS
-eb625122-4276-43d4-bcda-61db87f5e7be,SaaS
-2b2ed854-ab73-4eb7-b898-ba20c5c74c58,Other Cloud: Hybrid/Private/On-prem virtualization
-2b2ed854-ab73-4eb7-b898-ba20c5c74c58,SaaS
-9e6d9bf3-2a12-49cf-9f47-36d9bb501569,SaaS
-f8f8c4b3-710e-4c27-acfd-5d4137d5402a,SaaS
-8e1aba12-f165-43ca-ae4b-ed3658243e47,
-311c01ee-6b24-491e-8b66-14969029a2ea,SaaS
-e54ee9fd-e511-4c15-9bca-e58ed5b4ac2d,
-df76b55e-2bc6-4c6a-9e71-a857aba8e459,Other Cloud: Hybrid/Private/On-prem virtualization
-096f9a3f-2705-4878-8c80-c2df186d4999,SaaS
-096f9a3f-2705-4878-8c80-c2df186d4999,Other Cloud: Hybrid/Private/On-prem virtualization
-a846fc93-373e-4e32-a511-b2073307728d,
-643fdb4a-9ae8-4450-afd0-ff26b6254235,
-89dc7027-6546-400a-848e-9be578b478ad,Other Cloud: Hybrid/Private/On-prem virtualization
-89dc7027-6546-400a-848e-9be578b478ad,SaaS
-283ea9fb-161a-4414-abfb-e28727d6538f,IaaS
-283ea9fb-161a-4414-abfb-e28727d6538f,SaaS
-283ea9fb-161a-4414-abfb-e28727d6538f,PaaS
-283ea9fb-161a-4414-abfb-e28727d6538f,Other Cloud: Hybrid/Private/On-prem virtualization
-0eb98ffb-1276-438c-8a8d-46caf346238c,SaaS
-6f9fe60d-f372-44f4-97c7-6e1151296c81,SaaS
-301ee87e-913a-44c8-94b1-eab982bf4b94,Other Cloud: Hybrid/Private/On-prem virtualization
-301ee87e-913a-44c8-94b1-eab982bf4b94,SaaS
-258a35c7-9687-4094-bded-bb050851d5f1,SaaS
-0c69cd35-b456-43f1-be3d-960d56516919,
-459e7779-247e-4971-a2db-136c44f84772,SaaS
-459e7779-247e-4971-a2db-136c44f84772,Other Cloud: Hybrid/Private/On-prem virtualization
-6fcb8fd8-59a8-4661-bf1b-5fed5da17dca,SaaS
-d94ae817-c911-4b84-9e13-3970828d89cd,SaaS
-65202132-e798-451a-8d46-dea7059e0b72,IaaS
-65202132-e798-451a-8d46-dea7059e0b72,PaaS
-65202132-e798-451a-8d46-dea7059e0b72,Other Cloud: Hybrid/Private/On-prem virtualization
-65202132-e798-451a-8d46-dea7059e0b72,SaaS
-70de370b-5a02-44ab-bbab-f73c8879db33,SaaS
-70de370b-5a02-44ab-bbab-f73c8879db33,IaaS
-d6766efc-7e5c-4f18-b6c8-760a3e81d592,Other Cloud: Hybrid/Private/On-prem virtualization
-d6766efc-7e5c-4f18-b6c8-760a3e81d592,SaaS
-1fc077b9-503b-4bf1-8cdf-b004843b6f45,SaaS
-44d7fe3b-dc5f-4586-af18-993482e78ef9,SaaS
-0a1e1ea6-eae6-44a5-93c5-9250ad233a8f,SaaS
-5451aeda-cabc-4a0d-ba13-8f592d6dcccf,SaaS
-dd86606b-fad1-4999-97f2-a2bb65a0a89e,SaaS
-dd86606b-fad1-4999-97f2-a2bb65a0a89e,IaaS
-ebd94f13-e4a6-43e0-9961-c244b3cdd5b2,Other Cloud: Hybrid/Private/On-prem virtualization
-ebd94f13-e4a6-43e0-9961-c244b3cdd5b2,SaaS
-0abb9ea1-e81b-4505-981e-e6b8c0bd58b3,SaaS
-0abb9ea1-e81b-4505-981e-e6b8c0bd58b3,PaaS
-0abb9ea1-e81b-4505-981e-e6b8c0bd58b3,Other Cloud: Hybrid/Private/On-prem virtualization
-d1f5863a-6de8-498d-87f6-1ee22dd351da,SaaS
-26fbd355-345f-486b-ae9b-85a76a85d406,SaaS
-4c249918-fb84-4470-a133-3f280b76ca08,Other Cloud: Hybrid/Private/On-prem virtualization
-4c249918-fb84-4470-a133-3f280b76ca08,SaaS
-9d815f9c-4fc3-4604-a2de-ab00c3abeb44,SaaS
-9d815f9c-4fc3-4604-a2de-ab00c3abeb44,Other Cloud: Hybrid/Private/On-prem virtualization
-abd63484-c794-43ee-b655-9c98703ce124,
-ed4ed0d7-7166-44e7-a97d-6ea774ab79a7,Other Cloud: Hybrid/Private/On-prem virtualization
-ed4ed0d7-7166-44e7-a97d-6ea774ab79a7,SaaS
-fc82927e-01a5-4afa-ba22-6e9d35460a2c,
-8c76a36e-1c99-4d5c-bdcd-f281cea9847f,SaaS
-8c76a36e-1c99-4d5c-bdcd-f281cea9847f,Other Cloud: Hybrid/Private/On-prem virtualization
-1072cf91-736f-47dd-8611-7d00385388c8,SaaS
-204ac57d-193e-4aaa-8430-6524410e8f3e,
-a6f698aa-9ddd-47a7-82d6-6e029b423004,SaaS
-a6f698aa-9ddd-47a7-82d6-6e029b423004,Other Cloud: Hybrid/Private/On-prem virtualization
-1b32b9c1-8d8d-418e-b224-4f4f6850899e,
-cd2334ff-ccbe-4c8a-9b87-b7c79d5ffc3a,SaaS
-96f34130-5a94-49eb-8de0-56d762fc0dec,
-e45ffe56-9be2-49d1-890d-ee77364bf4db,SaaS
-e45ffe56-9be2-49d1-890d-ee77364bf4db,Other Cloud: Hybrid/Private/On-prem virtualization
-7e58c174-7b18-442f-b9e2-445facbeea3c,SaaS
-3351b095-f733-49cc-b7cb-51518c9a07ca,SaaS
-c42b0c3c-5059-4237-991e-aa12265eea2e,SaaS
-c42b0c3c-5059-4237-991e-aa12265eea2e,Other Cloud: Hybrid/Private/On-prem virtualization
-c297a7d0-0846-431e-a1c3-ef7aa8ebebf5,SaaS
-c297a7d0-0846-431e-a1c3-ef7aa8ebebf5,IaaS
-c297a7d0-0846-431e-a1c3-ef7aa8ebebf5,Other Cloud: Hybrid/Private/On-prem virtualization
-279e69e1-f941-46d1-aa01-ba249a52b343,
-17360313-f9fc-4978-977c-7c75e2bb8492,Other Cloud: Hybrid/Private/On-prem virtualization
-64553136-c0aa-44c3-97ae-d1331e953d62,Other Cloud: Hybrid/Private/On-prem virtualization
-64553136-c0aa-44c3-97ae-d1331e953d62,SaaS
-4f4060a8-3215-49be-a523-76c3a07b77cf,
-d2b8f8f7-847b-4d0b-96df-1c9d8dad1fff,SaaS
-ec87480c-9a12-471c-8a7e-7db0ee60c4af,
-773a641c-5124-4f1c-a2cc-54ca78fe30a1,Other Cloud: Hybrid/Private/On-prem virtualization
-03b1bcf2-4896-4fb2-8ddb-9cbedc4b15a2,
-79146a7c-2517-4089-a02b-ac9cfd58140a,SaaS
-26c41d79-f228-4bff-9cfd-e1c1a4243426,
-232401b1-97ef-4bb2-a659-a1d95fd5c9ed,
-9c94f532-e0c5-45b3-85df-0ee7bca440bb,SaaS
-9c94f532-e0c5-45b3-85df-0ee7bca440bb,IaaS
-ccec2979-248b-46a7-95fc-294fabf5e6c4,SaaS
-ccec2979-248b-46a7-95fc-294fabf5e6c4,Other Cloud: Hybrid/Private/On-prem virtualization
-5f9f4bae-bd8d-4825-aeaa-1bd3d986ef7f,PaaS
-5f9f4bae-bd8d-4825-aeaa-1bd3d986ef7f,SaaS
-5f9f4bae-bd8d-4825-aeaa-1bd3d986ef7f,Other Cloud: Hybrid/Private/On-prem virtualization
-6524b9a2-5442-483d-9644-f708e2adee42,SaaS
-53f9067d-488b-4a32-896a-b98af9636bd8,Other Cloud: Hybrid/Private/On-prem virtualization
-53f9067d-488b-4a32-896a-b98af9636bd8,SaaS
-937ed45c-ed5b-4943-a99a-620043613ebc,SaaS
-4faea783-df09-44c3-9a46-03abd7a6a9ef,SaaS
-4faea783-df09-44c3-9a46-03abd7a6a9ef,IaaS
-67f122a9-0d8e-4c2e-ac70-e42d5d29d853,SaaS
-67f122a9-0d8e-4c2e-ac70-e42d5d29d853,Other Cloud: Hybrid/Private/On-prem virtualization
-e54108f6-cca9-4114-af02-f9aeed60d425,SaaS
-e54108f6-cca9-4114-af02-f9aeed60d425,Other Cloud: Hybrid/Private/On-prem virtualization
-8f237c02-2a54-4e5b-bc68-a1e979fe2613,
-509a3753-322e-4d91-bdac-5ebf4ac1a4dc,
-96b5f7df-194a-40cd-88df-d74369aaee45,IaaS
-96b5f7df-194a-40cd-88df-d74369aaee45,Other Cloud: Hybrid/Private/On-prem virtualization
-96b5f7df-194a-40cd-88df-d74369aaee45,SaaS
-9c8e4420-5721-47d7-a629-fbcf789e0799,
-b79663c8-d9eb-4a7f-be19-d61140c9e3e5,
-6ca17112-838d-4e37-9466-732d0a6e3722,Other Cloud: Hybrid/Private/On-prem virtualization
-6ca17112-838d-4e37-9466-732d0a6e3722,SaaS
-bb34e446-81fa-4e03-9271-37cbacda65aa,
-1207aeb5-5565-4d04-9d36-b17b24f2744c,
-37918aad-ca2a-45b9-bfe6-f52774a58cce,
-14de54dc-9a8e-46d4-a4b5-d8f8c0517914,PaaS
-14de54dc-9a8e-46d4-a4b5-d8f8c0517914,SaaS
-14de54dc-9a8e-46d4-a4b5-d8f8c0517914,Other Cloud: Hybrid/Private/On-prem virtualization
-ea01e33c-d9f6-4d52-96ac-94d467d9e774,Other Cloud: Hybrid/Private/On-prem virtualization
-e1615f7d-93d9-4233-b73f-77b8abebe2a8,
-10093b74-aad9-4280-acad-e22cb9a5761c,
-048d945f-7a5f-44e4-8a34-f5be2b061025,Other Cloud: Hybrid/Private/On-prem virtualization
-048d945f-7a5f-44e4-8a34-f5be2b061025,IaaS
-048d945f-7a5f-44e4-8a34-f5be2b061025,PaaS
-048d945f-7a5f-44e4-8a34-f5be2b061025,SaaS
-b20a180c-a6de-41b8-8213-0c8c98b09484,SaaS
-0842f4bd-6745-4978-8171-60b60a94936f,SaaS
-14728297-1cdb-4ba1-a0bd-04e33388fdd9,Other Cloud: Hybrid/Private/On-prem virtualization
-14728297-1cdb-4ba1-a0bd-04e33388fdd9,SaaS
-0d25d1d8-73aa-4c2c-b4ac-447e16ef3f14,SaaS
-8f5e39db-b3e5-4397-8ba0-85c708226774,
-19bfd32a-c6fd-4405-aab8-f75ca491b10c,SaaS
-7f7dcf6f-b81f-4e93-91c0-30eab344a35f,SaaS
-7f7dcf6f-b81f-4e93-91c0-30eab344a35f,Other Cloud: Hybrid/Private/On-prem virtualization
-7f7dcf6f-b81f-4e93-91c0-30eab344a35f,PaaS
-43421d44-7f92-49e7-bfeb-0df040140edb,Other Cloud: Hybrid/Private/On-prem virtualization
-43421d44-7f92-49e7-bfeb-0df040140edb,SaaS
-bdae11ac-cc61-4f48-b684-7c0259699ab9,
-6743c050-0e85-4884-a630-de95c8e67fc2,SaaS
-6743c050-0e85-4884-a630-de95c8e67fc2,IaaS
-6743c050-0e85-4884-a630-de95c8e67fc2,PaaS
-6743c050-0e85-4884-a630-de95c8e67fc2,Other Cloud: Hybrid/Private/On-prem virtualization
-a13a620e-ead7-46f5-a8f1-5b49c498ef9f,
-8e64f0ab-4119-40bd-a091-b74d9981e3e0,SaaS
-d4a9d657-c3f9-40d6-b80e-5c60c6536d61,IaaS
-d4a9d657-c3f9-40d6-b80e-5c60c6536d61,PaaS
-d4a9d657-c3f9-40d6-b80e-5c60c6536d61,SaaS
-f7a2e0e6-f61b-475d-9506-d961e9feba76,
-b037b5bd-ff4b-41d9-affe-98547e536c9d,IaaS
-b037b5bd-ff4b-41d9-affe-98547e536c9d,Other Cloud: Hybrid/Private/On-prem virtualization
-b037b5bd-ff4b-41d9-affe-98547e536c9d,SaaS
-2c5b179d-6558-4b32-89bd-39b612316768,Other Cloud: Hybrid/Private/On-prem virtualization
-2c5b179d-6558-4b32-89bd-39b612316768,SaaS
-65f43ef2-5f60-4a12-880a-f862dfc186ec,
-e19cf6cd-ae4f-4eff-bc81-03a64013104e,Other Cloud: Hybrid/Private/On-prem virtualization
-e19cf6cd-ae4f-4eff-bc81-03a64013104e,SaaS
-79f11a6a-254a-46cc-88c8-55f96bb8b7c9,SaaS
-fc13f315-5695-4ead-87d9-4ab7cae7b50e,Other Cloud: Hybrid/Private/On-prem virtualization
-fc13f315-5695-4ead-87d9-4ab7cae7b50e,PaaS
-fc13f315-5695-4ead-87d9-4ab7cae7b50e,IaaS
-fc13f315-5695-4ead-87d9-4ab7cae7b50e,SaaS
-f478c3a9-a744-4170-8a46-4adce9bbb2c3,SaaS
-f478c3a9-a744-4170-8a46-4adce9bbb2c3,Other Cloud: Hybrid/Private/On-prem virtualization
-ad947f89-e548-4a41-98f0-bd1ff9fbf3e1,SaaS
-9760dfb6-9052-466c-9173-930b6c5b812d,SaaS
-c7dea4b1-cc21-4ad6-8b4a-b1affa45379a,SaaS
-c7dea4b1-cc21-4ad6-8b4a-b1affa45379a,PaaS
-c7dea4b1-cc21-4ad6-8b4a-b1affa45379a,Other Cloud: Hybrid/Private/On-prem virtualization
-c7dea4b1-cc21-4ad6-8b4a-b1affa45379a,IaaS
-5143bd76-a99e-4060-acf3-7593c7940ceb,SaaS
-5143bd76-a99e-4060-acf3-7593c7940ceb,Other Cloud: Hybrid/Private/On-prem virtualization
-5143bd76-a99e-4060-acf3-7593c7940ceb,IaaS
-f63a6447-eaea-4dbb-a81d-e3fce51c08a1,SaaS
-f63a6447-eaea-4dbb-a81d-e3fce51c08a1,IaaS
-f63a6447-eaea-4dbb-a81d-e3fce51c08a1,Other Cloud: Hybrid/Private/On-prem virtualization
-f63a6447-eaea-4dbb-a81d-e3fce51c08a1,PaaS
-520130af-0aa9-4ebf-957e-177c92aff406,Other Cloud: Hybrid/Private/On-prem virtualization
-520130af-0aa9-4ebf-957e-177c92aff406,IaaS
-520130af-0aa9-4ebf-957e-177c92aff406,SaaS
-ef62fd89-2e13-4023-b1b8-6516805e604d,SaaS
-ef62fd89-2e13-4023-b1b8-6516805e604d,PaaS
-ef62fd89-2e13-4023-b1b8-6516805e604d,IaaS
-16b46944-f24f-4bd0-91ae-507074385eae,
-e1080268-453f-409b-8837-5a0295d41bfc,
-27c4fa2e-1c2d-49b2-9130-e81da95a63da,
-1c1f9788-926a-45e6-b1be-e45e9f541056,SaaS
-1c1f9788-926a-45e6-b1be-e45e9f541056,Other Cloud: Hybrid/Private/On-prem virtualization
-ce191598-0ca7-425e-a996-19cf4417d433,
-3e30a050-b949-440d-977e-821fa15f27c0,SaaS
-f2637bc8-b09d-4782-8860-5f3078a4d5f7,SaaS
-f2637bc8-b09d-4782-8860-5f3078a4d5f7,Other Cloud: Hybrid/Private/On-prem virtualization
-21e6312c-4e02-4c00-a0b3-b2891dce0e6e,SaaS
-21e6312c-4e02-4c00-a0b3-b2891dce0e6e,Other Cloud: Hybrid/Private/On-prem virtualization
-73029e35-ee83-49e3-8f8d-410b72306b80,
-ad0fec4b-81ea-44a5-a22d-61fbf0ed2b86,
-b1b1de8d-e503-44ad-b467-8bae25017119,SaaS
-500dc0d0-cbb8-4559-9809-b2f9197d379d,
-e6f7aafa-6684-43cf-a9e1-0bb279a14a40,SaaS
-55f02576-4d2c-4f3d-9158-119e234d7977,IaaS
-55f02576-4d2c-4f3d-9158-119e234d7977,SaaS
-55f02576-4d2c-4f3d-9158-119e234d7977,Other Cloud: Hybrid/Private/On-prem virtualization
-27e1c08c-71a4-4323-91a5-ef508b25dec6,Other Cloud: Hybrid/Private/On-prem virtualization
-27e1c08c-71a4-4323-91a5-ef508b25dec6,SaaS
-b0c5e813-efe3-476e-8945-bc3c934cc19a,SaaS
-5873a99e-e27d-4c39-8296-617b736d9a50,SaaS
-5873a99e-e27d-4c39-8296-617b736d9a50,Other Cloud: Hybrid/Private/On-prem virtualization
-c28d7c04-9c4f-4ea6-a0f2-ccae1502effa,SaaS
-c28d7c04-9c4f-4ea6-a0f2-ccae1502effa,PaaS
-c28d7c04-9c4f-4ea6-a0f2-ccae1502effa,IaaS
-458cd342-4e6e-4f8a-aa07-bb459a920b6d,Other Cloud: Hybrid/Private/On-prem virtualization
-458cd342-4e6e-4f8a-aa07-bb459a920b6d,SaaS
-a4c0d354-45fc-4053-aa92-b3d35791dbdb,SaaS
-b85328db-6d32-4042-9a2d-2ac0e4e12f6c,SaaS
-b85328db-6d32-4042-9a2d-2ac0e4e12f6c,IaaS
-b85328db-6d32-4042-9a2d-2ac0e4e12f6c,Other Cloud: Hybrid/Private/On-prem virtualization
-eedfd208-7ac8-4ab7-88d4-faf82614c199,
-f9fef04b-2dd3-49ce-a6e6-58baa37c7739,Other Cloud: Hybrid/Private/On-prem virtualization
-f9fef04b-2dd3-49ce-a6e6-58baa37c7739,SaaS
-f9fef04b-2dd3-49ce-a6e6-58baa37c7739,IaaS
-f9fef04b-2dd3-49ce-a6e6-58baa37c7739,PaaS
-5a0268f5-b8fc-43fa-b304-278ccf1d4a94,
-e02b928e-707c-4fde-9c1f-d8ce9eab7ee7,Other Cloud: Hybrid/Private/On-prem virtualization
-0a307759-1d2d-45de-baf1-f92ab554ede9,SaaS
-0fdca554-dba2-4996-9a95-70b3e5069fc1,IaaS
-0fdca554-dba2-4996-9a95-70b3e5069fc1,SaaS
-706d2c6d-cfdf-4f37-81ed-5c132e9e87d5,SaaS
-706d2c6d-cfdf-4f37-81ed-5c132e9e87d5,Other Cloud: Hybrid/Private/On-prem virtualization
-d9cb3e70-4740-466e-8ba2-032477d6255a,
-fe028bb6-1a6e-4b29-a5c8-b777f6c0eaf6,SaaS
-fe028bb6-1a6e-4b29-a5c8-b777f6c0eaf6,Other Cloud: Hybrid/Private/On-prem virtualization
-0f51a918-d458-40a1-a152-2c6875ac5679,SaaS
-714669a0-eb95-44d1-9c1e-0f0b1778b811,
-8304fdbd-8c1c-47e4-9c55-3f0a3b57ede4,SaaS
-8b8ee7ec-0698-4d60-9ba7-822ad448b9d7,Other Cloud: Hybrid/Private/On-prem virtualization
-8b8ee7ec-0698-4d60-9ba7-822ad448b9d7,SaaS
-826ca53d-9058-45f0-962d-920626ace32c,
-3491cc56-ef35-4f1a-9fed-60d97c7f30fd,IaaS
-3491cc56-ef35-4f1a-9fed-60d97c7f30fd,SaaS
-3491cc56-ef35-4f1a-9fed-60d97c7f30fd,Other Cloud: Hybrid/Private/On-prem virtualization
-3491cc56-ef35-4f1a-9fed-60d97c7f30fd,PaaS
-ebf00348-ec57-4aab-981f-9475fd396db0,Other Cloud: Hybrid/Private/On-prem virtualization
-ebf00348-ec57-4aab-981f-9475fd396db0,SaaS
-1137c3cb-1331-4662-ae88-002c5f4716a0,SaaS
-1137c3cb-1331-4662-ae88-002c5f4716a0,Other Cloud: Hybrid/Private/On-prem virtualization
-10f4ca4e-def4-4a75-9abb-05d9c384399f,SaaS
-622f1a90-10c0-4540-998a-a8bd5c705245,Other Cloud: Hybrid/Private/On-prem virtualization
-55a76c03-2600-4ca2-9a57-737645fa4d92,SaaS
-1fdc7863-0476-4fbb-8321-8e866839237a,
-80399271-33b4-4ae1-bd76-87369d971175,SaaS
-80399271-33b4-4ae1-bd76-87369d971175,Other Cloud: Hybrid/Private/On-prem virtualization
-ce6476ca-89b3-4773-a4e8-6095a4457781,SaaS
-ce6476ca-89b3-4773-a4e8-6095a4457781,IaaS
-ce6476ca-89b3-4773-a4e8-6095a4457781,Other Cloud: Hybrid/Private/On-prem virtualization
-00692680-3cbe-46a7-8ec3-9cc075bf0cd7,
-dddeb34b-a273-405d-ad25-63c309f0905d,Other Cloud: Hybrid/Private/On-prem virtualization
-50567a43-2d63-4cca-b0f4-4018a497644e,
-1b22f54a-8e65-4a89-8f75-a1cc0b6a5266,SaaS
-1b22f54a-8e65-4a89-8f75-a1cc0b6a5266,Other Cloud: Hybrid/Private/On-prem virtualization
-f659172d-dbbe-4cf1-82d1-88a4fe0ddb2d,
-16a536ec-bafb-4523-aa1c-72337fd653ef,Other Cloud: Hybrid/Private/On-prem virtualization
-16a536ec-bafb-4523-aa1c-72337fd653ef,SaaS
-a3c28a89-9298-43cb-b00a-125dcbab3f92,Other Cloud: Hybrid/Private/On-prem virtualization
-a3c28a89-9298-43cb-b00a-125dcbab3f92,SaaS
-0397544f-6748-4ff6-9612-6548af49df15,SaaS
-673d65ae-1867-4d37-be86-30d441e8ad94,
-70eaae0d-7175-4af3-83f5-9464dfb8e512,SaaS
-39c2ed30-002a-496b-a27d-1401f93805e0,SaaS
-33bd8351-25ca-44fb-b6c7-03f9777d4b59,
-517d414e-de94-4a39-9c95-6b129f42d2bc,
-9811446f-4f74-40a7-bdbf-7614fe31fa2a,Other Cloud: Hybrid/Private/On-prem virtualization
-9811446f-4f74-40a7-bdbf-7614fe31fa2a,SaaS
-9ff5b28a-3572-431d-9c40-56fff95f48d2,
-492881f0-579c-499a-a8d8-2b4ead16a71b,SaaS
-d872e0f8-1489-429a-942a-55fd22af8081,
-6a0443f2-22fb-4a40-b2a8-3c8624e63544,IaaS
-6a0443f2-22fb-4a40-b2a8-3c8624e63544,SaaS
-6a0443f2-22fb-4a40-b2a8-3c8624e63544,PaaS
-6a0443f2-22fb-4a40-b2a8-3c8624e63544,Other Cloud: Hybrid/Private/On-prem virtualization
-e8aceb5f-e027-45f2-82fb-fd0eb8108b9d,SaaS
-e8aceb5f-e027-45f2-82fb-fd0eb8108b9d,Other Cloud: Hybrid/Private/On-prem virtualization
-e8aceb5f-e027-45f2-82fb-fd0eb8108b9d,IaaS
-8f03f11c-616e-46ca-a3da-ab21166a53d9,IaaS
-8f03f11c-616e-46ca-a3da-ab21166a53d9,SaaS
-8f03f11c-616e-46ca-a3da-ab21166a53d9,Other Cloud: Hybrid/Private/On-prem virtualization
-fe727d7b-22b7-4ab8-b217-7c3ecae5fdbe,
-2741a29e-ab76-4171-a01a-7fd5ffd8ec34,SaaS
-caeedf24-cfd2-4349-85c5-6a1f0f80f44f,Other Cloud: Hybrid/Private/On-prem virtualization
-caeedf24-cfd2-4349-85c5-6a1f0f80f44f,SaaS
-5f9c4334-b6c9-4997-b001-ad88c77baae7,SaaS
-5f9c4334-b6c9-4997-b001-ad88c77baae7,Other Cloud: Hybrid/Private/On-prem virtualization
-81bc0b2a-6765-4bd8-aa15-6339b26daf08,Other Cloud: Hybrid/Private/On-prem virtualization
-81bc0b2a-6765-4bd8-aa15-6339b26daf08,SaaS
-26a00ff6-469c-4552-b40a-d76ba2634162,SaaS
-26a00ff6-469c-4552-b40a-d76ba2634162,Other Cloud: Hybrid/Private/On-prem virtualization
-e93a5a11-7a06-4b69-9e45-bb803a93082c,IaaS
-e93a5a11-7a06-4b69-9e45-bb803a93082c,Other Cloud: Hybrid/Private/On-prem virtualization
-e93a5a11-7a06-4b69-9e45-bb803a93082c,SaaS
-e93a5a11-7a06-4b69-9e45-bb803a93082c,PaaS
-3d511f55-c30b-4a19-8080-c650719a73da,SaaS
-3d511f55-c30b-4a19-8080-c650719a73da,IaaS
-3d511f55-c30b-4a19-8080-c650719a73da,Other Cloud: Hybrid/Private/On-prem virtualization
-3d511f55-c30b-4a19-8080-c650719a73da,PaaS
-d0a903e8-e142-4f7a-934f-022ffbcb10a4,SaaS
-0dfce980-2589-4cac-bee0-90d51f8179c9,Other Cloud: Hybrid/Private/On-prem virtualization
-0dfce980-2589-4cac-bee0-90d51f8179c9,IaaS
-0dfce980-2589-4cac-bee0-90d51f8179c9,SaaS
-9aae35c7-e042-4a9e-9e2b-418958fe88eb,SaaS
-7c39bff0-3c84-4853-9d83-0d6bb87ec474,PaaS
-7c39bff0-3c84-4853-9d83-0d6bb87ec474,Other Cloud: Hybrid/Private/On-prem virtualization
-7c39bff0-3c84-4853-9d83-0d6bb87ec474,SaaS
-c5650435-5efa-4d85-ad6b-6ec0584aecc3,SaaS
-a7199f81-1cf5-4ec5-be54-2a7c47082113,Other Cloud: Hybrid/Private/On-prem virtualization
-a7199f81-1cf5-4ec5-be54-2a7c47082113,IaaS
-a7199f81-1cf5-4ec5-be54-2a7c47082113,SaaS
-7d0a1504-0e7d-4acd-87e4-735997892add,SaaS
-4d898b70-ab60-413c-ac93-088cd821a260,Other Cloud: Hybrid/Private/On-prem virtualization
-4d898b70-ab60-413c-ac93-088cd821a260,SaaS
-300be6a5-30dd-4ea5-aabb-eff2d8d1a572,Other Cloud: Hybrid/Private/On-prem virtualization
-300be6a5-30dd-4ea5-aabb-eff2d8d1a572,SaaS
-68bf8fe1-c234-47bf-96d1-ffef758e2a45,SaaS
-ededc560-d00f-4f1c-8ff1-c6799cf13d4e,Other Cloud: Hybrid/Private/On-prem virtualization
-ededc560-d00f-4f1c-8ff1-c6799cf13d4e,SaaS
-9c3d388a-afda-4559-a676-24fc52a1beb1,SaaS
-9c3d388a-afda-4559-a676-24fc52a1beb1,Other Cloud: Hybrid/Private/On-prem virtualization
-77bd6495-fe00-401b-9259-0e5f9a19f6b3,
-826b73db-d111-4619-9d85-481e721eb780,
-06f37015-c2a4-4879-996a-b803c0c60f15,
-1aec77ca-e1f0-41ab-8144-f39cc2b834be,
-8f69def6-6789-41ec-9b6f-0eb21de888be,SaaS
-e8b6b6c5-0a7b-4e07-8169-33d1170203fc,SaaS
-175124af-9ef8-4aa6-9d3e-3bcaca451d3d,SaaS
-1609a28b-ff57-4b0c-a168-cede904aecb9,Other Cloud: Hybrid/Private/On-prem virtualization
-3a6ddb7d-e233-4151-ac1e-abde91d3f19e,
-77f66152-92aa-4baf-86de-f36f9bb05bfb,
-0204f24e-7b59-4e82-8ef9-6e5efbeb5f06,SaaS
-0204f24e-7b59-4e82-8ef9-6e5efbeb5f06,PaaS
-0204f24e-7b59-4e82-8ef9-6e5efbeb5f06,IaaS
-0204f24e-7b59-4e82-8ef9-6e5efbeb5f06,Other Cloud: Hybrid/Private/On-prem virtualization
-d3c9f694-c175-4d9f-b285-a5d9f1361ede,Other Cloud: Hybrid/Private/On-prem virtualization
-d3c9f694-c175-4d9f-b285-a5d9f1361ede,SaaS
-3b3fef71-463b-467a-85d4-ade046b2ef3e,Other Cloud: Hybrid/Private/On-prem virtualization
-3b3fef71-463b-467a-85d4-ade046b2ef3e,SaaS
-3b3fef71-463b-467a-85d4-ade046b2ef3e,PaaS
-3b3fef71-463b-467a-85d4-ade046b2ef3e,IaaS
-3b1992c9-1e9a-49c4-8e37-828ff62eaf5d,SaaS
-7528d4c8-5e77-4fab-8aa7-5ef2390e16f2,SaaS
-a52605b3-d28e-4fde-9c8b-0d9bf1171b1a,SaaS
-a52605b3-d28e-4fde-9c8b-0d9bf1171b1a,Other Cloud: Hybrid/Private/On-prem virtualization
-2ceccb28-faab-4d1c-a478-7f3f08809427,
-b5944541-baa6-4483-b6ed-9856c3288b94,Other Cloud: Hybrid/Private/On-prem virtualization
-b5944541-baa6-4483-b6ed-9856c3288b94,SaaS
-8ad3ac13-1111-42b1-8dba-0569f616b8db,Other Cloud: Hybrid/Private/On-prem virtualization
-b5bbbf9c-115d-4009-bd69-485420977049,
-23dbf9ca-1398-41e8-8252-eeb61f68e6fc,
-028adea2-2f4f-4956-baf1-14c2ab41c901,
-c49a4196-817d-4bc3-a8fa-0f8400902a6c,SaaS
-41e3b9c3-d0a3-4106-aac3-87f0a61bad1b,PaaS
-41e3b9c3-d0a3-4106-aac3-87f0a61bad1b,Other Cloud: Hybrid/Private/On-prem virtualization
-41e3b9c3-d0a3-4106-aac3-87f0a61bad1b,SaaS
-41e3b9c3-d0a3-4106-aac3-87f0a61bad1b,IaaS
-5725f1f7-1ffe-4829-84ab-648edef60ff2,SaaS
-c3b5c03b-607e-49ff-bdc6-f37c6b855492,SaaS
-741961ca-999a-4db1-9176-53d8e844382c,SaaS
-a620699b-625d-4165-b067-0c3caf6593b7,SaaS
-70d0cbbc-25f3-48d0-8961-394bb332d865,
-6d99b432-be60-4866-8d55-fed4e72e0d98,SaaS
-db9b7847-865b-40ce-a8dd-869f227cad7d,Other Cloud: Hybrid/Private/On-prem virtualization
-db9b7847-865b-40ce-a8dd-869f227cad7d,SaaS
-3a30762e-0b95-43c1-aca6-1007c6976072,SaaS
-3a30762e-0b95-43c1-aca6-1007c6976072,IaaS
-3a30762e-0b95-43c1-aca6-1007c6976072,Other Cloud: Hybrid/Private/On-prem virtualization
-53aaaf79-5681-418e-b1c5-c296766769f8,Other Cloud: Hybrid/Private/On-prem virtualization
-53aaaf79-5681-418e-b1c5-c296766769f8,SaaS
-335ab783-5f52-4d81-b15a-0f7bdb993621,SaaS
-335ab783-5f52-4d81-b15a-0f7bdb993621,IaaS
-2c0159b5-2414-47c0-841b-c1a7a42ee05e,
-fd4da31c-18bd-4207-affa-22d8fde3749c,
-327e5f7c-72df-4d58-8f4f-7f3bdd29d561,
-e4847f08-9322-47c0-ba81-7e7da37e87ad,SaaS
-efa7e88e-60f6-4848-8cc4-8c82993caab1,SaaS
-efa7e88e-60f6-4848-8cc4-8c82993caab1,Other Cloud: Hybrid/Private/On-prem virtualization
-29a2e204-860d-4f3d-adec-1320d6a0a205,
-74b3fb6f-30d4-4a9d-a83c-55d716c7c654,SaaS
-46e3badf-ea82-44b7-8ccb-6f41ba06cf8d,SaaS
-0c264981-9981-4efe-a24a-c7714486ae84,SaaS
-0c264981-9981-4efe-a24a-c7714486ae84,Other Cloud: Hybrid/Private/On-prem virtualization
-857b8a28-36f5-46f2-9c7c-6650e8782053,SaaS
-d7a548b6-8a3d-41c8-a6cd-b6ee0579460b,SaaS
-d7a548b6-8a3d-41c8-a6cd-b6ee0579460b,Other Cloud: Hybrid/Private/On-prem virtualization
-2536f007-737b-4b4d-86ce-542e7fc0bb41,
-d19494bb-816a-4ea8-ae86-09f9b444bc12,SaaS
-4d8ef48c-d000-4c63-a422-af6c7231cb6d,SaaS
-41836e87-6729-44a2-ab1e-a7ff4ba9eb13,
-a721fd58-f980-4bf4-aa9d-79e7e531e668,SaaS
-a38e6221-f5ec-4ee5-9fd1-0b62815d876c,SaaS
-a38e6221-f5ec-4ee5-9fd1-0b62815d876c,IaaS
-a38e6221-f5ec-4ee5-9fd1-0b62815d876c,PaaS
-d9c75fcf-77fc-4e07-bd40-3533e24c91ae,
-ebe80f50-db2c-403c-80d1-e49639349c9a,
-89360c7b-fa3e-45e3-8cc3-b8ba504bc36c,IaaS
-89360c7b-fa3e-45e3-8cc3-b8ba504bc36c,SaaS
-89360c7b-fa3e-45e3-8cc3-b8ba504bc36c,PaaS
-eac8ba74-08b5-4238-a343-d45afe398367,SaaS
-17cd880a-f0e1-4c38-b661-e6bced6f59d5,SaaS
-17cd880a-f0e1-4c38-b661-e6bced6f59d5,Other Cloud: Hybrid/Private/On-prem virtualization
-ba3a2449-e2ec-480b-a8ea-e0c44e897b70,Other Cloud: Hybrid/Private/On-prem virtualization
-ba3a2449-e2ec-480b-a8ea-e0c44e897b70,SaaS
-73b7f1ba-e399-44ff-9b04-23b04cdc49cc,
-c3425367-3e7c-4f8e-9332-645e00d4b138,SaaS
-461a4548-2ab5-41cb-b280-24447694e8e2,Other Cloud: Hybrid/Private/On-prem virtualization
-461a4548-2ab5-41cb-b280-24447694e8e2,SaaS
-f5bde581-4ef6-4d69-bca6-714c54b879cb,SaaS
-7874741f-eb62-4b59-bfe9-f6a535dcaa76,
-ec913ccf-1bb5-4738-aedc-24a93b479fac,SaaS
-9acb419f-1900-4f8e-b9f0-8c59074744e6,
-64e6cd23-31b2-4f7f-8d5f-8d97a037aa1d,
-9c38d7da-dea1-49ec-acd3-70bb6e33eb60,
-6fe1272d-24be-43a8-9586-2784fc56dd45,SaaS
-e53511f3-b9ef-4327-a5a4-67547680cbe5,SaaS
-aa672e53-8587-4da4-89a7-228371758bd2,IaaS
-23bfb059-e8d3-46dc-b741-210b04f8ee58,
-b0d9089b-5ddd-4d4b-8d24-5d65c063074b,
-2799c605-a963-4ae9-88ed-c0110bea40d5,
-10cf70a1-a832-4b7f-9441-e4d153c1d0a9,
-a3656ab0-e778-4b1e-a940-656b546ad82e,SaaS
-a3656ab0-e778-4b1e-a940-656b546ad82e,Other Cloud: Hybrid/Private/On-prem virtualization
-17784275-a496-4cd0-b519-5d702bf2d3c9,
-8d36184a-9906-48d4-b50c-81abe582f9d5,SaaS
-8d36184a-9906-48d4-b50c-81abe582f9d5,Other Cloud: Hybrid/Private/On-prem virtualization
-85dea87f-3934-4e16-9f1d-066c48c91054,SaaS
-85dea87f-3934-4e16-9f1d-066c48c91054,Other Cloud: Hybrid/Private/On-prem virtualization
-52fa6aa6-a8a4-411f-a825-9ac82e32f988,PaaS
-52fa6aa6-a8a4-411f-a825-9ac82e32f988,SaaS
-52fa6aa6-a8a4-411f-a825-9ac82e32f988,IaaS
-52fa6aa6-a8a4-411f-a825-9ac82e32f988,Other Cloud: Hybrid/Private/On-prem virtualization
-aa98fb34-369b-4e67-a2bb-663777123eb8,
-06bf842e-9d35-4ad1-863a-c25c9e99a64d,SaaS
-478dff78-9c28-4df6-8650-53645aac1339,IaaS
-478dff78-9c28-4df6-8650-53645aac1339,PaaS
-478dff78-9c28-4df6-8650-53645aac1339,Other Cloud: Hybrid/Private/On-prem virtualization
-478dff78-9c28-4df6-8650-53645aac1339,SaaS
-29c108de-8e61-4c7f-96b6-81e1c92d5661,SaaS
-29c108de-8e61-4c7f-96b6-81e1c92d5661,IaaS
-29c108de-8e61-4c7f-96b6-81e1c92d5661,Other Cloud: Hybrid/Private/On-prem virtualization
-7a5d6634-2a09-493e-b4e3-7fb4ba58b572,
-45b64b08-5fa8-4d08-8ef5-01cea6e10a0c,SaaS
-45b64b08-5fa8-4d08-8ef5-01cea6e10a0c,Other Cloud: Hybrid/Private/On-prem virtualization
-03ff854b-664d-42b0-8763-dcf72ec55077,SaaS
-03ff854b-664d-42b0-8763-dcf72ec55077,Other Cloud: Hybrid/Private/On-prem virtualization
-845eaed8-657b-46f9-8916-87c7d50796ac,SaaS
-845eaed8-657b-46f9-8916-87c7d50796ac,Other Cloud: Hybrid/Private/On-prem virtualization
-13ec6cd9-253a-4a8a-b912-7013c3a5ac44,Other Cloud: Hybrid/Private/On-prem virtualization
-13ec6cd9-253a-4a8a-b912-7013c3a5ac44,SaaS
-700eac4e-74c5-4564-a685-9f68c167ba25,IaaS
-700eac4e-74c5-4564-a685-9f68c167ba25,PaaS
-700eac4e-74c5-4564-a685-9f68c167ba25,SaaS
-700eac4e-74c5-4564-a685-9f68c167ba25,Other Cloud: Hybrid/Private/On-prem virtualization
-4b2dd836-1221-49dc-9872-16498208f0d4,SaaS
-63074996-348c-4e06-9c70-11a17ec3b839,Other Cloud: Hybrid/Private/On-prem virtualization
-63074996-348c-4e06-9c70-11a17ec3b839,SaaS
-e47e7f27-ef61-4574-a927-4fa5684e4e29,Other Cloud: Hybrid/Private/On-prem virtualization
-e47e7f27-ef61-4574-a927-4fa5684e4e29,IaaS
-e47e7f27-ef61-4574-a927-4fa5684e4e29,PaaS
-e47e7f27-ef61-4574-a927-4fa5684e4e29,SaaS
-34833234-9e3a-458c-8476-4e065765c01d,
-da863803-0179-4e9e-ab3c-0236898acfe6,
-0420bccd-2820-4e5c-8485-151268f7be14,
-32143ca8-1351-4e4d-9c33-d5d979df98a0,
-12724593-d111-4dc9-8c59-b355a20c8711,SaaS
-81dbec79-d140-42a3-8864-4d16e4bacd82,SaaS
-08344bb1-25f8-4e45-a892-08344e9dcf39,Other Cloud: Hybrid/Private/On-prem virtualization
-08344bb1-25f8-4e45-a892-08344e9dcf39,SaaS
-db7c64c8-9171-47e6-a438-badd3babfe71,
-d2fbcfd4-805b-444c-8004-f60fc6ab0352,Other Cloud: Hybrid/Private/On-prem virtualization
-838b6f69-6666-4374-b4bc-34a00b7e5a89,
-486e4d94-82b7-4897-9b03-cac8ca2086a1,Other Cloud: Hybrid/Private/On-prem virtualization
-486e4d94-82b7-4897-9b03-cac8ca2086a1,PaaS
-486e4d94-82b7-4897-9b03-cac8ca2086a1,IaaS
-486e4d94-82b7-4897-9b03-cac8ca2086a1,SaaS
-15914ebd-4f8c-400e-a0d1-81adbd8fc171,SaaS
-15914ebd-4f8c-400e-a0d1-81adbd8fc171,Other Cloud: Hybrid/Private/On-prem virtualization
-15914ebd-4f8c-400e-a0d1-81adbd8fc171,IaaS
-52c33a3b-e103-4df3-8f5c-9bb6e95f8c20,
-63973d78-a3e5-46ab-8cf7-6c9fb7841a69,Other Cloud: Hybrid/Private/On-prem virtualization
-63973d78-a3e5-46ab-8cf7-6c9fb7841a69,SaaS
-fd8f25fe-721a-4d7a-a0f5-d8653dd96d24,Other Cloud: Hybrid/Private/On-prem virtualization
-fd8f25fe-721a-4d7a-a0f5-d8653dd96d24,SaaS
-966901d8-7cf6-4d8c-a6ad-c74e0e561432,
-c4e69e95-c9f2-4ef1-bb78-1bcc8ee22495,SaaS
-c4e69e95-c9f2-4ef1-bb78-1bcc8ee22495,IaaS
-c4e69e95-c9f2-4ef1-bb78-1bcc8ee22495,Other Cloud: Hybrid/Private/On-prem virtualization
-f81fabb7-4e7e-4cfd-8bcf-3dd831393a27,Other Cloud: Hybrid/Private/On-prem virtualization
-f81fabb7-4e7e-4cfd-8bcf-3dd831393a27,SaaS
-f81fabb7-4e7e-4cfd-8bcf-3dd831393a27,IaaS
-f81fabb7-4e7e-4cfd-8bcf-3dd831393a27,PaaS
-9c9547b5-e7d9-4aa4-aa3f-518b049b7d37,SaaS
-9c9547b5-e7d9-4aa4-aa3f-518b049b7d37,Other Cloud: Hybrid/Private/On-prem virtualization
-85e04c6a-6d41-424a-8b1c-8549947d7ce5,SaaS
-85e04c6a-6d41-424a-8b1c-8549947d7ce5,PaaS
-85e04c6a-6d41-424a-8b1c-8549947d7ce5,Other Cloud: Hybrid/Private/On-prem virtualization
-369e7675-152b-4276-92a5-d0f17f07c1ab,
-84e8a57a-2e49-43c8-b60a-809fa955685c,SaaS
-dc8f6486-ded5-41db-8211-09ea08a4f3fc,Other Cloud: Hybrid/Private/On-prem virtualization
-48dd6f70-c624-4773-823f-3139de10e143,IaaS
-48dd6f70-c624-4773-823f-3139de10e143,Other Cloud: Hybrid/Private/On-prem virtualization
-48dd6f70-c624-4773-823f-3139de10e143,SaaS
-d78b6b69-cadb-4cc9-81af-1b432a28e9a6,
-57999d1f-3748-4ba3-bbe4-254aa6102871,SaaS
-3c6e52ef-fff3-4891-94f1-063736a3c50e,
-d61e9394-fe3a-4231-a563-4838785b158b,
-e4f94a9c-85bd-417a-807e-1da76d0051f9,PaaS
-e4f94a9c-85bd-417a-807e-1da76d0051f9,IaaS
-e4f94a9c-85bd-417a-807e-1da76d0051f9,SaaS
-13ea9612-80f5-43ed-8a9f-bb02ee2d5b89,PaaS
-13ea9612-80f5-43ed-8a9f-bb02ee2d5b89,SaaS
-13ea9612-80f5-43ed-8a9f-bb02ee2d5b89,Other Cloud: Hybrid/Private/On-prem virtualization
-13ea9612-80f5-43ed-8a9f-bb02ee2d5b89,IaaS
-e4c769ed-4563-48b1-9a54-7d87e5dbd0a4,SaaS
-741678f6-588a-4288-8686-a5327434ced4,SaaS
-741678f6-588a-4288-8686-a5327434ced4,IaaS
-8b11b074-702e-4969-a175-324dbd225c91,PaaS
-8b11b074-702e-4969-a175-324dbd225c91,Other Cloud: Hybrid/Private/On-prem virtualization
-8b11b074-702e-4969-a175-324dbd225c91,SaaS
-8b11b074-702e-4969-a175-324dbd225c91,IaaS
-073027cc-6f6f-42c6-9fde-dfdfe27dd7a7,
-c14e3a5f-2d38-4b26-af2e-f318e73203b1,
-4f64270c-6925-49fc-a67e-dbfa2e5bbc0b,SaaS
-648d4f4b-15b1-434c-bc5e-22e3ac6fac90,
-4b815000-fc8c-48af-b5bc-c8b8cb59379e,
-e65aaeff-bfa0-4863-bc8c-8120727b4a10,
-af0b47c2-1493-481b-9d71-94e7e59772e5,
-6421dde1-87af-408e-8625-85ce01e629d3,SaaS
-6421dde1-87af-408e-8625-85ce01e629d3,Other Cloud: Hybrid/Private/On-prem virtualization
-a31e3174-9ebe-4ea4-8d30-74fdfeb1c5e0,
-951d3972-6d15-4b07-8931-5b1712cebe65,SaaS
-7c021955-9f43-44c1-a394-350481c76e8d,SaaS
-7c021955-9f43-44c1-a394-350481c76e8d,Other Cloud: Hybrid/Private/On-prem virtualization
-9aa93f9b-f83b-406e-b069-c201959b8d2a,
-dd239c91-74a7-43c4-9dc2-ab8d9c58f746,SaaS
-72b91c7d-dbc5-4a18-ad7b-1e665f92aa8a,SaaS
-52124a3c-9ffd-4b4e-a2d7-ef7d2658d8cc,IaaS
-52124a3c-9ffd-4b4e-a2d7-ef7d2658d8cc,Other Cloud: Hybrid/Private/On-prem virtualization
-52124a3c-9ffd-4b4e-a2d7-ef7d2658d8cc,PaaS
-52124a3c-9ffd-4b4e-a2d7-ef7d2658d8cc,SaaS
-70e96a01-40fe-40f9-a862-c875a2ab4c02,Other Cloud: Hybrid/Private/On-prem virtualization
-956bc123-1d01-430c-9ec8-5c48b6c7dc16,
-17d27d90-73f7-4627-afff-6a9267692a44,Other Cloud: Hybrid/Private/On-prem virtualization
-dfc08082-17ae-4b4a-9dfa-756d3ce410c4,
-6f445e9f-9fc0-4f1c-a814-fbac090a32f6,
-37e84cc0-7230-4aa1-867a-53f75d199279,
-aaa9fafe-7066-4214-8716-90eee997412b,
-4a09fa20-5c42-4746-82be-138586d495b2,IaaS
-4a09fa20-5c42-4746-82be-138586d495b2,SaaS
-4a09fa20-5c42-4746-82be-138586d495b2,Other Cloud: Hybrid/Private/On-prem virtualization
-85f8bea7-0c4b-4362-a192-086800ef6a3b,SaaS
-e47bf233-4fe8-4d8d-a951-bb29065550eb,SaaS
-1d3f09d8-86c6-42f0-b56c-8d6b7581b664,
-6b2be88e-949e-49cb-897d-9da191d36326,PaaS
-6b2be88e-949e-49cb-897d-9da191d36326,SaaS
-6b2be88e-949e-49cb-897d-9da191d36326,IaaS
-0aec5e44-d232-495c-9777-9a2461965876,Other Cloud: Hybrid/Private/On-prem virtualization
-0aec5e44-d232-495c-9777-9a2461965876,SaaS
-5584654e-68b6-4707-8a53-4e050aec4ce6,SaaS
-5584654e-68b6-4707-8a53-4e050aec4ce6,Other Cloud: Hybrid/Private/On-prem virtualization
-4cc44636-e715-4d0e-a31b-2bc09c426640,SaaS
-4cc44636-e715-4d0e-a31b-2bc09c426640,Other Cloud: Hybrid/Private/On-prem virtualization
-4cc44636-e715-4d0e-a31b-2bc09c426640,IaaS
-df4fa295-c528-4503-96c0-088bc0a46e96,IaaS
-df4fa295-c528-4503-96c0-088bc0a46e96,SaaS
-df4fa295-c528-4503-96c0-088bc0a46e96,PaaS
-df4fa295-c528-4503-96c0-088bc0a46e96,Other Cloud: Hybrid/Private/On-prem virtualization
-33c1c8c7-8115-4e1e-b92d-826f0169b76b,
-ae2ecf7d-56e7-47f5-8bbd-0683a31449af,
-d3b96d1e-4d57-40db-981c-decd2ea89cb6,SaaS
-0f4d9ede-fb56-4825-9d27-4572611cd615,SaaS
-0f4d9ede-fb56-4825-9d27-4572611cd615,Other Cloud: Hybrid/Private/On-prem virtualization
-dca7f2d3-381f-4bea-8b26-184607787f66,Other Cloud: Hybrid/Private/On-prem virtualization
-dca7f2d3-381f-4bea-8b26-184607787f66,SaaS
-4d9a3793-7a64-4026-b8ef-4971ea626cc4,
-0aecd191-acaa-4120-b352-4c581f30f6f5,Other Cloud: Hybrid/Private/On-prem virtualization
-f54b662f-db08-4bc5-b5c4-d6ceb90374d2,Other Cloud: Hybrid/Private/On-prem virtualization
-b04202be-5505-4ecc-a0a1-60ad5498ff72,SaaS
-6e87cd6a-f91e-441d-82e1-f2042965ce03,PaaS
-6e87cd6a-f91e-441d-82e1-f2042965ce03,SaaS
-6e87cd6a-f91e-441d-82e1-f2042965ce03,IaaS
-88d874d9-bc0f-48b6-8ee4-ad91fc5a9940,
-510b7546-a035-4f2d-9550-f9b6ca338bb2,Other Cloud: Hybrid/Private/On-prem virtualization
-bf918959-5b22-4c71-84c8-7f95045dab26,SaaS
-629effad-60b8-4c47-b2f5-e51046b0c75e,SaaS
-51dbd2e0-5350-4c13-aa68-f0134f5017e2,Other Cloud: Hybrid/Private/On-prem virtualization
-57be648b-0eb7-482d-958d-48c704e38878,Other Cloud: Hybrid/Private/On-prem virtualization
-57be648b-0eb7-482d-958d-48c704e38878,PaaS
-57be648b-0eb7-482d-958d-48c704e38878,SaaS
-57be648b-0eb7-482d-958d-48c704e38878,IaaS
-221c0360-66d2-4574-a7f0-b0b159c18edb,Other Cloud: Hybrid/Private/On-prem virtualization
-83812d62-2fae-4e03-80bf-58ff7a8cd7cb,
-f0fa2614-f9c5-43bd-939d-6c04314f18f3,
-cabceb85-f467-42a2-88d9-1fa5b097739d,
-2d7ed934-2da5-4865-8e41-84cad2494f27,Other Cloud: Hybrid/Private/On-prem virtualization
-d4580609-411e-46ec-8af5-5e6ad2c564f8,SaaS
-d4580609-411e-46ec-8af5-5e6ad2c564f8,IaaS
-d4580609-411e-46ec-8af5-5e6ad2c564f8,Other Cloud: Hybrid/Private/On-prem virtualization
-2e2aef90-d45d-4c95-824d-d75e3685c1ec,SaaS
-2e2aef90-d45d-4c95-824d-d75e3685c1ec,Other Cloud: Hybrid/Private/On-prem virtualization
-14c520ab-2801-4d9d-955b-cc98897f1e5f,Other Cloud: Hybrid/Private/On-prem virtualization
-cbab24bb-186b-45e1-85de-6e123a5e4d07,IaaS
-cbab24bb-186b-45e1-85de-6e123a5e4d07,SaaS
-56e796e4-620b-48fb-85cd-f0a9236699e8,IaaS
-56e796e4-620b-48fb-85cd-f0a9236699e8,SaaS
-f192f53c-190a-4ca8-900a-bb9b788b6b90,Other Cloud: Hybrid/Private/On-prem virtualization
-f192f53c-190a-4ca8-900a-bb9b788b6b90,SaaS
-976dc8bc-8cad-4b88-acd3-4711f1e4fa0e,
-cd89846c-342c-4cac-ac35-d04d191fa421,Other Cloud: Hybrid/Private/On-prem virtualization
-cd89846c-342c-4cac-ac35-d04d191fa421,SaaS
-37a14a65-4a73-445a-9759-85206970d3da,Other Cloud: Hybrid/Private/On-prem virtualization
-07fa7c06-7ddb-4242-b895-2bb4d932d6a3,
-9b45ef76-cc12-4570-8757-22458e740ce5,SaaS
-64d29148-757b-474a-8c77-78f8e83afa2a,
-ee4986d9-40a8-4604-90ea-97c10bab7b7d,SaaS
-d1f7d1a3-1561-4743-a0e9-a11beb732a5b,
-42af1dab-8d59-4e85-ba75-ab16fdf3342d,SaaS
-7133803e-b33a-4c86-a03b-e36b7db3d821,SaaS
-c2dc1495-daa3-4d05-a2fc-25d1627a30c3,SaaS
-836dcc91-b72f-40e8-819f-94b716bb1fae,Other Cloud: Hybrid/Private/On-prem virtualization
-836dcc91-b72f-40e8-819f-94b716bb1fae,SaaS
-aa725647-ad86-49b2-8e7b-8ffc9e1e023b,SaaS
-2243662a-050d-473f-87a7-ce7a5fdc93d7,SaaS
-a0dd8b14-aa2d-425d-942c-df2f53b82b69,SaaS
-a0dd8b14-aa2d-425d-942c-df2f53b82b69,Other Cloud: Hybrid/Private/On-prem virtualization
-f27d5ebe-a8cb-4259-bb02-06a4227142fc,
-674c0933-7e56-4231-a916-c9de5b9f81a4,SaaS
-674c0933-7e56-4231-a916-c9de5b9f81a4,PaaS
-674c0933-7e56-4231-a916-c9de5b9f81a4,IaaS
-674c0933-7e56-4231-a916-c9de5b9f81a4,Other Cloud: Hybrid/Private/On-prem virtualization
-7de44966-bc03-4006-9a9c-3473dbde1eaf,Other Cloud: Hybrid/Private/On-prem virtualization
-7de44966-bc03-4006-9a9c-3473dbde1eaf,IaaS
-7de44966-bc03-4006-9a9c-3473dbde1eaf,SaaS
-088256ce-a753-4be6-b524-bb1304a2dcdb,Other Cloud: Hybrid/Private/On-prem virtualization
-088256ce-a753-4be6-b524-bb1304a2dcdb,SaaS
-a17a8a28-e43b-43e1-adaf-51de084315de,SaaS
-a17a8a28-e43b-43e1-adaf-51de084315de,Other Cloud: Hybrid/Private/On-prem virtualization
-5e2e2990-b6fa-4e2c-a9ce-2d57ead693e3,
-bbe5b2c8-c93d-493c-ad8a-5999eef3509c,SaaS
-dde28212-ab02-4da2-9b43-ac37bb518e51,Other Cloud: Hybrid/Private/On-prem virtualization
-b0a5ad1e-9ef2-49d5-8080-969795faacc3,Other Cloud: Hybrid/Private/On-prem virtualization
-b0a5ad1e-9ef2-49d5-8080-969795faacc3,IaaS
-b0a5ad1e-9ef2-49d5-8080-969795faacc3,SaaS
-b0a5ad1e-9ef2-49d5-8080-969795faacc3,PaaS
-24fdfe4c-2e03-4f29-a132-b64337720cea,SaaS
-32606beb-2f7c-44b0-875c-59c7edc34d45,SaaS
-ca1d6678-b34f-44ed-b6f1-c19acb51219b,Other Cloud: Hybrid/Private/On-prem virtualization
-afe09da6-33e8-4ca0-bada-8cd65e102a54,
-aa42a1c3-66d0-40d3-aa0e-113fbe28b64f,Other Cloud: Hybrid/Private/On-prem virtualization
-aa42a1c3-66d0-40d3-aa0e-113fbe28b64f,SaaS
-f589ad82-65aa-47f6-86ec-ea2aff981563,SaaS
-f589ad82-65aa-47f6-86ec-ea2aff981563,Other Cloud: Hybrid/Private/On-prem virtualization
-8b70ad64-08be-421d-9262-a469a310c09e,
-035f650b-9da9-4316-9db0-6178fbf5ee66,SaaS
-e6456e30-3907-4570-b1d5-fd3b0a27a155,
-9b6a9566-3f3d-4855-92a5-12576805bf7e,IaaS
-45f9e8f9-c7c8-4d0e-94e4-8557509b7b7b,Other Cloud: Hybrid/Private/On-prem virtualization
-45f9e8f9-c7c8-4d0e-94e4-8557509b7b7b,SaaS
-f6bb0b84-1931-4a1d-b32c-b856f23478e3,SaaS
-654c9766-f781-4ee4-bb8d-1970a629519f,SaaS
-9227d4fa-ae68-4e64-a6ee-484368208a56,Other Cloud: Hybrid/Private/On-prem virtualization
-88d2edae-cc3b-4996-beae-26e642a25b65,SaaS
-087b4d0a-f3e2-41a7-b062-f9832de7a8b1,SaaS
-8f036fb9-bbd7-439c-9838-b400370d1916,SaaS
-7f830e2c-791b-4318-8b4f-c964375dc70b,SaaS
-7f830e2c-791b-4318-8b4f-c964375dc70b,IaaS
-7f830e2c-791b-4318-8b4f-c964375dc70b,PaaS
-36c86fd8-5018-405d-b62f-419f2561f4f9,Other Cloud: Hybrid/Private/On-prem virtualization
-36c86fd8-5018-405d-b62f-419f2561f4f9,SaaS
-d44e81d0-21f8-4aa9-ab44-e11e08507089,SaaS
-3cf72b3b-13d2-465d-a4d9-8ae89d04fade,Other Cloud: Hybrid/Private/On-prem virtualization
-3cf72b3b-13d2-465d-a4d9-8ae89d04fade,SaaS
-3cf72b3b-13d2-465d-a4d9-8ae89d04fade,IaaS
-c153c559-e05c-4f60-a6e3-1845c238d2a5,Other Cloud: Hybrid/Private/On-prem virtualization
-c153c559-e05c-4f60-a6e3-1845c238d2a5,IaaS
-c153c559-e05c-4f60-a6e3-1845c238d2a5,SaaS
-cca34af4-426f-4700-83d4-75a0ae823d9e,Other Cloud: Hybrid/Private/On-prem virtualization
-cca34af4-426f-4700-83d4-75a0ae823d9e,SaaS
-b77be2cb-4b3e-473e-9049-d319f99685c8,PaaS
-b77be2cb-4b3e-473e-9049-d319f99685c8,SaaS
-b77be2cb-4b3e-473e-9049-d319f99685c8,IaaS
-b77be2cb-4b3e-473e-9049-d319f99685c8,Other Cloud: Hybrid/Private/On-prem virtualization
-b71511a6-8ceb-47a7-88a2-b45e6afd88fb,
-68b60089-87cd-4745-aedd-4664c13d284b,SaaS
-499ac776-f89f-4eb3-923d-b06fcab675e3,IaaS
-499ac776-f89f-4eb3-923d-b06fcab675e3,SaaS
-5f285ca4-0ba2-487f-b2a6-9be87b606df2,IaaS
-a53fad86-ce75-48de-a3e7-c0a4f99a72af,SaaS
-a53fad86-ce75-48de-a3e7-c0a4f99a72af,Other Cloud: Hybrid/Private/On-prem virtualization
-6b34263b-0216-4526-9b9a-fbffeb5ec6d6,
-188814e7-e098-41dc-87d4-02fc92cb1814,
-1094bd8e-21bf-430c-891c-8a1439c58857,
-27121486-e4b2-41ae-a6f4-faace30a1a67,SaaS
-32db7882-5f17-4fe6-a5bc-8a8f21ff4834,
-9cfb4339-37b8-496a-bd75-225c20532f13,Other Cloud: Hybrid/Private/On-prem virtualization
-9cfb4339-37b8-496a-bd75-225c20532f13,SaaS
-6f1471ce-c6bb-483b-83a7-2dc1b6db72ca,
-0bc77f4c-b338-404a-a314-a5a46dcc0198,SaaS
-5dbc0b04-4487-41ab-be3e-60a09142487d,
-e5f51e14-883a-47fe-b6bc-e594bdf63ceb,
-772a6b79-231d-470f-97a6-f765c12bfadd,SaaS
-814f535f-f55b-4855-9ab8-8a8321cb7934,
-d89da4ca-3ab2-4035-9eef-9b9017e0d229,
-2a6b1c31-9214-4145-aaed-f778855a1a39,SaaS
-8f7f9e76-aeeb-412f-a032-a614bf3716d2,
-5417558c-852b-41f6-9c25-7c576a72e65a,Other Cloud: Hybrid/Private/On-prem virtualization
-5417558c-852b-41f6-9c25-7c576a72e65a,SaaS
-3ecc3be1-c20e-4213-a78f-90ca755db3aa,PaaS
-3ecc3be1-c20e-4213-a78f-90ca755db3aa,SaaS
-3ecc3be1-c20e-4213-a78f-90ca755db3aa,IaaS
-3ecc3be1-c20e-4213-a78f-90ca755db3aa,Other Cloud: Hybrid/Private/On-prem virtualization
-c881334e-7a89-4b8f-a142-b0e364f3ae9d,
-0321eb13-bd5b-4daa-8c0b-060cf628c239,
-f47754db-8804-407d-8743-dc6bbf982166,SaaS
-e363eaa4-b110-492e-b7c3-6b080d3463cd,
-bad1a411-e54f-4957-85e3-7d61014a46e0,SaaS
-3ab69b3c-4954-4436-904e-0be36b56554b,SaaS
-3ab69b3c-4954-4436-904e-0be36b56554b,Other Cloud: Hybrid/Private/On-prem virtualization
-90412103-924b-432f-813a-44273efe4ac4,
-1376d229-b2be-40cb-b794-bb4201f09914,
-fdaa791d-f275-40e2-95d3-924d5388888c,
-d48d61c9-fe55-45df-9838-603457fac8c8,Other Cloud: Hybrid/Private/On-prem virtualization
-b8eb9516-e470-41da-985d-930650d8b058,
-62f4cc6b-bc87-4e49-92f6-54c47983c307,
-b1e2ab2b-46ff-4370-a618-71cc870f1974,Other Cloud: Hybrid/Private/On-prem virtualization
-b1e2ab2b-46ff-4370-a618-71cc870f1974,SaaS
-92145eec-489c-49f3-ac59-7a2a2efd90e9,SaaS
-92145eec-489c-49f3-ac59-7a2a2efd90e9,Other Cloud: Hybrid/Private/On-prem virtualization
-c0c55520-8ef5-49c5-ad53-b343eb83cf4b,
-cf7f3a40-ba96-4a82-bc16-4a202584d332,SaaS
-cf7f3a40-ba96-4a82-bc16-4a202584d332,Other Cloud: Hybrid/Private/On-prem virtualization
-8ada2835-7e94-42d3-bc35-93a6472279ba,Other Cloud: Hybrid/Private/On-prem virtualization
-8ada2835-7e94-42d3-bc35-93a6472279ba,SaaS
-5b2550c5-546d-4728-a65c-5afe87936d70,Other Cloud: Hybrid/Private/On-prem virtualization
-5b2550c5-546d-4728-a65c-5afe87936d70,IaaS
-5b2550c5-546d-4728-a65c-5afe87936d70,SaaS
-fd17acc5-2263-4235-8490-2d164b94a920,SaaS
-6ad9827f-39ab-4b22-9d2b-b1a5a87b8898,SaaS
-6ad9827f-39ab-4b22-9d2b-b1a5a87b8898,Other Cloud: Hybrid/Private/On-prem virtualization
-b29972d2-6d27-42c2-a35e-40c5ee65caec,Other Cloud: Hybrid/Private/On-prem virtualization
-b29972d2-6d27-42c2-a35e-40c5ee65caec,SaaS
-1d933329-c4c9-417a-b505-a42f083c6e2a,SaaS
-0f75332f-d969-4a3e-952b-4fe05712871b,
-c476446c-6a0f-473b-b02c-370279a18587,
-c1bae1d2-9165-45b4-b6d2-f98397b68b2f,PaaS
-c1bae1d2-9165-45b4-b6d2-f98397b68b2f,IaaS
-c1bae1d2-9165-45b4-b6d2-f98397b68b2f,SaaS
-389b6095-ec15-4f60-9726-d083e390b6cd,Other Cloud: Hybrid/Private/On-prem virtualization
-389b6095-ec15-4f60-9726-d083e390b6cd,SaaS
-74ec7949-be47-4bb6-be2c-9998ac4b5b25,
-71148304-040c-4aa4-a862-63c755f1feeb,SaaS
-a325aa4f-6632-4306-8024-912ac8f34921,SaaS
-7965705f-5390-461c-9e9d-7691ada8b590,SaaS
-1ae358a9-7c32-41a3-bae3-69ebe771c430,SaaS
-fdfd0c88-1667-4404-8b59-fbcc5422f7cf,SaaS
-a0e9af5e-494f-413e-9009-5ed320f6b493,SaaS
-72b9e005-0edc-4c59-aa50-75201f27bf66,SaaS
-8df5d3dc-aa97-461b-9781-6fbfe87ea318,Other Cloud: Hybrid/Private/On-prem virtualization
-8df5d3dc-aa97-461b-9781-6fbfe87ea318,SaaS
-995feb4a-231e-4c7b-9be1-7aaa40c0f4b8,SaaS
-6ad81ec5-62e6-4675-a854-aac21ea11809,IaaS
-6ad81ec5-62e6-4675-a854-aac21ea11809,Other Cloud: Hybrid/Private/On-prem virtualization
-6ad81ec5-62e6-4675-a854-aac21ea11809,SaaS
-766067df-d01e-41a0-91b8-8e9b431cad4d,Other Cloud: Hybrid/Private/On-prem virtualization
-766067df-d01e-41a0-91b8-8e9b431cad4d,SaaS
-d5cc86e9-c8b0-4089-a25b-4eeea74dd18f,PaaS
-d5cc86e9-c8b0-4089-a25b-4eeea74dd18f,SaaS
-d5cc86e9-c8b0-4089-a25b-4eeea74dd18f,IaaS
-f4cb1967-4f24-4f1b-9323-3a0e4ba39a3a,
-08f2df2a-d297-418e-8dca-eec6a4bf0fd7,
-2edf097e-2dd3-4cb9-90da-acdec1b1547d,IaaS
-1a99fa1f-a4e6-4b09-9167-2fa7bfb5b819,IaaS
-1a99fa1f-a4e6-4b09-9167-2fa7bfb5b819,SaaS
-1a99fa1f-a4e6-4b09-9167-2fa7bfb5b819,Other Cloud: Hybrid/Private/On-prem virtualization
-88cb3225-cc57-47fc-9caa-9a66a78f3795,Other Cloud: Hybrid/Private/On-prem virtualization
-88cb3225-cc57-47fc-9caa-9a66a78f3795,SaaS
-bbb069f8-2476-4586-a534-0677ba2729f2,
-ad2bdaf7-33e9-41b0-be59-d68f45c914e4,SaaS
-f6aff760-356b-4efc-be1d-6066a70f4dd9,
-e7177807-5059-4944-a710-1f5945413eee,
-8b85bcf0-58d6-418e-bdf5-71c922891981,Other Cloud: Hybrid/Private/On-prem virtualization
-8b85bcf0-58d6-418e-bdf5-71c922891981,SaaS
-8f96b32e-32af-4336-820f-276c65df516e,SaaS
-a9e1afe4-3f90-40a9-83be-eae2f0749031,SaaS
-a9e1afe4-3f90-40a9-83be-eae2f0749031,Other Cloud: Hybrid/Private/On-prem virtualization
-70285b89-7cac-421b-8086-22017489ea72,SaaS
-83f41311-c617-42af-a11b-671311c3fc9c,SaaS
-83f41311-c617-42af-a11b-671311c3fc9c,PaaS
-efeae2c4-77fd-4677-9191-5cd7a5ba3e01,SaaS
-3be1eb62-9c78-4eb4-b221-28ccb437df32,
-c68785b0-98d3-4dcd-b198-0861e4b5bff1,SaaS
-0e8f3c35-13a7-4ddf-b683-d1d3ebeb0dd1,SaaS
-657c7438-7e07-4d16-bd0e-2ca5130aec61,IaaS
-657c7438-7e07-4d16-bd0e-2ca5130aec61,Other Cloud: Hybrid/Private/On-prem virtualization
-657c7438-7e07-4d16-bd0e-2ca5130aec61,SaaS
-a94873c4-308a-41f1-afdf-bc5ade313e9d,IaaS
-a94873c4-308a-41f1-afdf-bc5ade313e9d,PaaS
-a94873c4-308a-41f1-afdf-bc5ade313e9d,SaaS
-a94873c4-308a-41f1-afdf-bc5ade313e9d,Other Cloud: Hybrid/Private/On-prem virtualization
-22c43e5a-c9b1-4200-850b-0eed954fc61c,Other Cloud: Hybrid/Private/On-prem virtualization
-22c43e5a-c9b1-4200-850b-0eed954fc61c,SaaS
-1d0cfe0d-7c9d-49fd-85e7-cfe5319768c7,Other Cloud: Hybrid/Private/On-prem virtualization
-1d0cfe0d-7c9d-49fd-85e7-cfe5319768c7,SaaS
-9f9f0a90-f99c-4e90-84cd-597f8a3e43d1,SaaS
-9f9f0a90-f99c-4e90-84cd-597f8a3e43d1,IaaS
-5adf2742-9db0-45d6-b2ad-9206c9fb7de3,
-fc2b09d1-ebb8-451f-8526-e7869eec004b,
-ba43ae75-ea6f-44e2-a07a-f40c6889ecab,
-bd6efa4e-14bf-4da1-b780-695f206eed2f,
-618dfe25-905e-491a-90b5-a7fd9c188998,
-a061d5df-2015-49b7-a524-5827d8aa183f,SaaS
-7e765218-b91b-49f8-a213-ca2319d263ee,Other Cloud: Hybrid/Private/On-prem virtualization
-1d303f39-468b-401c-942a-2d7fbd606663,SaaS
-e9126902-602e-4a5c-993b-c700c41795ab,SaaS
-6e1ece83-e5f5-49b5-9f1f-23feb78a405f,
-9a71778e-6553-4269-976b-bee679fb4686,
-bad2796b-08a6-4e81-9b1d-fcf4619970a2,Other Cloud: Hybrid/Private/On-prem virtualization
-bad2796b-08a6-4e81-9b1d-fcf4619970a2,PaaS
-bad2796b-08a6-4e81-9b1d-fcf4619970a2,SaaS
-bad2796b-08a6-4e81-9b1d-fcf4619970a2,IaaS
-13c3fee2-7007-4103-b371-60597e2157c6,
-61189d32-f3c4-4419-9208-7a5f43fcd32a,
-dec5f5e7-d0d3-4836-bde0-c2356e3dec5a,SaaS
-dec5f5e7-d0d3-4836-bde0-c2356e3dec5a,Other Cloud: Hybrid/Private/On-prem virtualization
-7546788a-4466-407f-a5c4-7866bb2c0e57,
-d7ca6c9e-0d72-41bb-a700-a7be2e572a0e,SaaS
-57e4ed8d-e52a-4ff2-a89d-a37f3e845e3e,SaaS
-57e4ed8d-e52a-4ff2-a89d-a37f3e845e3e,Other Cloud: Hybrid/Private/On-prem virtualization
-04f938cb-b56b-4301-9008-a9bbd189a402,Other Cloud: Hybrid/Private/On-prem virtualization
-04f938cb-b56b-4301-9008-a9bbd189a402,SaaS
-05de47e1-16d0-42da-af78-c1aee6b6ca8f,
-659a9fcc-66ea-45f4-bc70-797b2936588c,PaaS
-659a9fcc-66ea-45f4-bc70-797b2936588c,IaaS
-659a9fcc-66ea-45f4-bc70-797b2936588c,Other Cloud: Hybrid/Private/On-prem virtualization
-659a9fcc-66ea-45f4-bc70-797b2936588c,SaaS
-7d430200-e94b-4586-b311-2031cc842e0b,SaaS
-1241d095-dafb-492a-8223-1d1d3b6beb6c,SaaS
-1241d095-dafb-492a-8223-1d1d3b6beb6c,Other Cloud: Hybrid/Private/On-prem virtualization
-78b3445b-828b-47ce-a4dc-487fbb946596,
-e7875d02-bdfe-44ce-8b3f-507f30ebf350,IaaS
-e7875d02-bdfe-44ce-8b3f-507f30ebf350,PaaS
-e7875d02-bdfe-44ce-8b3f-507f30ebf350,SaaS
-e7875d02-bdfe-44ce-8b3f-507f30ebf350,Other Cloud: Hybrid/Private/On-prem virtualization
-3ca8fd1b-a21d-4b45-af36-f29fde169a22,IaaS
-3ca8fd1b-a21d-4b45-af36-f29fde169a22,SaaS
-3ca8fd1b-a21d-4b45-af36-f29fde169a22,PaaS
-99fc9a3d-ee2d-4976-b16c-0fa1999e181b,
-0eed11cd-3fab-4815-93c8-be679063174e,SaaS
-0879568a-bd83-47ab-b3f9-34387cf2f29f,
-9f2c9871-6279-4689-969d-96777038d8f4,SaaS
-9942a4da-a32e-45c1-b026-1904765081a2,PaaS
-9942a4da-a32e-45c1-b026-1904765081a2,SaaS
-9942a4da-a32e-45c1-b026-1904765081a2,Other Cloud: Hybrid/Private/On-prem virtualization
-9942a4da-a32e-45c1-b026-1904765081a2,IaaS
-6a853343-722c-45f0-8052-2c5a358c33f7,Other Cloud: Hybrid/Private/On-prem virtualization
-6a853343-722c-45f0-8052-2c5a358c33f7,PaaS
-6a853343-722c-45f0-8052-2c5a358c33f7,SaaS
-f4fecae3-5cbd-4b03-b7e3-3b6d3c22425f,
-0ed8e3a8-c8b3-4154-9eb4-7b6e1c66d51d,Other Cloud: Hybrid/Private/On-prem virtualization
-0c777b69-1745-4c96-ba58-2580fe2e9942,
-8a678628-4d90-44a1-a9b1-6cc4e5d84926,
-67a43e5d-bc8a-4f07-9790-97cef9408eef,SaaS
-67a43e5d-bc8a-4f07-9790-97cef9408eef,Other Cloud: Hybrid/Private/On-prem virtualization
-c4cf86b4-ece4-44c5-ba17-d49604331d65,PaaS
-c4cf86b4-ece4-44c5-ba17-d49604331d65,SaaS
-c4cf86b4-ece4-44c5-ba17-d49604331d65,IaaS
-c4cf86b4-ece4-44c5-ba17-d49604331d65,Other Cloud: Hybrid/Private/On-prem virtualization
-affd5cc4-f28e-495b-aa35-374ccc31a396,
-748e82f8-f700-4237-81e6-edfe90cf19c8,
-86939e0c-761a-4aaf-ba98-474d04380289,Other Cloud: Hybrid/Private/On-prem virtualization
-927b64cb-5a89-486e-8928-30d9f1e2de90,SaaS
-4315b1b2-73a0-4fa0-9485-f725044bba6e,SaaS
-a94c372c-72b9-43c2-9df6-ea0d4459144b,
-ace4e0a6-4571-457c-bffd-ad8b967c8595,IaaS
-ace4e0a6-4571-457c-bffd-ad8b967c8595,Other Cloud: Hybrid/Private/On-prem virtualization
-ace4e0a6-4571-457c-bffd-ad8b967c8595,SaaS
-8be7ca4d-4473-4d72-8d7b-7559695f0fd6,SaaS
-8be7ca4d-4473-4d72-8d7b-7559695f0fd6,Other Cloud: Hybrid/Private/On-prem virtualization
-db9e9b5b-5998-4a30-b0c0-2b7e53869be5,SaaS
-c208c87c-0263-4007-aae0-c8b662e03b0a,SaaS
-ec84d79f-cf13-4718-a19d-3072764d9a5a,
-60e915b6-0b7b-480d-b688-454c79958e05,Other Cloud: Hybrid/Private/On-prem virtualization
-60e915b6-0b7b-480d-b688-454c79958e05,SaaS
-82f55784-be81-4204-96b4-7ef6ad873bd0,SaaS
-07c1362b-a4d3-424b-b3f3-6d6e11f83e69,SaaS
-07c1362b-a4d3-424b-b3f3-6d6e11f83e69,Other Cloud: Hybrid/Private/On-prem virtualization
-edfba3fa-f77d-480f-bf95-5f45fbe29e0b,PaaS
-edfba3fa-f77d-480f-bf95-5f45fbe29e0b,Other Cloud: Hybrid/Private/On-prem virtualization
-edfba3fa-f77d-480f-bf95-5f45fbe29e0b,SaaS
-edfba3fa-f77d-480f-bf95-5f45fbe29e0b,IaaS
-190563d8-fa97-4a4d-9775-6ddd74ed80ed,SaaS
-190563d8-fa97-4a4d-9775-6ddd74ed80ed,Other Cloud: Hybrid/Private/On-prem virtualization
-f5417d8c-cb8c-476d-ba33-6de7e50a1588,Other Cloud: Hybrid/Private/On-prem virtualization
-5f686078-e0a5-40db-9028-b0058cd1ec1a,SaaS
-4a4e4819-36c5-49e8-87a6-860a6faec8c4,SaaS
-4a4e4819-36c5-49e8-87a6-860a6faec8c4,IaaS
-4a4e4819-36c5-49e8-87a6-860a6faec8c4,Other Cloud: Hybrid/Private/On-prem virtualization
-620bc983-32e5-4b45-9823-7a6d1e82d3fb,SaaS
-c5a135a4-b44a-474c-95eb-ade63117ab09,SaaS
-c5a135a4-b44a-474c-95eb-ade63117ab09,IaaS
-c5a135a4-b44a-474c-95eb-ade63117ab09,Other Cloud: Hybrid/Private/On-prem virtualization
-5e3807b9-349d-4e50-8366-47a8de015743,
-03ee2c49-eba3-43fd-bca8-d4928ba2e94c,
-dd004c39-3f54-4e3a-b58d-a46603027f9b,
-dfb06d8a-ee1e-4079-b9ee-447704028c09,
-6662a202-4632-4ac0-bdff-97aeb597b1ef,SaaS
-1ba15788-ee09-45c6-9370-8c54bd3c3e96,SaaS
-22994df6-22ac-4b59-8c76-bd6fc51e5a3f,SaaS
-a5757a31-40e5-4870-887d-f36ea26a3884,Other Cloud: Hybrid/Private/On-prem virtualization
-de952143-872c-4096-b0d5-0db56f6d7af1,IaaS
-de952143-872c-4096-b0d5-0db56f6d7af1,SaaS
-0fe38eb4-efa8-44da-9eb1-4f23a639bee2,SaaS
-0fe38eb4-efa8-44da-9eb1-4f23a639bee2,Other Cloud: Hybrid/Private/On-prem virtualization
-e336f1eb-43f3-419f-a7d5-71a946e2a66d,SaaS
-ed83dd7a-5984-4e98-9b45-4d76dc83be7c,
-f2ba6282-97b5-40eb-9f3b-33b0441df1a4,SaaS
-2222033e-7527-417b-b031-368531852a84,SaaS
-2222033e-7527-417b-b031-368531852a84,Other Cloud: Hybrid/Private/On-prem virtualization
-618c4f41-ff17-4d49-87c6-8286582f832a,
-36dfa362-4ee0-4dd2-b01e-efe80d81c375,
-f765bbc4-9d9f-45bf-a154-26217a946501,Other Cloud: Hybrid/Private/On-prem virtualization
-f765bbc4-9d9f-45bf-a154-26217a946501,SaaS
-5149cdc4-2c7d-45d8-983a-ddf9b1f98592,
-dac30e7d-a0dc-4273-bf2c-97adbed91f8b,SaaS
-26a10a5c-112e-4661-9049-e490cf8c061c,SaaS
-26a10a5c-112e-4661-9049-e490cf8c061c,Other Cloud: Hybrid/Private/On-prem virtualization
-d6844240-56a9-47fc-92e7-0313268c0668,SaaS
-d6844240-56a9-47fc-92e7-0313268c0668,Other Cloud: Hybrid/Private/On-prem virtualization
-a7ad2f36-3850-4928-8029-5a8d2232509f,SaaS
-a7ad2f36-3850-4928-8029-5a8d2232509f,Other Cloud: Hybrid/Private/On-prem virtualization
-849577a8-aaee-42af-a506-09695785feb0,SaaS
-849577a8-aaee-42af-a506-09695785feb0,Other Cloud: Hybrid/Private/On-prem virtualization
-7f1cfd7a-7ba8-4c9a-92a6-7687d091c4d5,Other Cloud: Hybrid/Private/On-prem virtualization
-7f1cfd7a-7ba8-4c9a-92a6-7687d091c4d5,SaaS
-b39965e1-7fbe-418d-97f5-75a77482e936,SaaS
-004c39ef-6df8-4b3c-b974-be2016724edc,
-28bc56b2-b6a4-4e7e-b380-b393591b88f7,SaaS
-bee964ed-a974-4248-aea9-cf9c88edfc54,SaaS
-bee964ed-a974-4248-aea9-cf9c88edfc54,Other Cloud: Hybrid/Private/On-prem virtualization
-0137bd45-7ead-4108-981f-33ce88fce390,IaaS
-0137bd45-7ead-4108-981f-33ce88fce390,SaaS
-0137bd45-7ead-4108-981f-33ce88fce390,Other Cloud: Hybrid/Private/On-prem virtualization
-33d3ceb2-7393-4992-9c2e-afb693751717,SaaS
-33d3ceb2-7393-4992-9c2e-afb693751717,Other Cloud: Hybrid/Private/On-prem virtualization
-a46d6c1d-0706-4c88-b6bf-41139ce8859c,
-52f18306-3df4-48ad-82f3-abcae466f375,Other Cloud: Hybrid/Private/On-prem virtualization
-52f18306-3df4-48ad-82f3-abcae466f375,SaaS
-8d1cae13-6404-4836-96b8-735960f9540d,SaaS
-8d1cae13-6404-4836-96b8-735960f9540d,Other Cloud: Hybrid/Private/On-prem virtualization
-eb484c4e-1bd9-4131-9a68-f82b69a67544,SaaS
-eb484c4e-1bd9-4131-9a68-f82b69a67544,Other Cloud: Hybrid/Private/On-prem virtualization
-19c06873-e6b4-444b-bf0d-a3afa91bacd6,
-6be1dd50-7190-4027-b897-2476ff34f2b0,SaaS
-6be1dd50-7190-4027-b897-2476ff34f2b0,Other Cloud: Hybrid/Private/On-prem virtualization
-6be1dd50-7190-4027-b897-2476ff34f2b0,PaaS
-6be1dd50-7190-4027-b897-2476ff34f2b0,IaaS
-eb7118a0-9fec-4b61-bef6-073788a8f4e8,SaaS
-dba6e6f4-c181-46fc-b36d-2c3e0d4547be,Other Cloud: Hybrid/Private/On-prem virtualization
-dba6e6f4-c181-46fc-b36d-2c3e0d4547be,IaaS
-dba6e6f4-c181-46fc-b36d-2c3e0d4547be,SaaS
-63357bcb-fc6d-4553-a75f-4b411a48b20b,SaaS
-63357bcb-fc6d-4553-a75f-4b411a48b20b,Other Cloud: Hybrid/Private/On-prem virtualization
-8c45f1c2-54fa-4d12-8f57-d56ee3ee1b90,PaaS
-8c45f1c2-54fa-4d12-8f57-d56ee3ee1b90,IaaS
-8c45f1c2-54fa-4d12-8f57-d56ee3ee1b90,SaaS
-8c45f1c2-54fa-4d12-8f57-d56ee3ee1b90,Other Cloud: Hybrid/Private/On-prem virtualization
-ecce616a-a7c0-4112-b385-23819eac2ff8,SaaS
-ecce616a-a7c0-4112-b385-23819eac2ff8,Other Cloud: Hybrid/Private/On-prem virtualization
-465774e0-cec6-49d8-a710-b9bc1d1f25dd,IaaS
-9f2e50bc-8d7b-41f9-8b9e-46de6ac18f7e,SaaS
-4849ffe8-f12a-40d0-aa9b-fd9924fe87a4,SaaS
-4849ffe8-f12a-40d0-aa9b-fd9924fe87a4,IaaS
-bda43b2a-b260-4fb0-8594-27aeef193406,
-1a1c1cb4-8aaf-4542-9f3e-0325ceae1aa4,
-71ca6091-f0a8-4e84-9620-c41e506678cb,SaaS
-9d6c7650-bf12-41fe-9b0c-6bd640889f37,IaaS
-9d6c7650-bf12-41fe-9b0c-6bd640889f37,SaaS
-9d6c7650-bf12-41fe-9b0c-6bd640889f37,PaaS
-8e68a588-e09d-44d7-a02c-864141474cd9,
-b6edbb7b-7681-4be8-a09b-bcc384eec298,SaaS
-b6741da8-5571-4828-a902-223b4ff84d6b,SaaS
-b6741da8-5571-4828-a902-223b4ff84d6b,IaaS
-2426283c-b5ed-4cbd-b17a-9122c617a2a1,Other Cloud: Hybrid/Private/On-prem virtualization
-2426283c-b5ed-4cbd-b17a-9122c617a2a1,SaaS
-a4d18574-209d-4bc7-9195-ba2c5d8b23d0,
-05c9986d-1428-4533-aca5-c58963aeeb8d,
-7f14e480-956e-4da0-9e57-29fe223a1729,Other Cloud: Hybrid/Private/On-prem virtualization
-7f14e480-956e-4da0-9e57-29fe223a1729,SaaS
-dbfda476-b539-46ce-a4e6-f64baf0552dc,SaaS
-dbfda476-b539-46ce-a4e6-f64baf0552dc,Other Cloud: Hybrid/Private/On-prem virtualization
-7fc4b0b7-a650-4a07-a6ba-7f8a36395509,
-60bdf450-8cae-4035-b386-a3e75e92c034,
-8aa9350e-31b5-4bd5-8345-aea897c79483,
-9bfec8a3-034e-4add-bf85-2050f725ef69,SaaS
-ca881a6b-a7e6-41c1-971f-fa1eef6d0dbb,IaaS
-ca881a6b-a7e6-41c1-971f-fa1eef6d0dbb,PaaS
-ca881a6b-a7e6-41c1-971f-fa1eef6d0dbb,SaaS
-1e351c97-5f49-4b45-9a7b-9c591b0ae4c9,
-a54d7b9d-3282-4648-9725-dffcc51d273d,PaaS
-a54d7b9d-3282-4648-9725-dffcc51d273d,Other Cloud: Hybrid/Private/On-prem virtualization
-a54d7b9d-3282-4648-9725-dffcc51d273d,SaaS
-b3cc83b6-5ca6-426a-9c45-547ed38cc10c,SaaS
-0c5cbfc1-5a09-4d4f-b4a5-3457c5511c69,IaaS
-0c5cbfc1-5a09-4d4f-b4a5-3457c5511c69,PaaS
-0c5cbfc1-5a09-4d4f-b4a5-3457c5511c69,SaaS
-0c5cbfc1-5a09-4d4f-b4a5-3457c5511c69,Other Cloud: Hybrid/Private/On-prem virtualization
-6a78400a-b2f5-4645-ab1b-3f24bc25ab89,Other Cloud: Hybrid/Private/On-prem virtualization
-6a78400a-b2f5-4645-ab1b-3f24bc25ab89,IaaS
-6a78400a-b2f5-4645-ab1b-3f24bc25ab89,PaaS
-6a78400a-b2f5-4645-ab1b-3f24bc25ab89,SaaS
-b8bb66d5-67eb-4e0f-ba54-d0769a92be70,
-25ffab48-45ee-4029-8bd7-cae9c211d640,
-a86661e6-64c2-43ad-a1dd-3471912a5dd2,SaaS
-a86661e6-64c2-43ad-a1dd-3471912a5dd2,Other Cloud: Hybrid/Private/On-prem virtualization
-06f362d9-ab98-4fb7-bc8b-24837237230a,Other Cloud: Hybrid/Private/On-prem virtualization
-06f362d9-ab98-4fb7-bc8b-24837237230a,SaaS
-06f362d9-ab98-4fb7-bc8b-24837237230a,IaaS
-4c1fa845-f0c9-443f-ad1d-2d056588041b,
-9499d550-cafa-427c-bd9a-da0865a7067f,Other Cloud: Hybrid/Private/On-prem virtualization
-9499d550-cafa-427c-bd9a-da0865a7067f,SaaS
-b1ae5d9c-f204-495a-85d4-73af687440e1,Other Cloud: Hybrid/Private/On-prem virtualization
-13d8d316-149c-439f-ae19-fbea6ae07857,
-0e9f7893-f383-47d6-a73e-af6576a11dab,
-2d35a57c-885e-4769-9629-07c99eca3623,SaaS
-2d35a57c-885e-4769-9629-07c99eca3623,Other Cloud: Hybrid/Private/On-prem virtualization
-deccb122-80d7-4ff4-9996-f005ef44c7bb,IaaS
-deccb122-80d7-4ff4-9996-f005ef44c7bb,Other Cloud: Hybrid/Private/On-prem virtualization
-deccb122-80d7-4ff4-9996-f005ef44c7bb,PaaS
-deccb122-80d7-4ff4-9996-f005ef44c7bb,SaaS
-f2581954-7af9-4f30-bea9-06c37478a314,IaaS
-f2581954-7af9-4f30-bea9-06c37478a314,SaaS
-9bd8d126-f042-4247-89b6-6a1bb27ed27e,SaaS
-9bd8d126-f042-4247-89b6-6a1bb27ed27e,Other Cloud: Hybrid/Private/On-prem virtualization
-0d19ba77-6b4e-43b8-947b-8f633e99522c,
-c40ec00e-f658-4e68-a8ae-4920e7bcc383,SaaS
-bfaf5ac1-b394-4597-909d-95e55d6708f3,
-33585dc9-3f50-4d1a-918b-b75ab3ad8d03,SaaS
-33585dc9-3f50-4d1a-918b-b75ab3ad8d03,Other Cloud: Hybrid/Private/On-prem virtualization
-8a2444e9-ecaa-43dc-a197-d8165c05aedf,IaaS
-8a2444e9-ecaa-43dc-a197-d8165c05aedf,Other Cloud: Hybrid/Private/On-prem virtualization
-8a2444e9-ecaa-43dc-a197-d8165c05aedf,PaaS
-8a2444e9-ecaa-43dc-a197-d8165c05aedf,SaaS
-0bf1d09f-63dd-4b45-8f82-dfde61b581d2,
-edb0b976-c98d-4f8d-ad9e-5f571ec1f348,
-0595e582-af21-4417-b7ee-aa78f8739146,SaaS
-0595e582-af21-4417-b7ee-aa78f8739146,Other Cloud: Hybrid/Private/On-prem virtualization
-0595e582-af21-4417-b7ee-aa78f8739146,IaaS
-0595e582-af21-4417-b7ee-aa78f8739146,PaaS
-17f9b52f-a9ec-4ccb-8713-41f86bed0478,SaaS
-17f9b52f-a9ec-4ccb-8713-41f86bed0478,Other Cloud: Hybrid/Private/On-prem virtualization
-9c68120d-016a-400b-ba97-bcd3d258fdfb,
-da3c3085-f79d-424a-8425-0eabdfde6518,
-dd41d547-9cf7-4e77-b496-f6e20d11e69f,Other Cloud: Hybrid/Private/On-prem virtualization
-dd41d547-9cf7-4e77-b496-f6e20d11e69f,SaaS
-e08b1c66-77e8-40cf-8134-6ecc23fa2d25,Other Cloud: Hybrid/Private/On-prem virtualization
-e08b1c66-77e8-40cf-8134-6ecc23fa2d25,SaaS
-e08b1c66-77e8-40cf-8134-6ecc23fa2d25,IaaS
-e08b1c66-77e8-40cf-8134-6ecc23fa2d25,PaaS
-f98cd542-1e20-4c40-b8ac-428565d16bb9,SaaS
-a640071d-fba1-40ee-8b5c-98a1f09051cd,SaaS
-10bfc416-5add-4a32-a05c-45606c6b5462,IaaS
-10bfc416-5add-4a32-a05c-45606c6b5462,SaaS
-32d26651-1884-472c-a9f1-00767d2784b3,SaaS
-b5a6b944-5fec-4b75-a32b-440d1db699a1,SaaS
-b5a6b944-5fec-4b75-a32b-440d1db699a1,IaaS
-b5a6b944-5fec-4b75-a32b-440d1db699a1,Other Cloud: Hybrid/Private/On-prem virtualization
-b5a6b944-5fec-4b75-a32b-440d1db699a1,PaaS
+31f4f889-5c6a-4867-b12d-d70e0b1ede37,SaaS
+025d9464-547d-4d96-a716-bb36bf0d1f55,Other Cloud: Hybrid/Private/On-prem virtualization
+025d9464-547d-4d96-a716-bb36bf0d1f55,SaaS
+3da23ea0-4997-4c21-88f6-8cee4d17e40a,SaaS
+aadab715-a81f-4354-a700-a5689ffb2341,SaaS
+2d6dc330-aa19-42be-a5c7-b0ae641b3d43,IaaS
+2d6dc330-aa19-42be-a5c7-b0ae641b3d43,SaaS
+2d6dc330-aa19-42be-a5c7-b0ae641b3d43,PaaS
+15ada0e4-fd22-4523-96a9-548e33656ad5,
+e02b4dfb-be6d-4dc0-b902-e6fb62b7d2e2,
+42d63ff2-8889-425f-9b86-5b7109e48354,SaaS
+42d63ff2-8889-425f-9b86-5b7109e48354,Other Cloud: Hybrid/Private/On-prem virtualization
+42d63ff2-8889-425f-9b86-5b7109e48354,IaaS
+42d63ff2-8889-425f-9b86-5b7109e48354,PaaS
+a4d47add-bff3-4365-a269-6d86aef04bc2,Other Cloud: Hybrid/Private/On-prem virtualization
+a4d47add-bff3-4365-a269-6d86aef04bc2,SaaS
+a5b54099-1df5-4a7f-929a-cb9e2804874a,SaaS
+a5b54099-1df5-4a7f-929a-cb9e2804874a,Other Cloud: Hybrid/Private/On-prem virtualization
+8549a90a-895b-49e6-a568-9c8d4a2205c5,IaaS
+8549a90a-895b-49e6-a568-9c8d4a2205c5,Other Cloud: Hybrid/Private/On-prem virtualization
+8549a90a-895b-49e6-a568-9c8d4a2205c5,SaaS
+075d4f36-601b-403b-9397-4f708a576184,Other Cloud: Hybrid/Private/On-prem virtualization
+075d4f36-601b-403b-9397-4f708a576184,SaaS
+f0ac4cd6-513f-47f2-b79a-f1b2ed21b23d,SaaS
+f0ac4cd6-513f-47f2-b79a-f1b2ed21b23d,Other Cloud: Hybrid/Private/On-prem virtualization
+03ef0e0a-644a-4161-9030-f38a840c2679,SaaS
+03ef0e0a-644a-4161-9030-f38a840c2679,Other Cloud: Hybrid/Private/On-prem virtualization
+733ef438-99f2-4253-8617-cc871c341079,SaaS
+f762af7d-90bb-46b0-ae10-2b678f87a86f,SaaS
+f762af7d-90bb-46b0-ae10-2b678f87a86f,Other Cloud: Hybrid/Private/On-prem virtualization
+a260283e-cd39-436d-8e43-2cc733f9ea3c,
+bc81549b-3fb6-443d-8446-cebccf7ada3b,
+2b0e1774-d4d8-471d-8923-0bf553675440,Other Cloud: Hybrid/Private/On-prem virtualization
+2b0e1774-d4d8-471d-8923-0bf553675440,SaaS
+2b0e1774-d4d8-471d-8923-0bf553675440,IaaS
+8918e718-42be-4b54-8d54-374c2a313b82,Other Cloud: Hybrid/Private/On-prem virtualization
+8918e718-42be-4b54-8d54-374c2a313b82,SaaS
+b414da6a-6756-4372-8cbb-81342e618d78,SaaS
+1fb98e2e-2a90-4e16-a0fc-ac69f90a376f,
+27b55936-82a6-49a1-b119-0368b3d00115,
+bd29c2b1-06c5-460d-b24f-eb938a2e60fa,
+2ae25501-eb9b-457e-bc98-731eeaaeefa6,
+4cc02baa-e6cd-4e5b-8192-6eed1d8c374d,Other Cloud: Hybrid/Private/On-prem virtualization
+ab14d80f-23c3-482a-9c89-9fd37feaf826,SaaS
+21e61094-1ae9-4e6e-bdcf-5d49895abb75,PaaS
+21e61094-1ae9-4e6e-bdcf-5d49895abb75,SaaS
+21e61094-1ae9-4e6e-bdcf-5d49895abb75,Other Cloud: Hybrid/Private/On-prem virtualization
+1c47359c-3f1b-49e5-8a1a-2cb87875678f,SaaS
+2afbfe2c-331a-4881-bc2b-b5c9d325dbe7,
+940ad9bd-e1f3-4fd6-b219-c97e535601e5,
+e4de44c8-dcac-4604-886a-780595a559e0,
+05787efb-5558-4560-8c37-a37d2612488b,Other Cloud: Hybrid/Private/On-prem virtualization
+05787efb-5558-4560-8c37-a37d2612488b,SaaS
+05787efb-5558-4560-8c37-a37d2612488b,PaaS
+f3083c28-f852-4367-b794-aa2202f28a1d,SaaS
+f95c7daa-ea58-423e-a968-80262fc86a5e,SaaS
+eee6e621-ad35-47a1-9591-3e846a8d88dd,SaaS
+19cfdc3e-7eb6-414b-a584-88a9ae697fad,
+bc0cabe4-3e98-4b4c-a032-43c41ec015fb,SaaS
+fc37a753-b77c-45f1-affd-1335439712be,
+9fc5dbc1-1c16-476b-9399-b174a9b8ead2,
+093380fd-c6f7-45b9-b86c-fd20c86b08e1,
+b8bd0d27-0563-480f-9a75-7635209ff627,PaaS
+b8bd0d27-0563-480f-9a75-7635209ff627,Other Cloud: Hybrid/Private/On-prem virtualization
+b8bd0d27-0563-480f-9a75-7635209ff627,SaaS
+2bdee4f4-c157-4aa8-a958-0c098fb83914,Other Cloud: Hybrid/Private/On-prem virtualization
+2bdee4f4-c157-4aa8-a958-0c098fb83914,IaaS
+2bdee4f4-c157-4aa8-a958-0c098fb83914,SaaS
+2bdee4f4-c157-4aa8-a958-0c098fb83914,PaaS
+7fe979db-c7c7-4491-ac3a-f8881eb8f6dd,IaaS
+7fe979db-c7c7-4491-ac3a-f8881eb8f6dd,SaaS
+c5054464-3e63-4a91-a958-5237de93dbd1,SaaS
+71166c65-4395-4b88-b42e-4501c6d4b79d,PaaS
+71166c65-4395-4b88-b42e-4501c6d4b79d,SaaS
+9af683ab-c344-4303-87eb-ecc1620db3b9,SaaS
+9af683ab-c344-4303-87eb-ecc1620db3b9,Other Cloud: Hybrid/Private/On-prem virtualization
+08189b09-fae6-4857-a2f6-b62ed91c82bf,
+9cccde2a-3569-457b-8946-856289c1b1d1,
+e39457a6-c21c-4b8c-98c2-a619bfee80ce,SaaS
+ed8bfde6-49b7-4d72-80e8-2d55078c4b5b,SaaS
+ed8bfde6-49b7-4d72-80e8-2d55078c4b5b,Other Cloud: Hybrid/Private/On-prem virtualization
+05037db5-a7b6-4ad3-91f1-1ebad80fc45c,SaaS
+02082a6c-8771-4e39-b211-96c3e7f8e7aa,SaaS
+d48939bc-947b-4461-b8fd-1b000ebf32c4,SaaS
+e3fb5c1b-995f-4a07-af88-6622510590e8,Other Cloud: Hybrid/Private/On-prem virtualization
+e3fb5c1b-995f-4a07-af88-6622510590e8,SaaS
+c8648697-09ae-406a-a786-c1240beb70a1,SaaS
+c8648697-09ae-406a-a786-c1240beb70a1,Other Cloud: Hybrid/Private/On-prem virtualization
+a1f2e717-15cf-4781-9cc5-c19ca4ba4cf7,Other Cloud: Hybrid/Private/On-prem virtualization
+a1f2e717-15cf-4781-9cc5-c19ca4ba4cf7,SaaS
+2026824a-50fa-4fac-86ec-2a2347cbb48a,
+1a33e958-d172-46ab-8fa1-257e676eb68e,
+dff932db-7a83-4abb-a63e-1d3a5dfc313b,
+8f330ffe-de75-4ef7-8bf3-7d33af176231,SaaS
+13554e0e-f1ac-47c7-bcb2-61a26eb031f5,SaaS
+1f83748b-5137-451a-aa17-bf2d55f05d00,SaaS
+3035e3c3-a997-4413-941c-efffacf114a3,SaaS
+63bed0c8-343a-42ba-bb60-c218c6ee8207,SaaS
+f7bb15e8-79e1-4ace-9d0b-6de3e599395e,SaaS
+4f18d368-4916-4955-8012-b4cfe1012684,SaaS
+32f42f92-3609-400a-a435-1843a9af3df0,PaaS
+32f42f92-3609-400a-a435-1843a9af3df0,Other Cloud: Hybrid/Private/On-prem virtualization
+32f42f92-3609-400a-a435-1843a9af3df0,IaaS
+32f42f92-3609-400a-a435-1843a9af3df0,SaaS
+63584948-3fc0-4f34-ad0d-cf56ad043a48,SaaS
+3612e46d-1573-4605-8bde-39f7e048d638,
+64a51afd-4f28-46d6-aded-0e1ff9b8ecc0,
+52adc6dc-b232-4b27-b01c-53c61763a40b,
+e9731b48-de7f-42f4-91e2-f3fe834f7c3b,
+50ccd430-169c-48ea-83ed-6c3490f3c490,SaaS
+50ccd430-169c-48ea-83ed-6c3490f3c490,IaaS
+50ccd430-169c-48ea-83ed-6c3490f3c490,Other Cloud: Hybrid/Private/On-prem virtualization
+1491443f-34f8-4191-a7d7-f8db4c3932cf,
+56d6a748-5d98-430e-a5a1-cd1bccf6dbc9,SaaS
+56d6a748-5d98-430e-a5a1-cd1bccf6dbc9,Other Cloud: Hybrid/Private/On-prem virtualization
+1b3a2b70-adb3-42d2-8d3c-79c6f1d2b4d6,SaaS
+1b3a2b70-adb3-42d2-8d3c-79c6f1d2b4d6,IaaS
+1b3a2b70-adb3-42d2-8d3c-79c6f1d2b4d6,Other Cloud: Hybrid/Private/On-prem virtualization
+65a0b7ca-6584-4424-9589-6ef6394179a7,Other Cloud: Hybrid/Private/On-prem virtualization
+dea5ec00-5f99-49ae-9713-927af604ea2f,SaaS
+dea5ec00-5f99-49ae-9713-927af604ea2f,Other Cloud: Hybrid/Private/On-prem virtualization
+ab4763b9-0d5b-4b67-8693-186e4b7a9008,
+77ad6b8f-046b-47c2-8cfc-a93444a80685,
+396f4f05-27f6-46a4-a084-29fb1e811385,
+a1d8cb33-b200-4792-9a29-0430e2d59a04,
+706d84ce-0441-43ab-b150-8d2a4ae0cda6,SaaS
+706d84ce-0441-43ab-b150-8d2a4ae0cda6,Other Cloud: Hybrid/Private/On-prem virtualization
+338ed983-8d73-4b08-8326-e2c13660f98e,SaaS
+c95e9324-0be4-417f-aac9-9bcde022b21e,Other Cloud: Hybrid/Private/On-prem virtualization
+c95e9324-0be4-417f-aac9-9bcde022b21e,SaaS
+93d9da59-242e-4edc-b8d6-c1c7997e2e6f,SaaS
+be1993af-b4bb-4724-a10c-c8cb3fb4321c,
+9fc8c5ec-b4a7-4ff5-a912-60985fe9314c,SaaS
+68456f96-44b4-47ca-87d9-7eceb65e9080,Other Cloud: Hybrid/Private/On-prem virtualization
+38438059-3bba-473f-abb7-cebd57e62c9d,
+4ab556b9-da1c-46de-8169-5433bdd03046,
+867da02a-1966-44fa-90d8-413802175247,Other Cloud: Hybrid/Private/On-prem virtualization
+3291b02d-c562-4e76-8c30-e80b5fcd65ec,SaaS
+3291b02d-c562-4e76-8c30-e80b5fcd65ec,IaaS
+3291b02d-c562-4e76-8c30-e80b5fcd65ec,Other Cloud: Hybrid/Private/On-prem virtualization
+aa975978-8100-4922-aa51-7f5dc20da905,Other Cloud: Hybrid/Private/On-prem virtualization
+04842973-c66c-4065-9582-215f344d4caa,SaaS
+ba506c04-8f05-46a3-8050-3d53408077e8,Other Cloud: Hybrid/Private/On-prem virtualization
+ba506c04-8f05-46a3-8050-3d53408077e8,PaaS
+ba506c04-8f05-46a3-8050-3d53408077e8,SaaS
+bd3333d2-987f-487a-9772-11397d3572ee,
+a7c7b0e9-f7be-4942-8077-730e47f8b0dd,SaaS
+a7c7b0e9-f7be-4942-8077-730e47f8b0dd,Other Cloud: Hybrid/Private/On-prem virtualization
+efe98746-63ea-4c69-aa96-51eb77bdc468,SaaS
+2c52f539-1bc6-4b9e-8eca-77bc380c5da1,SaaS
+3ef5be3c-60b0-482e-a1da-a95d6fb09d36,PaaS
+3ef5be3c-60b0-482e-a1da-a95d6fb09d36,IaaS
+3ef5be3c-60b0-482e-a1da-a95d6fb09d36,Other Cloud: Hybrid/Private/On-prem virtualization
+3ef5be3c-60b0-482e-a1da-a95d6fb09d36,SaaS
+3635738d-4e4a-480c-9af4-fb378e13f1af,IaaS
+3635738d-4e4a-480c-9af4-fb378e13f1af,SaaS
+f788ec6a-6153-4c40-bb58-758c3568252c,Other Cloud: Hybrid/Private/On-prem virtualization
+f788ec6a-6153-4c40-bb58-758c3568252c,IaaS
+f788ec6a-6153-4c40-bb58-758c3568252c,PaaS
+f788ec6a-6153-4c40-bb58-758c3568252c,SaaS
+6ca9debe-c76c-4862-8fbb-fbaa494a6956,SaaS
+74f385eb-d2f5-4407-8ca1-b3b2bbca8d66,Other Cloud: Hybrid/Private/On-prem virtualization
+99020770-e710-4283-b14a-cd5251d1094a,Other Cloud: Hybrid/Private/On-prem virtualization
+99020770-e710-4283-b14a-cd5251d1094a,SaaS
+47de8d5c-de2a-45ae-bf28-df0374b5cf70,
+87b11f2b-4917-4e9a-b5e6-dec9be889a79,SaaS
+87b11f2b-4917-4e9a-b5e6-dec9be889a79,Other Cloud: Hybrid/Private/On-prem virtualization
+55128630-cc3f-42d7-b37a-49d750610a26,SaaS
+55128630-cc3f-42d7-b37a-49d750610a26,Other Cloud: Hybrid/Private/On-prem virtualization
+fa303ad1-957c-4dcc-a331-8589634ba303,SaaS
+fa303ad1-957c-4dcc-a331-8589634ba303,IaaS
+42ab7d9d-52f8-4bc6-8c4b-858de7977ba1,
+67e995a1-8cb5-42c6-98b1-5a5dbce81d10,SaaS
+8052eb40-f0f9-40e5-b102-2b4f3c753b3c,
+20af1612-3dda-4569-ac23-6081b415f189,SaaS
+20af1612-3dda-4569-ac23-6081b415f189,Other Cloud: Hybrid/Private/On-prem virtualization
+67e8c2e9-8d01-4ef7-a69c-826cb132be6b,SaaS
+eda8a4e3-1b27-4314-bfd4-aceb28e9e351,
+9fe7aee8-6248-47d2-8e34-80f874bda8a1,SaaS
+78c070e8-3ce8-421a-8126-2eddb1f1bc5b,
+2c355ec4-4f6b-40dc-8a0e-144390c3521d,
+dc853e8f-a0b8-4bf5-bed1-a9cf281b76c5,
+5443e6df-7c92-4d6d-bdab-30c87b4b7848,
+3bb30f18-b00d-4190-bdb9-ea1095cba86c,SaaS
+530239b2-a494-4ae9-a1b8-15eb4bc5433f,
+6c7b22af-943a-4b2f-8ecd-4458352d2baf,
+c5f92d19-d241-408b-a2fc-2958b5d32051,
+edae4122-46a1-49b4-b1e8-743943359e73,
+a774b649-fb03-4888-9d3a-6356478e17fc,
+0a1fa90c-3754-4da4-9457-0904c79462a4,
+95ede799-a2a8-4776-a693-1fe9cf813bac,Other Cloud: Hybrid/Private/On-prem virtualization
+1479edd2-1b5e-4f8e-92b3-241da50cf6ff,Other Cloud: Hybrid/Private/On-prem virtualization
+1479edd2-1b5e-4f8e-92b3-241da50cf6ff,SaaS
+ed892805-237d-43b0-8807-afea658fdd7a,SaaS
+ed892805-237d-43b0-8807-afea658fdd7a,Other Cloud: Hybrid/Private/On-prem virtualization
+5afb3506-c07b-4326-a5e8-5b0def53ef53,Other Cloud: Hybrid/Private/On-prem virtualization
+5afb3506-c07b-4326-a5e8-5b0def53ef53,SaaS
+830ba127-911a-4674-a402-01b5edc9945c,
+8cb0e285-59aa-4fa0-8b1d-51386fbe0e5a,Other Cloud: Hybrid/Private/On-prem virtualization
+d67d03cd-7666-4fde-a1dd-325595bf908b,
+5c620805-6b26-4431-9924-8455a45369d7,SaaS
+32246119-daa1-472b-a7cc-a5093a38da3f,SaaS
+1a87fafe-c17d-4298-94db-510ddf0d1900,Other Cloud: Hybrid/Private/On-prem virtualization
+1a87fafe-c17d-4298-94db-510ddf0d1900,SaaS
+eb55a3ad-a9ca-453e-a681-a860099907df,SaaS
+eb55a3ad-a9ca-453e-a681-a860099907df,PaaS
+eb55a3ad-a9ca-453e-a681-a860099907df,IaaS
+14c3445a-ad5d-4832-a749-92fffb23a220,SaaS
+9fcbe455-89ff-4f45-b46f-9a775496c381,
+f4747f88-98f1-4513-ad56-39e3150d0a7b,Other Cloud: Hybrid/Private/On-prem virtualization
+f4747f88-98f1-4513-ad56-39e3150d0a7b,IaaS
+f4747f88-98f1-4513-ad56-39e3150d0a7b,SaaS
+f4747f88-98f1-4513-ad56-39e3150d0a7b,PaaS
+65dac09a-f7b1-4713-b5ac-de573c959f24,SaaS
+65dac09a-f7b1-4713-b5ac-de573c959f24,Other Cloud: Hybrid/Private/On-prem virtualization
+9780c760-eb5e-4fbd-b022-ef7d725033ee,
+2c2d552c-d668-4353-9dbf-cfe8401f13fb,SaaS
+6652b358-a397-42bf-95fa-37519be2130b,Other Cloud: Hybrid/Private/On-prem virtualization
+6652b358-a397-42bf-95fa-37519be2130b,SaaS
+4390932c-ce7b-4dc8-8001-4d1e3f96e109,SaaS
+36f8b998-d076-4318-a9c0-77ba4da604fc,SaaS
+db46b09b-1235-4d2b-8328-158ef91d6797,
+3f29b791-0056-4fd2-ac6d-aebb9295ffa6,SaaS
+76afb2e0-57ee-432b-b63f-47fea2de3e9e,Other Cloud: Hybrid/Private/On-prem virtualization
+c609d811-405b-4fee-bcc3-34d06666ec20,SaaS
+c609d811-405b-4fee-bcc3-34d06666ec20,Other Cloud: Hybrid/Private/On-prem virtualization
+2409b847-90f1-497a-9925-bc1ee7be67a5,SaaS
+29954dc9-f489-4f42-9b21-8c99b765cce1,Other Cloud: Hybrid/Private/On-prem virtualization
+29954dc9-f489-4f42-9b21-8c99b765cce1,SaaS
+ce01c7c2-a8f3-442b-9fae-25dcb7dff2bc,IaaS
+ce01c7c2-a8f3-442b-9fae-25dcb7dff2bc,SaaS
+ce01c7c2-a8f3-442b-9fae-25dcb7dff2bc,PaaS
+ce01c7c2-a8f3-442b-9fae-25dcb7dff2bc,Other Cloud: Hybrid/Private/On-prem virtualization
+a790b401-5453-4d96-ab3f-6a3dbe2b951c,SaaS
+ccebdfa0-0637-454d-a0c6-2d3a22a9d06e,SaaS
+48e71de7-8430-4757-80b8-b5dc97857483,Other Cloud: Hybrid/Private/On-prem virtualization
+48e71de7-8430-4757-80b8-b5dc97857483,SaaS
+a481a14c-760d-4f3d-ab70-bc1e4368d830,SaaS
+ae62901d-1c8e-4bf3-859c-39a9df6d92ec,SaaS
+ae62901d-1c8e-4bf3-859c-39a9df6d92ec,IaaS
+ae62901d-1c8e-4bf3-859c-39a9df6d92ec,Other Cloud: Hybrid/Private/On-prem virtualization
+d61a92bb-e720-4ab1-ae75-b3d2be3321fe,SaaS
+d61a92bb-e720-4ab1-ae75-b3d2be3321fe,Other Cloud: Hybrid/Private/On-prem virtualization
+1b5d986f-e30a-4996-bbaa-490ccc4022f6,Other Cloud: Hybrid/Private/On-prem virtualization
+1b5d986f-e30a-4996-bbaa-490ccc4022f6,SaaS
+a312bc72-da0a-4cf1-9a3f-0b41c270e543,SaaS
+53fd1aca-2fc5-4fc3-adf1-c7cb60f235aa,Other Cloud: Hybrid/Private/On-prem virtualization
+53fd1aca-2fc5-4fc3-adf1-c7cb60f235aa,SaaS
+53fd1aca-2fc5-4fc3-adf1-c7cb60f235aa,IaaS
+eac2de91-1c93-451e-9334-7ab43878c9a1,IaaS
+eac2de91-1c93-451e-9334-7ab43878c9a1,PaaS
+eac2de91-1c93-451e-9334-7ab43878c9a1,Other Cloud: Hybrid/Private/On-prem virtualization
+eac2de91-1c93-451e-9334-7ab43878c9a1,SaaS
+815c5bb8-800e-4886-8c19-8e65e04bb723,SaaS
+815c5bb8-800e-4886-8c19-8e65e04bb723,IaaS
+ca4b834e-0f64-4235-8430-cfb837519f49,SaaS
+72bde1c5-402c-4e92-84b7-f76588efe268,
+9bd405e0-8999-4908-852e-d17abf2838a2,SaaS
+9bd405e0-8999-4908-852e-d17abf2838a2,IaaS
+dec002c7-311b-451c-ba12-048ef25b644d,SaaS
+dec002c7-311b-451c-ba12-048ef25b644d,PaaS
+dec002c7-311b-451c-ba12-048ef25b644d,Other Cloud: Hybrid/Private/On-prem virtualization
+13f319d5-9cc4-4d93-a27e-3973c3e18f59,SaaS
+084133e2-7453-4e8c-a629-719adf916bc2,SaaS
+b285ffa7-7be3-4834-ad25-1fc3f001cdb1,
+264e77ba-1390-478d-b2a4-2cf4d12845fc,PaaS
+264e77ba-1390-478d-b2a4-2cf4d12845fc,SaaS
+264e77ba-1390-478d-b2a4-2cf4d12845fc,Other Cloud: Hybrid/Private/On-prem virtualization
+264e77ba-1390-478d-b2a4-2cf4d12845fc,IaaS
+d5abd2fe-b7ab-45f7-be8b-21ca27a1b90d,SaaS
+4bbc5f04-9670-45e2-82c2-eeb3f06d2bc7,SaaS
+4bbc5f04-9670-45e2-82c2-eeb3f06d2bc7,Other Cloud: Hybrid/Private/On-prem virtualization
+c03f9542-6397-4f00-b205-4c799896d99e,SaaS
+e9f0e7be-e7ca-4795-8196-112bda19205c,SaaS
+ad5b8e48-820f-4043-b197-cb9ccda227e5,SaaS
+ad5b8e48-820f-4043-b197-cb9ccda227e5,IaaS
+ad5b8e48-820f-4043-b197-cb9ccda227e5,Other Cloud: Hybrid/Private/On-prem virtualization
+01a40b69-4327-476f-acde-30c29e77731e,SaaS
+01a40b69-4327-476f-acde-30c29e77731e,Other Cloud: Hybrid/Private/On-prem virtualization
+9bbb0043-3f3d-4023-8be0-30ae5dfd44a1,Other Cloud: Hybrid/Private/On-prem virtualization
+9bbb0043-3f3d-4023-8be0-30ae5dfd44a1,SaaS
+ff093900-fa5e-47e8-9b72-36e495585eab,SaaS
+c59f65b9-7a7e-43f7-9436-09cbaf4fc296,SaaS
+7bb35b1b-c659-4682-a339-108bbc0948a7,
+a71388dd-6c72-48f0-bd85-d3fb5daf18db,Other Cloud: Hybrid/Private/On-prem virtualization
+a71388dd-6c72-48f0-bd85-d3fb5daf18db,SaaS
+1d13673b-ef55-4a49-a3b9-27ae31bf6920,Other Cloud: Hybrid/Private/On-prem virtualization
+c02f4d8a-4c0d-416d-878e-d73c00e45c1f,SaaS
+f3bda80b-e8a9-4d79-9c63-99f218828d44,SaaS
+f3bda80b-e8a9-4d79-9c63-99f218828d44,IaaS
+68054353-8a07-4927-9c66-04664d4cf84e,SaaS
+68054353-8a07-4927-9c66-04664d4cf84e,Other Cloud: Hybrid/Private/On-prem virtualization
+590a513c-4fe1-44d1-a63a-93de3bce9b57,
+4a4c2c81-07f9-48da-a342-ef4be4a07d35,
+3dea0167-384c-4e34-88de-c237f9dc60f3,SaaS
+c520bbc2-41e4-4e0f-bbd6-77744ea508fb,SaaS
+c520bbc2-41e4-4e0f-bbd6-77744ea508fb,IaaS
+c8ec148f-8e36-476e-a396-8ab20e018a4f,
+fcec2f41-aab2-4f4e-9026-309faed5f51d,SaaS
+fcec2f41-aab2-4f4e-9026-309faed5f51d,Other Cloud: Hybrid/Private/On-prem virtualization
+f480d2f2-353c-43b7-8139-cf29de659410,
+dfce11cf-9c37-4901-a2dc-696ac3aaa406,
+c3edffb0-fd2f-4ebf-b456-0369c7c042f2,
+ed02a810-6897-4630-9683-a46ebb93d500,Other Cloud: Hybrid/Private/On-prem virtualization
+ed02a810-6897-4630-9683-a46ebb93d500,SaaS
+5edd400a-3440-42d1-8fc1-08416766d357,SaaS
+453005d6-c8c9-4dc6-bed6-dc46c2b79f09,
+dc0ee828-326f-4f61-a1ca-9560d6b3c6ad,
+83b30253-ae03-4474-bbfa-e45cd0185299,SaaS
+83b30253-ae03-4474-bbfa-e45cd0185299,Other Cloud: Hybrid/Private/On-prem virtualization
+48d6c9e1-3a08-4590-b795-78da431708a4,SaaS
+39cb2258-694f-4610-83d0-591bea34b790,SaaS
+39cb2258-694f-4610-83d0-591bea34b790,Other Cloud: Hybrid/Private/On-prem virtualization
+39cb2258-694f-4610-83d0-591bea34b790,PaaS
+acb28b80-de93-49cd-a571-bcacb950920c,IaaS
+acb28b80-de93-49cd-a571-bcacb950920c,PaaS
+acb28b80-de93-49cd-a571-bcacb950920c,SaaS
+927f1f0a-26f2-44f3-b8de-21ae1c6e3690,
+3545716c-096d-4766-b741-f40bfc7acc59,Other Cloud: Hybrid/Private/On-prem virtualization
+3545716c-096d-4766-b741-f40bfc7acc59,SaaS
+ffd8b12e-4091-40a1-a55f-e3ee4b5133d3,SaaS
+ffd8b12e-4091-40a1-a55f-e3ee4b5133d3,Other Cloud: Hybrid/Private/On-prem virtualization
+a2c37c13-e067-4323-94f0-8e66e876d333,SaaS
+9ef5710f-f267-433e-b105-569dad9261b6,
+f628646d-6904-4409-998c-175e5c228d75,
+4c717362-3039-4c78-9a0b-de90d5d5478d,SaaS
+4c717362-3039-4c78-9a0b-de90d5d5478d,PaaS
+4c717362-3039-4c78-9a0b-de90d5d5478d,Other Cloud: Hybrid/Private/On-prem virtualization
+4c717362-3039-4c78-9a0b-de90d5d5478d,IaaS
+c58c6307-994d-44e4-9517-0ab761d0a424,SaaS
+c58c6307-994d-44e4-9517-0ab761d0a424,Other Cloud: Hybrid/Private/On-prem virtualization
+c58c6307-994d-44e4-9517-0ab761d0a424,IaaS
+67318afb-2f33-45a1-9ce9-fc20c69fbe69,SaaS
+67318afb-2f33-45a1-9ce9-fc20c69fbe69,PaaS
+67318afb-2f33-45a1-9ce9-fc20c69fbe69,IaaS
+93c40ef2-9897-4d45-a059-ee5f61e34961,Other Cloud: Hybrid/Private/On-prem virtualization
+93c40ef2-9897-4d45-a059-ee5f61e34961,SaaS
+93c40ef2-9897-4d45-a059-ee5f61e34961,PaaS
+93c40ef2-9897-4d45-a059-ee5f61e34961,IaaS
+8b0f2eb6-dcd8-44ae-90b9-7d55e0aee8cd,
+4211d9d6-bee0-47fd-85a1-fbf9d78fa981,SaaS
+4211d9d6-bee0-47fd-85a1-fbf9d78fa981,Other Cloud: Hybrid/Private/On-prem virtualization
+57b785d8-2ab1-4586-a70d-def8ffe44458,
+6a46b3be-8732-446a-b351-206c557e6f91,SaaS
+6a46b3be-8732-446a-b351-206c557e6f91,Other Cloud: Hybrid/Private/On-prem virtualization
+31e6a6b0-55e3-40c6-a1c8-74dd3950883d,
+ef8cd001-0d61-445c-81b0-50b2765d2a8d,SaaS
+941635b2-a372-4358-89b4-6700e75c8443,SaaS
+79e133ae-bb7b-46c3-948d-34401427c971,SaaS
+8287052b-477d-4999-a748-2f44222f3dff,IaaS
+8287052b-477d-4999-a748-2f44222f3dff,SaaS
+8287052b-477d-4999-a748-2f44222f3dff,Other Cloud: Hybrid/Private/On-prem virtualization
+05e2a9dd-0204-4d54-a473-c2a309b1f1ff,SaaS
+05e2a9dd-0204-4d54-a473-c2a309b1f1ff,Other Cloud: Hybrid/Private/On-prem virtualization
+990522f4-438c-4b2c-98e0-56e197e52a8b,
+fdf04d89-5a9c-49ee-b86b-97e4fb5de323,SaaS
+4917a5a1-788b-4d4f-8546-645bd454c1d5,SaaS
+4917a5a1-788b-4d4f-8546-645bd454c1d5,Other Cloud: Hybrid/Private/On-prem virtualization
+7da6c961-4ee5-49c2-adb2-1e8f804680a8,
+4d6f8735-5378-4bd4-aa4b-974fe30249de,Other Cloud: Hybrid/Private/On-prem virtualization
+4d6f8735-5378-4bd4-aa4b-974fe30249de,SaaS
+e0972492-c990-4509-af95-f592cff44691,
+de21f189-5b37-42cc-8151-7d4c3838b49d,SaaS
+de21f189-5b37-42cc-8151-7d4c3838b49d,PaaS
+de21f189-5b37-42cc-8151-7d4c3838b49d,IaaS
+fd7a49a1-3354-47b8-bfcf-428ce605b034,Other Cloud: Hybrid/Private/On-prem virtualization
+fd7a49a1-3354-47b8-bfcf-428ce605b034,SaaS
+0efb258e-b553-45b1-b609-e647d026b855,SaaS
+0efb258e-b553-45b1-b609-e647d026b855,IaaS
+0efb258e-b553-45b1-b609-e647d026b855,Other Cloud: Hybrid/Private/On-prem virtualization
+3c7ee40d-5cae-407e-bc1d-5262cef197f9,
+1f302ef9-36b1-4552-9316-c470f5a1b8c0,Other Cloud: Hybrid/Private/On-prem virtualization
+1f302ef9-36b1-4552-9316-c470f5a1b8c0,SaaS
+1f302ef9-36b1-4552-9316-c470f5a1b8c0,IaaS
+1f302ef9-36b1-4552-9316-c470f5a1b8c0,PaaS
+00e6f20e-0fbb-41fd-818d-7d0e4deaee14,Other Cloud: Hybrid/Private/On-prem virtualization
+b488e50d-89d8-4f59-8495-2b23c845bcbd,SaaS
+a272e0a2-fa9d-49cb-893f-dc764de1ca83,
+d4b1a756-4819-4370-a628-4857e8fe3026,SaaS
+d4b1a756-4819-4370-a628-4857e8fe3026,Other Cloud: Hybrid/Private/On-prem virtualization
+8e947f1a-0312-4659-830b-0a4dc07af14c,SaaS
+00be2d24-1266-4f3d-b898-6b7138ceb1fa,
+8afe99cf-a6be-437e-a793-8516c1f97ef8,SaaS
+b8d897bd-56dc-45ae-b950-64ae01e48590,SaaS
+b8d897bd-56dc-45ae-b950-64ae01e48590,Other Cloud: Hybrid/Private/On-prem virtualization
+5046122b-a6c1-48d1-8ae1-c2448ab1d40e,SaaS
+76ee8466-e12b-40ea-aae2-7432d0ee9cb0,SaaS
+6f8a3f29-e9da-4fcf-8fd3-8effae2c8858,
+20f8b23a-29ff-460f-9b9f-70fd76aa84a6,SaaS
+20f8b23a-29ff-460f-9b9f-70fd76aa84a6,Other Cloud: Hybrid/Private/On-prem virtualization
+2879cfea-d1b1-4000-83e5-805e327ccc82,SaaS
+2879cfea-d1b1-4000-83e5-805e327ccc82,IaaS
+2879cfea-d1b1-4000-83e5-805e327ccc82,Other Cloud: Hybrid/Private/On-prem virtualization
+78a63f0b-be52-4095-b7da-ef8588250f1f,Other Cloud: Hybrid/Private/On-prem virtualization
+d4192b7e-93ca-42ef-bd57-960bc4bb12d7,SaaS
+d4192b7e-93ca-42ef-bd57-960bc4bb12d7,Other Cloud: Hybrid/Private/On-prem virtualization
+882af28e-8f24-441b-a9f4-71e27aa73003,SaaS
+882af28e-8f24-441b-a9f4-71e27aa73003,Other Cloud: Hybrid/Private/On-prem virtualization
+c4099915-f83a-4270-964c-eb07507a0bb1,
+5174b36f-b6c4-491e-b820-a001e8307f8d,SaaS
+30938f3d-912b-481b-9054-0c3584bf578c,
+6a4648e7-1fb3-4a81-8730-91d791cce7f6,SaaS
+b24211e9-5d73-400b-8360-4c5927720ae3,SaaS
+797ea4fb-740e-4995-9b0e-0636188d62ff,
+22d458b3-69bd-4511-9d06-e8a5f7492e4a,
+9facb0dd-ed48-4972-84b2-be762fa27956,
+8f8446cb-8873-4984-8814-3741fe241ad0,Other Cloud: Hybrid/Private/On-prem virtualization
+8f8446cb-8873-4984-8814-3741fe241ad0,SaaS
+0b7d91df-4b16-4ba3-8641-dd7776411c72,
+0c924d86-93c7-4822-aa14-9ede8cbe446c,IaaS
+0c924d86-93c7-4822-aa14-9ede8cbe446c,SaaS
+0c924d86-93c7-4822-aa14-9ede8cbe446c,PaaS
+0c924d86-93c7-4822-aa14-9ede8cbe446c,Other Cloud: Hybrid/Private/On-prem virtualization
+b92d2b61-aa11-4287-81cd-af9a157063b2,SaaS
+b92d2b61-aa11-4287-81cd-af9a157063b2,Other Cloud: Hybrid/Private/On-prem virtualization
+b92d2b61-aa11-4287-81cd-af9a157063b2,IaaS
+0472586e-2e3a-4837-8d7a-cd1117960cbb,IaaS
+0472586e-2e3a-4837-8d7a-cd1117960cbb,SaaS
+0472586e-2e3a-4837-8d7a-cd1117960cbb,Other Cloud: Hybrid/Private/On-prem virtualization
+4cbacf79-e3cf-46fc-ac93-edac2e99066f,Other Cloud: Hybrid/Private/On-prem virtualization
+4cbacf79-e3cf-46fc-ac93-edac2e99066f,PaaS
+4cbacf79-e3cf-46fc-ac93-edac2e99066f,SaaS
+633d1641-15b9-4e52-be79-93bfb6ca2a60,IaaS
+1abe113d-2443-4b37-bf98-a5da0c833ca3,SaaS
+a6755b80-7586-4dce-a407-8823355a226d,Other Cloud: Hybrid/Private/On-prem virtualization
+a6755b80-7586-4dce-a407-8823355a226d,SaaS
+ad8077bd-00d7-4be4-8dd7-ac492413769a,Other Cloud: Hybrid/Private/On-prem virtualization
+ad8077bd-00d7-4be4-8dd7-ac492413769a,SaaS
+76a32923-1907-4501-858a-068be117ca7e,SaaS
+76a32923-1907-4501-858a-068be117ca7e,Other Cloud: Hybrid/Private/On-prem virtualization
+05b67c17-6321-43a1-b51c-24300e5c4da0,SaaS
+8b5958ed-5588-42cd-94ff-1b1342812402,Other Cloud: Hybrid/Private/On-prem virtualization
+8b5958ed-5588-42cd-94ff-1b1342812402,IaaS
+8b5958ed-5588-42cd-94ff-1b1342812402,SaaS
+e8600c0c-b986-4207-aad3-d85b34e59f0a,SaaS
+e346daf0-2abb-4d1c-b5dc-944388fc2943,Other Cloud: Hybrid/Private/On-prem virtualization
+e346daf0-2abb-4d1c-b5dc-944388fc2943,IaaS
+e346daf0-2abb-4d1c-b5dc-944388fc2943,SaaS
+6f966d3f-6e6e-412d-bfba-1f00093193e2,Other Cloud: Hybrid/Private/On-prem virtualization
+6f966d3f-6e6e-412d-bfba-1f00093193e2,SaaS
+475c4235-6db9-498d-afd9-1596574c79f2,Other Cloud: Hybrid/Private/On-prem virtualization
+475c4235-6db9-498d-afd9-1596574c79f2,SaaS
+83c235b7-e3c9-4d63-b7fe-d5a78a9dbbb0,SaaS
+92eec7a7-5e2f-4405-8290-b433e80358de,SaaS
+92eec7a7-5e2f-4405-8290-b433e80358de,Other Cloud: Hybrid/Private/On-prem virtualization
+6f3ce3ef-96b4-4fdc-a592-8d531ce7df1e,
+e2ba4866-9b79-462e-a8e1-ae2d0186ccc8,SaaS
+8f77cfcd-47ad-447e-88f8-7df38d1a5743,SaaS
+189d3486-50ef-43a2-82d3-b6272fbb2945,SaaS
+a7b07b0a-9e7f-4c90-8912-70eef9641ebd,
+2586a11b-99e1-46fb-ad97-4229cf49db85,
+7b600e70-4d08-454c-a7be-07071b48a64c,SaaS
+7b600e70-4d08-454c-a7be-07071b48a64c,PaaS
+7b600e70-4d08-454c-a7be-07071b48a64c,IaaS
+7b600e70-4d08-454c-a7be-07071b48a64c,Other Cloud: Hybrid/Private/On-prem virtualization
+dc4affae-55b9-4e8d-bff3-83fbb8a22bb9,
+ccb7f013-d49c-4889-b395-b38ebaf57c10,Other Cloud: Hybrid/Private/On-prem virtualization
+ae2f2ad0-2b67-4a79-af51-9ec81ce3ea5c,
+c6ea7acd-7c1a-4feb-83f6-6a15c82b3326,SaaS
+6f1edb05-6e78-4758-a21a-0337784928ad,SaaS
+ad36b133-8fd5-4715-9396-4c65ff38ab71,PaaS
+ad36b133-8fd5-4715-9396-4c65ff38ab71,Other Cloud: Hybrid/Private/On-prem virtualization
+ad36b133-8fd5-4715-9396-4c65ff38ab71,SaaS
+ad36b133-8fd5-4715-9396-4c65ff38ab71,IaaS
+11dfbf01-5315-4487-bc13-2182759dd489,SaaS
+11536bef-d5ae-4c6d-8ee2-8124795e1f6d,
+82492e2d-751c-427d-8b0f-563fd0101c0e,SaaS
+2186ed7e-d2e5-4875-a867-370813518589,Other Cloud: Hybrid/Private/On-prem virtualization
+2186ed7e-d2e5-4875-a867-370813518589,SaaS
+7e56e1d5-fa42-44c4-926a-ebad12abb830,SaaS
+7e56e1d5-fa42-44c4-926a-ebad12abb830,IaaS
+91cfd967-30e9-4ce5-aa9a-ab3ad17eb62e,
+bac1057f-745a-4541-a775-4443f21cb956,
+36e14cbc-fe45-49cf-897e-4c4e64b1a36a,
+f0307acc-f8cb-459e-a4eb-f78648c94df2,SaaS
+6df239b2-24fb-4986-8d68-2ed8fc8e791e,
+405c7027-c37b-48c9-ab33-76b3eaffe5d4,SaaS
+2a5453a1-11d2-441d-b366-d6ea3f92f50c,SaaS
+807e3968-be29-4f1c-9454-0dd68a76fcdb,SaaS
+807e3968-be29-4f1c-9454-0dd68a76fcdb,Other Cloud: Hybrid/Private/On-prem virtualization
+a28906d0-c2b1-4b27-a708-0109d4a7e9cb,SaaS
+a28906d0-c2b1-4b27-a708-0109d4a7e9cb,Other Cloud: Hybrid/Private/On-prem virtualization
+0812038e-b0de-4097-b861-3bf029efd416,SaaS
+7bf4dc50-4c39-4388-84e7-9a530e122ca1,SaaS
+07e1a337-8f67-4fa7-b7ba-d9cfe6a10387,SaaS
+07e1a337-8f67-4fa7-b7ba-d9cfe6a10387,Other Cloud: Hybrid/Private/On-prem virtualization
+07e1a337-8f67-4fa7-b7ba-d9cfe6a10387,IaaS
+cb53aa94-a47b-492a-98e3-d28cb5c68215,SaaS
+cbd61e86-abb0-4ff5-a59c-30c9f82bf926,SaaS
+cbd61e86-abb0-4ff5-a59c-30c9f82bf926,IaaS
+cbd61e86-abb0-4ff5-a59c-30c9f82bf926,PaaS
+a30c66d0-b497-4916-828c-6a458bb5ae64,
+99b5fca7-28cf-481c-b78c-e02c5bd2dc59,Other Cloud: Hybrid/Private/On-prem virtualization
+99b5fca7-28cf-481c-b78c-e02c5bd2dc59,SaaS
+7e4b723d-f541-4df4-a0e5-6ec5b521ecbb,IaaS
+7e4b723d-f541-4df4-a0e5-6ec5b521ecbb,Other Cloud: Hybrid/Private/On-prem virtualization
+7e4b723d-f541-4df4-a0e5-6ec5b521ecbb,SaaS
+178aef75-b744-44a7-9636-846034edd2d0,SaaS
+178aef75-b744-44a7-9636-846034edd2d0,IaaS
+178aef75-b744-44a7-9636-846034edd2d0,PaaS
+df379980-20cf-4ff6-9ffe-285580e923d7,
+c0a32c93-f140-4635-9970-c2ec203e6056,SaaS
+e70426d7-8e7e-4611-8839-56a46a9402fc,
+fc6582cf-141d-485d-8efd-2c5b69e5a71c,SaaS
+c851f4e2-dfe8-4b9b-9e00-9a9ad9e1301f,
+73c015eb-8500-464e-a497-4a7b2e786852,
+f2944bcc-bd7f-4fc5-b2cf-f9414df32d71,SaaS
+d200d020-b31d-489c-98bd-c2240889ac52,IaaS
+0656b76d-2c3e-4d9f-9eeb-91185425e92e,
+827c2863-2db6-43f6-90cb-3c11ac73ac16,
+ca364b2b-63d3-4f1b-8d88-1ae7bab380a4,
+b6071050-9984-474d-829a-c6e9031ea40d,
+a484440d-0625-48e5-ba2f-6752c135bcdf,SaaS
+ff411138-c0f0-442c-a5ff-bef46022826d,SaaS
+ff411138-c0f0-442c-a5ff-bef46022826d,Other Cloud: Hybrid/Private/On-prem virtualization
+a6b6c4c2-6b6c-42e0-9cf0-0d43cebeb319,
+3e3b6211-5bdf-4fd3-8765-0798693d7361,
+89aa59f7-c95d-4f46-b1f0-4870d108ec19,SaaS
+89aa59f7-c95d-4f46-b1f0-4870d108ec19,PaaS
+89aa59f7-c95d-4f46-b1f0-4870d108ec19,IaaS
+1a44a4ee-2fd8-4ad5-b8d7-bf922312f18d,PaaS
+1a44a4ee-2fd8-4ad5-b8d7-bf922312f18d,SaaS
+1a44a4ee-2fd8-4ad5-b8d7-bf922312f18d,IaaS
+1a44a4ee-2fd8-4ad5-b8d7-bf922312f18d,Other Cloud: Hybrid/Private/On-prem virtualization
+52514750-8467-42b9-b4e7-45fba4e03aae,
+90704e35-3689-4d48-a456-5b677d69ccb1,IaaS
+90704e35-3689-4d48-a456-5b677d69ccb1,PaaS
+90704e35-3689-4d48-a456-5b677d69ccb1,Other Cloud: Hybrid/Private/On-prem virtualization
+90704e35-3689-4d48-a456-5b677d69ccb1,SaaS
+7da88a81-02c3-43e8-bd3c-1419bffcdc2c,SaaS
+7da88a81-02c3-43e8-bd3c-1419bffcdc2c,IaaS
+7da88a81-02c3-43e8-bd3c-1419bffcdc2c,Other Cloud: Hybrid/Private/On-prem virtualization
+c80efe2a-5e40-463f-af9b-90e6a13d6e1c,
+99afc0fc-d83d-4212-a1ec-a7729c9dde61,SaaS
+99afc0fc-d83d-4212-a1ec-a7729c9dde61,Other Cloud: Hybrid/Private/On-prem virtualization
+87f6499b-f4b3-4eca-a529-c35595d2fd91,Other Cloud: Hybrid/Private/On-prem virtualization
+87f6499b-f4b3-4eca-a529-c35595d2fd91,SaaS
+cf7cfb0c-e346-4d68-be49-04665074116b,Other Cloud: Hybrid/Private/On-prem virtualization
+cf7cfb0c-e346-4d68-be49-04665074116b,SaaS
+a759d99f-1f05-4ed1-bc40-e40cc884641e,
+c605de48-8a9e-42ff-8d39-e58268a02db9,IaaS
+c605de48-8a9e-42ff-8d39-e58268a02db9,PaaS
+c605de48-8a9e-42ff-8d39-e58268a02db9,SaaS
+c605de48-8a9e-42ff-8d39-e58268a02db9,Other Cloud: Hybrid/Private/On-prem virtualization
+535e4824-812b-4086-8600-e586a8a7718e,SaaS
+cd8dd4d9-0da1-44d9-a88e-717f4ec8c8bb,Other Cloud: Hybrid/Private/On-prem virtualization
+cd8dd4d9-0da1-44d9-a88e-717f4ec8c8bb,SaaS
+3b2fbc33-4ec1-4bd8-b5db-76ab5d4d08f2,
+c371a0f8-5432-450e-9dcf-9d1a33928e44,
+f4327794-ea2b-4d0c-b5bf-56da3817d5af,
+66c8c015-07f3-4b40-807d-267d45f3cef4,SaaS
+c0b89cc8-e65c-4673-bc33-e779f1728d4e,
+9e0d030b-d7f3-4162-965d-9a46ef63c786,
+5bd69fb7-944d-4f75-9c62-5405464def5a,Other Cloud: Hybrid/Private/On-prem virtualization
+5bd69fb7-944d-4f75-9c62-5405464def5a,SaaS
+ebe99cd8-97bb-4686-8fcd-4b44a771b5ff,
+d340fa84-ed68-4a4f-8982-96c30c46075c,
+aae7eca1-78f0-41bd-81d2-8124e7cf0232,
+e392840f-930f-4ab9-a6c5-469e9c66663f,SaaS
+e392840f-930f-4ab9-a6c5-469e9c66663f,Other Cloud: Hybrid/Private/On-prem virtualization
+0fafeaaa-ef48-4d99-8455-7ce3bdfbf929,
+ae7f8ebf-7568-4bcf-83ae-fa81cd8b500c,IaaS
+ae7f8ebf-7568-4bcf-83ae-fa81cd8b500c,Other Cloud: Hybrid/Private/On-prem virtualization
+ae7f8ebf-7568-4bcf-83ae-fa81cd8b500c,SaaS
+593273b6-70c7-4665-be16-2be15a7646a0,
+9228fa3a-df9f-4e18-b3e0-e245e0d00678,SaaS
+4e53dede-6793-4321-b953-8e49b27e78ac,
+8c692124-77e2-46ec-a72c-5e6824119bb0,
+0f056241-99bb-4ea6-bfbb-d074c3d30d4c,PaaS
+0f056241-99bb-4ea6-bfbb-d074c3d30d4c,IaaS
+0f056241-99bb-4ea6-bfbb-d074c3d30d4c,SaaS
+8fd4e051-808b-4724-8771-56cd54ef9d45,
+46a9bac8-6d76-4a7a-ad03-5d8e0d76c019,
+dfddc8e2-53a2-416c-8820-0c3b7049dd18,PaaS
+dfddc8e2-53a2-416c-8820-0c3b7049dd18,SaaS
+dfddc8e2-53a2-416c-8820-0c3b7049dd18,Other Cloud: Hybrid/Private/On-prem virtualization
+dfddc8e2-53a2-416c-8820-0c3b7049dd18,IaaS
+eecfd82f-20bd-4c3b-94c9-91c4e66f26c3,SaaS
+47f2f101-a1ae-4a26-b1d6-5103b7c56eb9,SaaS
+47f2f101-a1ae-4a26-b1d6-5103b7c56eb9,Other Cloud: Hybrid/Private/On-prem virtualization
+ad983643-25bb-4c4d-abc8-d2b3d7e7725a,SaaS
+ad983643-25bb-4c4d-abc8-d2b3d7e7725a,IaaS
+ac11d186-c540-41dd-8754-edc818527360,PaaS
+ac11d186-c540-41dd-8754-edc818527360,Other Cloud: Hybrid/Private/On-prem virtualization
+ac11d186-c540-41dd-8754-edc818527360,SaaS
+ac11d186-c540-41dd-8754-edc818527360,IaaS
+d9772d78-bd89-4986-9bf8-75e29dda80d9,
+8245b284-5cc1-439b-8aca-def9e56001c7,
+31f88f34-d1e6-4fe5-9bbb-579fc44f900f,
+d8835ed3-a0d6-4314-98eb-d6bb954cdcbe,
+87cc706d-4531-4143-935e-34c08acc74a2,
+fce02d6f-275d-4965-a663-4de16ca12e2f,
+6133bdd8-52fc-4a16-90e9-9d6a80666795,
+f63b701f-0670-4aa0-adda-f0a10f9b10b4,
+5bc8800c-1288-4d62-939a-1d27424bb03a,SaaS
+71eceb3c-017e-4fcd-bd26-26a586b1b1f7,
+924783dc-87f6-4be5-8b18-d784ff0582e3,SaaS
+6a7f1f8e-d974-40e9-b5f1-ca8c01e6d562,IaaS
+6a7f1f8e-d974-40e9-b5f1-ca8c01e6d562,SaaS
+6a7f1f8e-d974-40e9-b5f1-ca8c01e6d562,Other Cloud: Hybrid/Private/On-prem virtualization
+6a7f1f8e-d974-40e9-b5f1-ca8c01e6d562,PaaS
+0bce757e-4d66-4d30-919e-8a6f215acd5a,
+b83a2925-4827-41da-bca2-9e5778c56d61,IaaS
+b83a2925-4827-41da-bca2-9e5778c56d61,SaaS
+b83a2925-4827-41da-bca2-9e5778c56d61,Other Cloud: Hybrid/Private/On-prem virtualization
+8c01e5e4-12ee-41fa-b307-3dd0d1df7683,PaaS
+8c01e5e4-12ee-41fa-b307-3dd0d1df7683,SaaS
+8c01e5e4-12ee-41fa-b307-3dd0d1df7683,IaaS
+25a1d40b-387e-4c7b-bb4c-39e31e629fa6,Other Cloud: Hybrid/Private/On-prem virtualization
+25a1d40b-387e-4c7b-bb4c-39e31e629fa6,SaaS
+1743f519-4a00-49d3-94ec-7f7e0bfab950,
+bd0bddfa-ef2c-4d38-b4de-a02f5b8907b9,
+7c22e8da-0c18-4e64-a512-041ee37fc82a,Other Cloud: Hybrid/Private/On-prem virtualization
+7c22e8da-0c18-4e64-a512-041ee37fc82a,SaaS
+18c6f970-e740-4e41-a975-a21db201a601,Other Cloud: Hybrid/Private/On-prem virtualization
+d0aac26f-826f-455c-9537-2c870bfc2f87,
+e41330f5-ddeb-4527-90f1-1fb9f61bdb46,Other Cloud: Hybrid/Private/On-prem virtualization
+6808e82e-d2dc-4895-808c-3bb65fe609b7,PaaS
+6808e82e-d2dc-4895-808c-3bb65fe609b7,SaaS
+6808e82e-d2dc-4895-808c-3bb65fe609b7,IaaS
+296578f5-8177-4200-96c4-7d7a785f5fad,SaaS
+5e110f44-6c31-4549-a8a9-fb51d70ff6ca,SaaS
+1576793d-e99b-4895-9ea1-92cf2c62e51c,Other Cloud: Hybrid/Private/On-prem virtualization
+06e049f7-aef1-4616-a47c-3bf733f15b63,Other Cloud: Hybrid/Private/On-prem virtualization
+06e049f7-aef1-4616-a47c-3bf733f15b63,PaaS
+06e049f7-aef1-4616-a47c-3bf733f15b63,SaaS
+06e049f7-aef1-4616-a47c-3bf733f15b63,IaaS
+8ac117b9-0c99-4f70-a6d6-a05645ddf90f,Other Cloud: Hybrid/Private/On-prem virtualization
+12e5887e-20f2-47d1-baec-0d6260a75756,
+fd828e60-635a-4741-aa30-b2f222ab476c,
+bf0147dd-7caa-48e3-9a29-47f45057ff55,
+6eda8c69-8e7e-4d3f-af25-12afd998ce3c,
+16c2ef9d-e5a6-492e-b34b-4682c050ca26,
+1869b8da-6b71-45cd-9574-733a20558352,Other Cloud: Hybrid/Private/On-prem virtualization
+da848005-885e-40df-a675-e48d05ec654a,SaaS
+da848005-885e-40df-a675-e48d05ec654a,IaaS
+da848005-885e-40df-a675-e48d05ec654a,Other Cloud: Hybrid/Private/On-prem virtualization
+c75c478b-f375-4e04-9ec9-95bcbcd79086,
+634d556c-0494-4e43-ae66-4357b3032fd6,IaaS
+634d556c-0494-4e43-ae66-4357b3032fd6,SaaS
+35b9fcab-9d7d-4f41-ba0a-9a07dc868327,IaaS
+35b9fcab-9d7d-4f41-ba0a-9a07dc868327,SaaS
+99c32d58-8d11-4759-baea-8b1862e37ac2,
+89a0d3c3-fa65-4d11-9379-11f4b477a999,
+69af2fe5-759b-4a09-b826-e1762ab7479a,Other Cloud: Hybrid/Private/On-prem virtualization
+18654ab8-56f2-4b66-9689-886855e99c4f,
+b9d50ef8-f5c3-433d-9b1a-b56c1fce9f72,SaaS
+0a4ec82b-7fa8-4990-8cd9-a3b0c14d7b94,
+565d2224-d865-42bf-a489-2c6370abdd9a,SaaS
+59206b03-4ccb-4f76-8333-bcde9bdb895a,SaaS
+c64e5034-b6b8-44d1-a15d-8cf0ba7cfcae,SaaS
+d4217cb0-4b26-43bc-bd5f-eff094d05352,SaaS
+d4217cb0-4b26-43bc-bd5f-eff094d05352,PaaS
+d4217cb0-4b26-43bc-bd5f-eff094d05352,IaaS
+d4217cb0-4b26-43bc-bd5f-eff094d05352,Other Cloud: Hybrid/Private/On-prem virtualization
+97a6f274-31a9-4f0d-b476-8bb6103214af,Other Cloud: Hybrid/Private/On-prem virtualization
+97a6f274-31a9-4f0d-b476-8bb6103214af,IaaS
+97a6f274-31a9-4f0d-b476-8bb6103214af,SaaS
+a255c9a6-56d5-4138-8842-4636286faa49,
+c191969e-5b09-4991-bd93-a63819b44a2f,
+df6a94b6-4240-4c4d-ba71-8d417e0599ba,SaaS
+4219ed7a-340e-47b3-a4f0-0048115adcce,
+cdbcb9fa-b0dc-4d0d-8891-105cec404f16,Other Cloud: Hybrid/Private/On-prem virtualization
+9331539b-d3b1-4435-a48c-bc4bff1c7bc6,SaaS
+e8f0471c-3e7c-431d-8063-ad838ab151e4,SaaS
+96dc120b-a381-4bfa-ae4a-2f849f234f4c,
+af059538-08cb-446d-a542-84223c52cf7b,SaaS
+269644a7-b695-4f7c-8c9c-9b2514c1a0b8,Other Cloud: Hybrid/Private/On-prem virtualization
+269644a7-b695-4f7c-8c9c-9b2514c1a0b8,SaaS
+8f1948c8-7ca4-40e1-8642-452bb158bdf3,SaaS
+8f1948c8-7ca4-40e1-8642-452bb158bdf3,Other Cloud: Hybrid/Private/On-prem virtualization
+8fccac92-c7f0-44d1-9028-cd99582db5c9,
+16997c74-7e5a-484d-a7ae-993816239cfb,SaaS
+8d90607f-74c9-4a9b-91af-ec2071d17566,IaaS
+b54c65de-ff8f-4571-a23a-3dba58921aef,Other Cloud: Hybrid/Private/On-prem virtualization
+b54c65de-ff8f-4571-a23a-3dba58921aef,SaaS
+5cf076a9-db69-4399-9f53-e775cb97029a,Other Cloud: Hybrid/Private/On-prem virtualization
+5cf076a9-db69-4399-9f53-e775cb97029a,SaaS
+4951d0d9-8e85-413c-8788-4af5b5f1226e,SaaS
+4e20450d-4c5d-4bd4-80d2-32c965386ff6,
+a806f069-81bf-4a3a-a01e-ce946255c999,SaaS
+396d9d5c-aec2-4320-893b-30707f32e138,SaaS
+2654c2ae-fa31-4c95-b577-988536f2292c,Other Cloud: Hybrid/Private/On-prem virtualization
+2654c2ae-fa31-4c95-b577-988536f2292c,SaaS
+2f179655-fbdd-43b6-b8d8-e412c2ced8b1,Other Cloud: Hybrid/Private/On-prem virtualization
+2f179655-fbdd-43b6-b8d8-e412c2ced8b1,SaaS
+2f179655-fbdd-43b6-b8d8-e412c2ced8b1,IaaS
+1ba19fef-669c-426f-89ab-4ce1e0e6e867,
+5dd5c3ce-b357-4536-a906-1ed0e7b2bbb9,
+d75ec7c4-7883-45fc-8174-58eca6e427a5,Other Cloud: Hybrid/Private/On-prem virtualization
+d75ec7c4-7883-45fc-8174-58eca6e427a5,IaaS
+d75ec7c4-7883-45fc-8174-58eca6e427a5,SaaS
+76279cbf-f6f6-45be-8f69-4af3099798a8,Other Cloud: Hybrid/Private/On-prem virtualization
+76279cbf-f6f6-45be-8f69-4af3099798a8,SaaS
+c27bad59-4f30-4c74-b385-b7f284de0766,PaaS
+c27bad59-4f30-4c74-b385-b7f284de0766,SaaS
+c27bad59-4f30-4c74-b385-b7f284de0766,IaaS
+c27bad59-4f30-4c74-b385-b7f284de0766,Other Cloud: Hybrid/Private/On-prem virtualization
+c392c184-03e7-42ca-9b98-f1bfeb428cb1,SaaS
+5a1a52c0-54e6-4255-b507-d910a2c35b5e,IaaS
+c71b7c29-b1b1-428e-b4fd-839787bec622,
+e35fe54a-9f6d-4c8c-ab4b-761ac87c3b68,SaaS
+e35fe54a-9f6d-4c8c-ab4b-761ac87c3b68,Other Cloud: Hybrid/Private/On-prem virtualization
+73711982-0caa-4544-af1a-a8ab6a91787d,SaaS
+7c338b25-8702-41bb-a2df-68a87c51ff11,Other Cloud: Hybrid/Private/On-prem virtualization
+b2f6bef9-75c4-47ae-9206-9666f54af509,
+8f37f906-e6fc-4180-b4ab-c7a2731658c6,
+0ecca615-9bab-4513-a34d-b8a3eb026fc3,Other Cloud: Hybrid/Private/On-prem virtualization
+0ecca615-9bab-4513-a34d-b8a3eb026fc3,SaaS
+bb76c4c0-7a87-4e54-a658-25bfb18dec6f,
+26cf0d6c-41bc-4cb9-bcf5-59d14e558c48,SaaS
+c6c2a814-3911-4864-9af8-2945022315b2,
+59516e3f-2ddc-4486-9351-760e24b420da,
+5a7a3555-12d5-409d-a460-e296cd511174,SaaS
+d0c7737d-8701-476c-97f7-b0de29d8bc14,
+a9e0ef8b-cd17-4ba7-a6cb-7768e371bb6b,Other Cloud: Hybrid/Private/On-prem virtualization
+a9e0ef8b-cd17-4ba7-a6cb-7768e371bb6b,SaaS
+a9e0ef8b-cd17-4ba7-a6cb-7768e371bb6b,IaaS
+6f542b0c-d5e0-4a01-a47d-0ff98203a100,
+ca036223-3068-4cd4-a839-d92e3a4bc472,Other Cloud: Hybrid/Private/On-prem virtualization
+16b38072-608e-4ce6-93a1-82d5a995e120,SaaS
+82447ced-4cdb-44ea-8016-fd2fd32beb12,SaaS
+9cab8081-6bbc-42ba-85a0-d63d1fca10dc,
+b96310b4-fcf4-4930-9578-405c8ba01f87,
+177414df-000a-4f9f-a908-1720772c6d36,
+978e5032-b759-4bb1-9482-a5481dbcacbf,
+45b93fcf-14e8-433e-ad55-bc14e82a541a,
+7b0833c4-e856-41cd-9ce0-66c5c9d468d9,Other Cloud: Hybrid/Private/On-prem virtualization
+7b0833c4-e856-41cd-9ce0-66c5c9d468d9,SaaS
+1a2aabcc-87ce-4eec-a167-97deeaf561f2,
+b9380759-faf7-435a-a639-cd3197faa2cb,SaaS
+b9380759-faf7-435a-a639-cd3197faa2cb,Other Cloud: Hybrid/Private/On-prem virtualization
+d3a2b0e9-fdbe-4139-af6a-ab04e5adfc88,
+7c053d5d-dc0a-415b-bbb5-e1a08b0cc155,Other Cloud: Hybrid/Private/On-prem virtualization
+7c053d5d-dc0a-415b-bbb5-e1a08b0cc155,SaaS
+7e9f38b7-bdf5-440f-afdd-0b3a089c808d,SaaS
+324d4822-2908-45a7-85af-ca7a4504d02e,SaaS
+324d4822-2908-45a7-85af-ca7a4504d02e,Other Cloud: Hybrid/Private/On-prem virtualization
+4102eff8-523f-49ba-8f7a-458b8bff4e5a,
+e4f127bf-8b1a-481b-b9b2-9467d36a8842,
+2ab30b39-bf6f-4e58-98ee-a10794a84075,Other Cloud: Hybrid/Private/On-prem virtualization
+2ab30b39-bf6f-4e58-98ee-a10794a84075,SaaS
+f33ee4ef-de89-48db-bc47-98deea6c9ff0,
+42cdbf68-ed83-4bbe-ba31-b012407a104b,SaaS
+3dcd33e4-972b-435d-a362-6db2c4b9ef2c,SaaS
+365308a8-127f-4014-83fa-7006db00c039,PaaS
+365308a8-127f-4014-83fa-7006db00c039,Other Cloud: Hybrid/Private/On-prem virtualization
+365308a8-127f-4014-83fa-7006db00c039,IaaS
+365308a8-127f-4014-83fa-7006db00c039,SaaS
+e34bb364-fd68-431e-be0c-ef52a3220db9,SaaS
+9f10e119-9d37-4ee2-80b9-1ccc70bbdc4d,
+d3039352-a4c3-4296-ad43-eb998e9600d5,
+6ac173bb-2337-4f96-8e75-f9bf17ff2ac8,IaaS
+6ac173bb-2337-4f96-8e75-f9bf17ff2ac8,SaaS
+6ac173bb-2337-4f96-8e75-f9bf17ff2ac8,Other Cloud: Hybrid/Private/On-prem virtualization
+976cae7e-dffd-4bce-b93e-f116091b6b99,
+d1983b24-6f31-4cab-8a6e-8f2961655d77,
+ac6a69e3-cf3a-4e3e-9078-d25047afd23f,
+6c08c112-d9f6-4647-af52-5fe86fc93088,SaaS
+6c08c112-d9f6-4647-af52-5fe86fc93088,Other Cloud: Hybrid/Private/On-prem virtualization
+0238765e-c71d-45c9-8495-9c3a99f16603,PaaS
+9298cb67-50b6-4ea4-8621-de17e9670443,SaaS
+0b6b2074-f52a-4156-8d6a-65d0bb6a7284,
+1e4804f8-5190-41c4-8058-a9524bb4020e,IaaS
+1e4804f8-5190-41c4-8058-a9524bb4020e,PaaS
+1e4804f8-5190-41c4-8058-a9524bb4020e,Other Cloud: Hybrid/Private/On-prem virtualization
+1e4804f8-5190-41c4-8058-a9524bb4020e,SaaS
+045069bb-bcaf-4fac-bb6f-7d1cd76b775f,SaaS
+045069bb-bcaf-4fac-bb6f-7d1cd76b775f,Other Cloud: Hybrid/Private/On-prem virtualization
+733f1c2a-8990-4d93-895c-9f1b23d6745b,SaaS
+9a569698-8ea9-499c-9a6a-18f24783dbf6,SaaS
+a9ef87c0-d706-4d52-908d-3c18e03a8eee,SaaS
+bbf33c96-701d-4f56-ac30-054ee9e8d972,
+7d05e165-f4c1-4e30-a7ef-b6e98a1f5a6e,IaaS
+7d05e165-f4c1-4e30-a7ef-b6e98a1f5a6e,PaaS
+7d05e165-f4c1-4e30-a7ef-b6e98a1f5a6e,SaaS
+7d05e165-f4c1-4e30-a7ef-b6e98a1f5a6e,Other Cloud: Hybrid/Private/On-prem virtualization
+d7625e1f-7ac9-4527-8430-a39207e88638,Other Cloud: Hybrid/Private/On-prem virtualization
+d7625e1f-7ac9-4527-8430-a39207e88638,SaaS
+f1df297d-eda1-4afc-9058-b7bbc78585e5,Other Cloud: Hybrid/Private/On-prem virtualization
+320d3be9-0c27-4bfc-b4ba-7cedf3bac7b7,SaaS
+15d8c418-0288-494d-9232-df4777cfad01,
+3fbbedaa-08fc-436f-a227-dd765e6432eb,
+1baf01be-9c36-4368-bbdd-e64d2d765f88,
+5fd92e8f-96d8-497d-917a-201124bed69b,SaaS
+8cf70861-e671-4a5e-a3a6-6a5771cf0a78,SaaS
+6dbca92e-8b9e-47a8-87ee-cb93e3ba38c7,SaaS
+c8af1bc2-a36f-4d39-ae64-0b2f0d57ab81,
+608da8eb-b8e4-4784-bb40-396280742f68,
+82009942-8768-460c-b001-5f3085a1d9e6,
+44ea4d41-99ea-4dfb-89ac-c9e491649177,
+c8604ddb-a0d7-4a42-a4ec-3b5c84aee259,Other Cloud: Hybrid/Private/On-prem virtualization
+c8604ddb-a0d7-4a42-a4ec-3b5c84aee259,SaaS
+b58adca1-9058-4d25-95d6-ba86d1b22567,
+751c48c5-0332-4525-b3d9-45886a8b7b6f,
+e1a72266-e6e6-4a2e-b114-5d5adafb0c15,PaaS
+e1a72266-e6e6-4a2e-b114-5d5adafb0c15,IaaS
+e1a72266-e6e6-4a2e-b114-5d5adafb0c15,Other Cloud: Hybrid/Private/On-prem virtualization
+e1a72266-e6e6-4a2e-b114-5d5adafb0c15,SaaS
+6a8a4db6-61c0-4b1a-b073-27eee93a004d,IaaS
+6a8a4db6-61c0-4b1a-b073-27eee93a004d,PaaS
+6a8a4db6-61c0-4b1a-b073-27eee93a004d,SaaS
+6a8a4db6-61c0-4b1a-b073-27eee93a004d,Other Cloud: Hybrid/Private/On-prem virtualization
+601f2bfc-7141-48e9-a99c-0d69c3fd861a,
+6fa80462-4efe-494c-979a-2e3dd5af5505,SaaS
+aeff9602-e29e-4a95-b240-5c12f12ef807,SaaS
+3c475f8e-7eb0-4dc5-81da-9c669ca38756,
+be9385be-2da5-4bcf-860d-4475ad3e805d,
+cb45649a-fd3c-4164-b8c9-e3e4e316a7c5,SaaS
+cb45649a-fd3c-4164-b8c9-e3e4e316a7c5,Other Cloud: Hybrid/Private/On-prem virtualization
+6c91cbd6-7442-466c-8088-9cf48094f1ca,
+0160568c-aa3c-49af-98ff-da122d2e56f3,
+41c0346a-dcec-4204-88b5-d123986966fa,SaaS
+437af96a-0667-4b8b-ab36-f17a91440653,SaaS
+3589311c-7223-470f-954c-afd37f804028,
+c5acec3b-656e-4ff3-b014-317d55e85cda,IaaS
+c5acec3b-656e-4ff3-b014-317d55e85cda,Other Cloud: Hybrid/Private/On-prem virtualization
+c5acec3b-656e-4ff3-b014-317d55e85cda,SaaS
+b9902f56-f304-455f-a6d6-22cc9c9de8c9,SaaS
+dd17e619-78c6-4012-b2c1-eff80e2ef998,SaaS
+c90c2260-2797-4f26-9324-d743b710f8e5,
+079e5066-34b0-4d62-bcf1-ebc513b5ff78,Other Cloud: Hybrid/Private/On-prem virtualization
+079e5066-34b0-4d62-bcf1-ebc513b5ff78,IaaS
+079e5066-34b0-4d62-bcf1-ebc513b5ff78,SaaS
+53d680cf-b186-406d-aca6-e3c857ac64b5,SaaS
+a59162aa-047d-4b8b-a0c1-6a2806879645,SaaS
+a59162aa-047d-4b8b-a0c1-6a2806879645,Other Cloud: Hybrid/Private/On-prem virtualization
+a70b8e0f-ba95-4175-b3a4-d54f352a2be2,Other Cloud: Hybrid/Private/On-prem virtualization
+e91673fb-e8c2-451f-be82-c4c5bb08d7e6,SaaS
+f48fa2cd-7c61-4080-88f5-d7ca11c0063c,SaaS
+f48fa2cd-7c61-4080-88f5-d7ca11c0063c,IaaS
+f48fa2cd-7c61-4080-88f5-d7ca11c0063c,Other Cloud: Hybrid/Private/On-prem virtualization
+a474272a-1dcd-403f-ab7f-fd29ab8a2d53,
+c1813537-2aa1-44dc-a8ec-3d2511eaf28e,
+b7cde2ca-9d39-4e3d-af38-91c5dcfd4ed4,SaaS
+e102ac4a-31b5-4cb4-9212-c46b5abfa6a5,
+ca4fb591-7f68-4410-93e2-a59bfffb21cf,SaaS
+0af7c199-6ced-4861-9606-fc67265a33f6,SaaS
+0af7c199-6ced-4861-9606-fc67265a33f6,Other Cloud: Hybrid/Private/On-prem virtualization
+5b74f169-db61-4ff2-b741-80f9305e269a,IaaS
+5b74f169-db61-4ff2-b741-80f9305e269a,SaaS
+bedab532-b937-45a3-8e5f-4d289198d2b8,SaaS
+bedab532-b937-45a3-8e5f-4d289198d2b8,Other Cloud: Hybrid/Private/On-prem virtualization
+ff1d8ea0-fdf2-4239-a0d0-7b1a8cf38f6b,
+9741d870-f775-4144-9353-e26822fb5a57,SaaS
+9741d870-f775-4144-9353-e26822fb5a57,Other Cloud: Hybrid/Private/On-prem virtualization
+37311120-95ba-490e-8718-6fc395d8fa83,SaaS
+37311120-95ba-490e-8718-6fc395d8fa83,Other Cloud: Hybrid/Private/On-prem virtualization
+7a1fcc77-a696-4db0-9e31-831cbd6c0733,SaaS
+7a1fcc77-a696-4db0-9e31-831cbd6c0733,Other Cloud: Hybrid/Private/On-prem virtualization
+f8a2dd2a-cfca-4756-837a-6f1a41816327,Other Cloud: Hybrid/Private/On-prem virtualization
+2f7dfecf-e65c-4291-8b02-1380d75d56d0,
+a935d6ba-432c-4402-ba10-0a309119b00b,SaaS
+a935d6ba-432c-4402-ba10-0a309119b00b,Other Cloud: Hybrid/Private/On-prem virtualization
+5c1089ec-0409-42bf-974a-96385d753529,IaaS
+7d938fd0-0491-4985-8b5b-43307b958343,
+e34bb39c-2334-4e09-bea8-95c781363ed0,SaaS
+ad4843b2-dde4-4e35-a70f-3344baba67f3,IaaS
+ad4843b2-dde4-4e35-a70f-3344baba67f3,SaaS
+ad4843b2-dde4-4e35-a70f-3344baba67f3,PaaS
+230ca0a0-05c0-48b0-abfa-def02d4fdde4,
+586d7157-163b-4086-917c-1ddafd8b527b,
+ea2ad9bf-4d2b-4590-9957-ad1c2ed16cea,SaaS
+b3577a39-8dfb-48a9-b49e-657abadfbb13,SaaS
+7372af9e-594f-4fb7-924a-8b64188f219d,SaaS
+7372af9e-594f-4fb7-924a-8b64188f219d,IaaS
+babadc28-4527-40f6-9f13-3a429fb4e4be,SaaS
+babadc28-4527-40f6-9f13-3a429fb4e4be,Other Cloud: Hybrid/Private/On-prem virtualization
+36bf5d74-c936-4fc6-a180-a4854b9e1b14,SaaS
+c7c64c84-fec1-4e19-b3ac-9296384dce72,IaaS
+c7c64c84-fec1-4e19-b3ac-9296384dce72,PaaS
+c7c64c84-fec1-4e19-b3ac-9296384dce72,SaaS
+9764f7d5-4199-4d55-bee8-f04117914825,Other Cloud: Hybrid/Private/On-prem virtualization
+9764f7d5-4199-4d55-bee8-f04117914825,SaaS
+73542d90-52c4-4c5a-88ca-786c4df03376,
+6e0642b8-24bd-455b-a1c2-1dfa0e97c421,PaaS
+6e0642b8-24bd-455b-a1c2-1dfa0e97c421,Other Cloud: Hybrid/Private/On-prem virtualization
+6e0642b8-24bd-455b-a1c2-1dfa0e97c421,SaaS
+20ea7301-6ac9-4a66-84cb-89868ad50590,SaaS
+6054dccb-6141-4b71-82e1-2e650f2fb648,
+6880c444-0e36-4283-8f3a-b8b8c45f7c2a,SaaS
+6880c444-0e36-4283-8f3a-b8b8c45f7c2a,Other Cloud: Hybrid/Private/On-prem virtualization
+8b63669d-fc30-4a60-a579-b406281365ea,Other Cloud: Hybrid/Private/On-prem virtualization
+8b63669d-fc30-4a60-a579-b406281365ea,SaaS
+8b63669d-fc30-4a60-a579-b406281365ea,IaaS
+8b63669d-fc30-4a60-a579-b406281365ea,PaaS
+d633de7d-5ee0-49b9-b6cf-2db2a3857a95,
+0da8bd9c-9e85-4555-892a-ede61b8fdb11,Other Cloud: Hybrid/Private/On-prem virtualization
+0da8bd9c-9e85-4555-892a-ede61b8fdb11,SaaS
+a689af3e-effa-4893-bdfa-a6cc48436aef,Other Cloud: Hybrid/Private/On-prem virtualization
+bf1400f6-ffcc-4d49-a133-a2c0c95a68fe,PaaS
+bf1400f6-ffcc-4d49-a133-a2c0c95a68fe,Other Cloud: Hybrid/Private/On-prem virtualization
+bf1400f6-ffcc-4d49-a133-a2c0c95a68fe,SaaS
+bf1400f6-ffcc-4d49-a133-a2c0c95a68fe,IaaS
+ed8f5d28-df99-4455-9659-3dc3c633bfde,
+06eb5e71-2167-4fd2-8c68-7567ddc74d57,
+fc227572-a88d-460f-8d10-70c364c78bc6,
+2ff5ad4f-c219-425e-bbbf-120a9c86037f,SaaS
+2ff5ad4f-c219-425e-bbbf-120a9c86037f,Other Cloud: Hybrid/Private/On-prem virtualization
+5d614bf8-66e8-4f64-bcb5-05dfbd579280,IaaS
+5d614bf8-66e8-4f64-bcb5-05dfbd579280,Other Cloud: Hybrid/Private/On-prem virtualization
+5d614bf8-66e8-4f64-bcb5-05dfbd579280,PaaS
+5d614bf8-66e8-4f64-bcb5-05dfbd579280,SaaS
+76bc6c4a-c527-44b3-aadb-d5ea1f1a0ef1,SaaS
+76bc6c4a-c527-44b3-aadb-d5ea1f1a0ef1,Other Cloud: Hybrid/Private/On-prem virtualization
+197c06e0-96f3-4d5e-8c33-b7a3b6de3551,SaaS
+9f119126-9f0c-46b3-a3ae-d85ee1cb2d9c,
+08cb0005-fc3c-4a75-bca1-b908d4a46346,SaaS
+08cb0005-fc3c-4a75-bca1-b908d4a46346,Other Cloud: Hybrid/Private/On-prem virtualization
+72ba7622-77aa-420e-8583-46d4b48d8194,
+2fd15e18-1b2b-4650-a5d8-89bc10be9d50,SaaS
+826b0d81-0074-4731-86ae-b749c5a42534,
+146111bc-006e-415a-ac7c-1507c0f5befc,
+49a99cc1-b365-48ce-ba25-c4faf63e6167,SaaS
+f978cd4d-3311-4768-8f2c-ad0fe9efa52d,IaaS
+f978cd4d-3311-4768-8f2c-ad0fe9efa52d,SaaS
