@@ -27,9 +27,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Copy built assets to default app root (served by NGINX)
 COPY --from=build /opt/app-root/src/dist /opt/app-root/src
 
-# Ensure directories exist and are writable by arbitrary UID
-RUN mkdir -p /opt/app-root/src/logs /opt/app-root/src/tmp \
-  && chmod -R g=u /opt/app-root/src /etc/nginx /var/cache/nginx
+# UBI nginx ya está preparado para UID arbitrario; evitar chmod en /etc/nginx
+# Solo aseguramos que el contenido de la app está presente en /opt/app-root/src
 
 EXPOSE 8080
 
