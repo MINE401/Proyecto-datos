@@ -126,8 +126,8 @@ async def lifespan(app: FastAPI):
     # Startup
     global model
     try:
-        # Usa el método estático load_model y especifica el tipo si es necesario
-        model = CatBoostClassifier() # O CatBoostRegressor()
+        # Cargar como regresor (salida continua 0-1)
+        model = CatBoostRegressor()
         model.load_model(MODEL_PATH)
         logger.info(f"Modelo CatBoost cargado exitosamente desde: {MODEL_PATH}")
     except Exception as e:
@@ -298,42 +298,19 @@ def predict(data: PredictionInput):
 
         # (debug prints removed)
 
-        # Predecir: intentar predict normal, si falla por mapeo de etiquetas usar alternativas
-        prediction = None
-        prediction_proba = None
+        # Regresión: devolver salida RAW del predictor
         try:
-            prediction = model.predict(X)
+            yhat = model.predict(X)
+            val = float(yhat[0]) if hasattr(yhat, '__iter__') else float(yhat)
+            return {"model_used": "CatBoostRegressor", "score": val}
         except Exception as e_pred:
-            # Intentar obtener probabilidades (si aplica)
+            # Fallback: RawFormulaVal directamente
             try:
-                prediction_proba = model.predict(X, prediction_type='Probability')
-                prediction = None
+                raw = model.predict(X, prediction_type='RawFormulaVal')
+                val = float(raw[0]) if not isinstance(raw, np.ndarray) else float(raw[0])
+                return {"model_used": "CatBoostRegressor", "score": val}
             except Exception:
-                try:
-                    # Último recurso: obtener valores crudos
-                    prediction = model.predict(X, prediction_type='RawFormulaVal')
-                except Exception as e2:
-                    raise e2
-        # Si no obtuvimos probabilidades pero el modelo tiene predict_proba, intentarlo
-        if prediction_proba is None and hasattr(model, 'predict_proba'):
-            try:
-                prediction_proba = model.predict_proba(X).tolist()
-            except Exception:
-                prediction_proba = None
-
-        result = {"model_used": "CatBoost"}
-        if prediction is not None:
-            try:
-                result['prediction'] = prediction.tolist()
-            except Exception:
-                result['prediction'] = prediction
-        if prediction_proba is not None:
-            try:
-                result['prediction_proba'] = prediction_proba.tolist() if hasattr(prediction_proba, 'tolist') else prediction_proba
-            except Exception:
-                result['prediction_proba'] = prediction_proba
-
-        return result
+                return {"error": f"No se pudo obtener salida RAW: {e_pred}"}
     except Exception as e:
         import traceback
         tb = traceback.format_exc()

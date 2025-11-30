@@ -87,12 +87,8 @@ export default function Home() {
                   setPredictResult(null)
                   try {
                     const res = await query('predict_score', payload)
-                    // Interpretar respuesta: usar prob de clase positiva si existe
-                    let score = null
-                    if (res && Array.isArray(res.prediction_proba)) {
-                      const row = Array.isArray(res.prediction_proba[0]) ? res.prediction_proba[0] : null
-                      if (row && row.length >= 2) score = row[1]
-                    }
+                    // Interpretar respuesta: usar score directo si existe
+                    const score = res.score ?? null
                     setPredictResult({ model: res.model_used, raw: res, score })
                   } catch (e) {
                     setPredictError(e.message || 'Error calculando score')
@@ -106,7 +102,7 @@ export default function Home() {
               {predictResult && (
                 <div className="message success">
                   Modelo: <strong>{predictResult.model || 'N/A'}</strong> · Score: <strong>{
-                    predictResult.score != null ? `${(predictResult.score*100).toFixed(1)}%` : 'N/A'
+                    predictResult.score != null ? `${predictResult.score.toFixed(2)}` : 'N/A'
                   }</strong>
                 </div>
               )}
